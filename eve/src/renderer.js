@@ -1,5 +1,6 @@
 import { drawAmbienceOverlay, drawAmbienceUnderlay, drawLightMask } from "./ambience.js";
 import { AUDIO_SETTING_ROWS, PARTY_DISPLAY_OPTIONS } from "./settings.js";
+import { CAMERA_ZOOM_DEFAULT } from "./state.js";
 
 const VIEW_W = 960;
 const VIEW_H = 640;
@@ -347,7 +348,7 @@ export class Renderer {
   drawWorld(state) {
     const map = this.data.maps[state.mapId];
     const tileSize = map.tileSize ?? TILE;
-    const zoom = state.cameraZoom ?? 1;
+    const zoom = state.cameraZoom ?? CAMERA_ZOOM_DEFAULT;
     const camera = this.camera(state, map, zoom, tileSize);
     const now = performance.now();
     this.ctx.save();
@@ -900,7 +901,7 @@ export class Renderer {
     return null;
   }
 
-  camera(state, map, zoom = 1, tileSize = map.tileSize ?? TILE) {
+  camera(state, map, zoom = CAMERA_ZOOM_DEFAULT, tileSize = map.tileSize ?? TILE) {
     const viewW = VIEW_W / zoom;
     const viewH = VIEW_H / zoom;
     return {

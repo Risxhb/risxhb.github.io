@@ -1,6 +1,9 @@
 import { createAmbienceState, hydrateAmbienceState, serializeAmbienceState } from "./ambience.js";
 
 const SAVE_KEY = "eve-rpg-save-v1";
+export const CAMERA_ZOOM_MIN = 0.75;
+export const CAMERA_ZOOM_MAX = 2;
+export const CAMERA_ZOOM_DEFAULT = CAMERA_ZOOM_MIN;
 
 export function createInitialState(data) {
   const party = data.actors.party.map((base) => ({
@@ -54,7 +57,7 @@ export function createInitialState(data) {
     toastTimer: 4,
     toastPriority: false,
     ambience: createAmbienceState(),
-    cameraZoom: 1,
+    cameraZoom: CAMERA_ZOOM_DEFAULT,
     insideTent: false,
     insideBuildingId: null,
     transition: null,
@@ -96,7 +99,7 @@ export function loadGame(state, data = null) {
   state.player.y = Number(state.player.y ?? 25);
   state.player.dir ??= "down";
   state.player.stepTimer = 0;
-  state.cameraZoom = Math.max(0.75, Math.min(2, state.cameraZoom ?? 1));
+  state.cameraZoom = Math.max(CAMERA_ZOOM_MIN, Math.min(CAMERA_ZOOM_MAX, state.cameraZoom ?? CAMERA_ZOOM_DEFAULT));
   state.dungeon ??= {
     currentFloor: 0,
     deepestFloor: 0,

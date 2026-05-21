@@ -6,7 +6,7 @@ import { Input } from "./input.js";
 import { loadGameData } from "./data.js";
 import { Renderer } from "./renderer.js";
 import { AUDIO_SETTING_ROWS, PARTY_DISPLAY_OPTIONS, loadGameSettings, normalizeGameSettings, saveGameSettings } from "./settings.js";
-import { createInitialState, loadGame, saveGame } from "./state.js";
+import { CAMERA_ZOOM_DEFAULT, CAMERA_ZOOM_MAX, CAMERA_ZOOM_MIN, createInitialState, loadGame, saveGame } from "./state.js";
 
 const canvas = document.querySelector("#game");
 const ctx = canvas.getContext("2d");
@@ -197,7 +197,7 @@ function updateWorld(dt) {
   const wheel = input.consumeWheel();
   if (wheel) {
     const delta = wheel < 0 ? 0.1 : -0.1;
-    state.cameraZoom = Math.max(0.75, Math.min(2, Math.round(((state.cameraZoom ?? 1) + delta) * 100) / 100));
+    state.cameraZoom = Math.max(CAMERA_ZOOM_MIN, Math.min(CAMERA_ZOOM_MAX, Math.round(((state.cameraZoom ?? CAMERA_ZOOM_DEFAULT) + delta) * 100) / 100));
   }
   if (input.consume("inventory")) openMode("inventory");
   if (input.consume("party")) openMode("party");
