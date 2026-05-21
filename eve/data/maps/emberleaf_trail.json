@@ -1,0 +1,712 @@
+{
+  "schema_version": 1,
+  "id": "emberleaf_trail",
+  "name": "Emberleaf Trail",
+  "tileSize": 32,
+  "width": 72,
+  "height": 45,
+  "defaultTile": "tile.tutorial.grass",
+  "tileVariants": {
+    "tile.tutorial.grass": [
+      {
+        "tile": "tile.tutorial.grass",
+        "weight": 50
+      },
+      {
+        "tile": "tile.tutorial.grass.soft",
+        "weight": 11
+      },
+      {
+        "tile": "tile.tutorial.grass.deep",
+        "weight": 10
+      },
+      {
+        "tile": "tile.tutorial.grass.clover",
+        "weight": 8
+      },
+      {
+        "tile": "tile.tutorial.grass.sprout",
+        "weight": 7
+      },
+      {
+        "tile": "tile.tutorial.grass.wind",
+        "weight": 5
+      }
+    ]
+  },
+  "spawn": {
+    "x": 8,
+    "y": 25
+  },
+  "tentInterior": {
+    "rect": [
+      10,
+      21,
+      4,
+      4
+    ]
+  },
+  "fills": [
+    {
+      "tile": "tile.tutorial.pathH",
+      "rect": [
+        4,
+        25,
+        42,
+        1
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathH",
+      "rect": [
+        50,
+        25,
+        22,
+        1
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathV",
+      "rect": [
+        8,
+        21,
+        1,
+        5
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathH",
+      "rect": [
+        8,
+        21,
+        5,
+        1
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathV",
+      "rect": [
+        18,
+        18,
+        1,
+        8
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathH",
+      "rect": [
+        18,
+        18,
+        9,
+        1
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathV",
+      "rect": [
+        31,
+        25,
+        1,
+        8
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathH",
+      "rect": [
+        31,
+        32,
+        10,
+        1
+      ]
+    },
+    {
+      "tile": "tile.tutorial.waterLeft",
+      "rect": [
+        45,
+        0,
+        1,
+        45
+      ]
+    },
+    {
+      "tile": "tile.tutorial.water.shimmer",
+      "rect": [
+        46,
+        0,
+        3,
+        45
+      ]
+    },
+    {
+      "tile": "tile.tutorial.waterRight",
+      "rect": [
+        49,
+        0,
+        1,
+        45
+      ]
+    },
+    {
+      "tile": "tile.tutorial.bridge",
+      "rect": [
+        45,
+        25,
+        5,
+        1
+      ]
+    },
+    {
+      "tile": "tile.tutorial.pathH",
+      "rect": [
+        50,
+        25,
+        22,
+        1
+      ]
+    }
+  ],
+  "blocked": [
+    [
+      0,
+      0,
+      72,
+      1
+    ],
+    [
+      0,
+      44,
+      72,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      45
+    ],
+    [
+      71,
+      0,
+      1,
+      24
+    ],
+    [
+      71,
+      26,
+      1,
+      19
+    ],
+    [
+      45,
+      0,
+      5,
+      25
+    ],
+    [
+      45,
+      26,
+      5,
+      19
+    ],
+    [
+      3,
+      4,
+      2,
+      2
+    ],
+    [
+      6,
+      3,
+      2,
+      2
+    ],
+    [
+      9,
+      5,
+      2,
+      2
+    ],
+    [
+      12,
+      2,
+      2,
+      2
+    ],
+    [
+      15,
+      5,
+      2,
+      2
+    ],
+    [
+      18,
+      3,
+      2,
+      2
+    ],
+    [
+      21,
+      6,
+      2,
+      2
+    ],
+    [
+      4,
+      9,
+      2,
+      2
+    ],
+    [
+      8,
+      10,
+      2,
+      2
+    ],
+    [
+      13,
+      9,
+      2,
+      2
+    ],
+    [
+      17,
+      11,
+      2,
+      2
+    ],
+    [
+      22,
+      10,
+      2,
+      2
+    ],
+    [
+      27,
+      7,
+      2,
+      2
+    ],
+    [
+      32,
+      8,
+      2,
+      2
+    ],
+    [
+      38,
+      7,
+      2,
+      2
+    ],
+    [
+      54,
+      6,
+      2,
+      2
+    ],
+    [
+      60,
+      8,
+      2,
+      2
+    ],
+    [
+      65,
+      5,
+      2,
+      2
+    ],
+    [
+      19,
+      31,
+      2,
+      2
+    ],
+    [
+      29,
+      36,
+      2,
+      2
+    ],
+    [
+      56,
+      34,
+      2,
+      2
+    ],
+    [
+      66,
+      36,
+      2,
+      2
+    ],
+    [
+      24,
+      17,
+      3,
+      2
+    ]
+  ],
+  "props": [
+    {
+      "id": "tent_interior",
+      "asset": "prop.tutorial.tent.interior",
+      "x": 11,
+      "y": 23,
+      "drawW": 104,
+      "drawH": 78,
+      "anchorY": 58,
+      "showWhenInsideTent": true
+    },
+    {
+      "id": "tent_roof",
+      "asset": "prop.tutorial.tent",
+      "x": 11,
+      "y": 23,
+      "drawW": 100,
+      "drawH": 100,
+      "anchorY": 74,
+      "hideWhenInsideTent": true
+    },
+    {
+      "id": "campfire",
+      "asset": "prop.tutorial.campfire.standalone",
+      "x": 8,
+      "y": 22,
+      "drawW": 54,
+      "drawH": 54,
+      "anchorY": 36
+    },
+    {
+      "id": "camp_bedroll",
+      "asset": "prop.tutorial.bedroll",
+      "x": 6,
+      "y": 26,
+      "drawW": 54,
+      "drawH": 44,
+      "anchorY": 30
+    },
+    {
+      "id": "camp_supplies",
+      "asset": "prop.tutorial.supplies",
+      "x": 11,
+      "y": 26,
+      "drawW": 56,
+      "drawH": 56,
+      "anchorY": 38
+    },
+    {
+      "id": "camp_log",
+      "asset": "prop.tutorial.log.standalone",
+      "x": 13,
+      "y": 24,
+      "drawW": 78,
+      "drawH": 43,
+      "anchorY": 28
+    },
+    {
+      "id": "emberleaf_1",
+      "asset": "prop.tutorial.flowers.standalone",
+      "x": 5,
+      "y": 23,
+      "drawW": 34,
+      "drawH": 34,
+      "anchorY": 24,
+      "pickup": "emberleaf"
+    },
+    {
+      "id": "emberleaf_2",
+      "asset": "prop.tutorial.flowers.standalone",
+      "x": 12,
+      "y": 27,
+      "drawW": 34,
+      "drawH": 34,
+      "anchorY": 24,
+      "pickup": "emberleaf"
+    },
+    {
+      "id": "emberleaf_3",
+      "asset": "prop.tutorial.flowers.standalone",
+      "x": 15,
+      "y": 22,
+      "drawW": 34,
+      "drawH": 34,
+      "anchorY": 24,
+      "pickup": "emberleaf"
+    },
+    {
+      "id": "tree_3_4",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 3,
+      "y": 4,
+      "drawW": 76,
+      "drawH": 76,
+      "anchorY": 58
+    },
+    {
+      "id": "tree_6_3",
+      "asset": "prop.tutorial.tree.wind",
+      "x": 6,
+      "y": 3,
+      "drawW": 86,
+      "drawH": 86,
+      "anchorY": 64
+    },
+    {
+      "id": "tree_9_5",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 9,
+      "y": 5,
+      "drawW": 74,
+      "drawH": 74,
+      "anchorY": 56
+    },
+    {
+      "id": "tree_12_2",
+      "asset": "prop.tutorial.tree.maple.wind",
+      "x": 12,
+      "y": 2,
+      "drawW": 78,
+      "drawH": 86,
+      "anchorY": 64
+    },
+    {
+      "id": "tree_15_5",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 15,
+      "y": 5,
+      "drawW": 74,
+      "drawH": 74,
+      "anchorY": 56
+    },
+    {
+      "id": "tree_18_3",
+      "asset": "prop.tutorial.tree.pine.wind",
+      "x": 18,
+      "y": 3,
+      "drawW": 76,
+      "drawH": 82,
+      "anchorY": 62
+    },
+    {
+      "id": "tree_21_6",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 21,
+      "y": 6,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_4_9",
+      "asset": "prop.tutorial.tree.maple.wind",
+      "x": 4,
+      "y": 9,
+      "drawW": 78,
+      "drawH": 86,
+      "anchorY": 64
+    },
+    {
+      "id": "tree_8_10",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 8,
+      "y": 10,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_13_9",
+      "asset": "prop.tutorial.tree.wind",
+      "x": 13,
+      "y": 9,
+      "drawW": 84,
+      "drawH": 84,
+      "anchorY": 62
+    },
+    {
+      "id": "tree_17_11",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 17,
+      "y": 11,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_22_10",
+      "asset": "prop.tutorial.tree.pine.wind",
+      "x": 22,
+      "y": 10,
+      "drawW": 76,
+      "drawH": 82,
+      "anchorY": 62
+    },
+    {
+      "id": "tree_27_7",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 27,
+      "y": 7,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_32_8",
+      "asset": "prop.tutorial.tree.maple.wind",
+      "x": 32,
+      "y": 8,
+      "drawW": 78,
+      "drawH": 86,
+      "anchorY": 64
+    },
+    {
+      "id": "tree_38_7",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 38,
+      "y": 7,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_54_6",
+      "asset": "prop.tutorial.tree.pine.wind",
+      "x": 54,
+      "y": 6,
+      "drawW": 76,
+      "drawH": 82,
+      "anchorY": 62
+    },
+    {
+      "id": "tree_60_8",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 60,
+      "y": 8,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_65_5",
+      "asset": "prop.tutorial.tree.wind",
+      "x": 65,
+      "y": 5,
+      "drawW": 80,
+      "drawH": 84,
+      "anchorY": 62
+    },
+    {
+      "id": "tree_19_31",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 19,
+      "y": 31,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "tree_29_36",
+      "asset": "prop.tutorial.tree.maple.wind",
+      "x": 29,
+      "y": 36,
+      "drawW": 78,
+      "drawH": 86,
+      "anchorY": 64
+    },
+    {
+      "id": "tree_56_34",
+      "asset": "prop.tutorial.tree.wind",
+      "x": 56,
+      "y": 34,
+      "drawW": 80,
+      "drawH": 84,
+      "anchorY": 62
+    },
+    {
+      "id": "tree_66_36",
+      "asset": "prop.tutorial.tree.standalone",
+      "x": 66,
+      "y": 36,
+      "drawW": 72,
+      "drawH": 72,
+      "anchorY": 55
+    },
+    {
+      "id": "waystone",
+      "asset": "prop.tutorial.waystone.standalone",
+      "x": 58,
+      "y": 26,
+      "drawW": 46,
+      "drawH": 62,
+      "anchorY": 44,
+      "script": "waystone"
+    },
+    {
+      "id": "trail_log",
+      "asset": "prop.tutorial.log.standalone",
+      "x": 25,
+      "y": 18,
+      "drawW": 78,
+      "drawH": 43,
+      "anchorY": 28
+    }
+  ],
+  "npcs": [
+    {
+      "id": "mira",
+      "name": "Mira",
+      "asset": "actor.elara",
+      "x": 7,
+      "y": 23,
+      "drawW": 86,
+      "drawH": 138,
+      "anchorY": 103,
+      "script": "mira-intro",
+      "afterFlagScript": {
+        "q-tutorial-started": "mira-return"
+      }
+    }
+  ],
+  "encounters": [
+    {
+      "id": "tutorial_slime",
+      "x": 38,
+      "y": 25,
+      "asset": "prop.tutorial.slime.standalone",
+      "drawW": 48,
+      "drawH": 37,
+      "enemies": [
+        "training-slime"
+      ],
+      "flag": "tutorial_combat_won"
+    },
+    {
+      "id": "thorn_imp",
+      "x": 66,
+      "y": 25,
+      "asset": "enemy.thorn.standalone",
+      "drawW": 50,
+      "drawH": 50,
+      "enemies": [
+        "thorn-imp"
+      ],
+      "flag": "trail_imp_won"
+    }
+  ],
+  "exits": [
+    {
+      "x": 71,
+      "y": 25,
+      "to": "brindlemarket_village",
+      "spawn": "west_gate",
+      "requires": "tutorial_complete"
+    }
+  ],
+  "backdrop": "backdrop.tutorial.generated",
+  "battleBackdrops": [
+    "backdrop.battle.forest.a",
+    "backdrop.battle.forest.b",
+    "backdrop.battle.forest.c"
+  ]
+}

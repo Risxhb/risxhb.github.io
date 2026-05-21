@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "skills": [
+    { "id": "guard-break", "name": "Guard Break", "class": "Knight", "kind": "skill", "mp": 4, "target": "enemy", "power": 1.45, "effect": "damage", "text": "Rowan cracks a foe's stance." },
+    { "id": "iron-wall", "name": "Iron Wall", "class": "Knight", "kind": "skill", "mp": 5, "target": "ally", "power": 0, "effect": "guard", "text": "Rowan shields the party." },
+    { "id": "rallying-strike", "name": "Rallying Strike", "class": "Knight", "kind": "skill", "mp": 6, "target": "enemy", "power": 1.15, "effect": "damage-party-ult", "text": "A strike that rallies allies." },
+    { "id": "oathkeepers-stand", "name": "Oathkeeper's Stand", "class": "Knight", "kind": "ultimate", "mp": 0, "target": "enemy", "power": 2.5, "effect": "damage-guard", "text": "Rowan plants his shield and answers every blow." },
+    { "id": "mend", "name": "Mend", "class": "Priest", "kind": "skill", "mp": 5, "target": "ally", "power": 34, "effect": "heal", "text": "Elara restores one ally." },
+    { "id": "radiant-veil", "name": "Radiant Veil", "class": "Priest", "kind": "skill", "mp": 7, "target": "party", "power": 0, "effect": "barrier", "text": "A dawn veil softens incoming harm." },
+    { "id": "cleanse", "name": "Cleanse", "class": "Priest", "kind": "skill", "mp": 4, "target": "ally", "power": 12, "effect": "cleanse", "text": "Elara removes poison and mends a little HP." },
+    { "id": "dawn-sanctuary", "name": "Dawn Sanctuary", "class": "Priest", "kind": "ultimate", "mp": 0, "target": "party", "power": 55, "effect": "heal-party", "text": "The party stands inside a warm sunrise." },
+    { "id": "ember-bolt", "name": "Ember Bolt", "class": "Mage", "kind": "skill", "mp": 5, "target": "enemy", "power": 1.65, "effect": "magic", "text": "Cassian fires a quick flame rune." },
+    { "id": "frost-sigil", "name": "Frost Sigil", "class": "Mage", "kind": "skill", "mp": 6, "target": "enemy", "power": 1.25, "effect": "magic-slow", "text": "A cold rune slows the target." },
+    { "id": "arc-burst", "name": "Arc Burst", "class": "Mage", "kind": "skill", "mp": 8, "target": "enemies", "power": 1.1, "effect": "magic-all", "text": "Cassian arcs crystal energy across enemies." },
+    { "id": "astral-cascade", "name": "Astral Cascade", "class": "Mage", "kind": "ultimate", "mp": 0, "target": "enemies", "power": 2.0, "effect": "magic-all", "text": "A shower of star-runes collapses onto the field." },
+    { "id": "backstab", "name": "Backstab", "class": "Thief", "kind": "skill", "mp": 4, "target": "enemy", "power": 1.55, "effect": "damage", "text": "Nia slips behind a foe." },
+    { "id": "smoke-step", "name": "Smoke Step", "class": "Thief", "kind": "skill", "mp": 5, "target": "self", "power": 0, "effect": "evasion", "text": "Nia vanishes in a puff of smoke." },
+    { "id": "pilfer", "name": "Pilfer", "class": "Thief", "kind": "skill", "mp": 3, "target": "enemy", "power": 0.8, "effect": "steal", "text": "Nia swipes gold while striking." },
+    { "id": "nine-lives-gambit", "name": "Nine-Lives Gambit", "class": "Thief", "kind": "ultimate", "mp": 0, "target": "enemy", "power": 3.0, "effect": "damage-steal", "text": "Nia bets everything on a perfect opening." }
+  ]
+}

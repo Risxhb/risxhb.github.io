@@ -1,0 +1,3149 @@
+{
+  "schema_version": 1,
+  "images": {
+    "portrait.rowan": {
+      "kind": "standalone",
+      "path": "assets/actors/portraits/portrait-rowan-gacha.png",
+      "width": 627,
+      "height": 627
+    },
+    "portrait.elara": {
+      "kind": "standalone",
+      "path": "assets/actors/portraits/portrait-elara-gacha.png",
+      "width": 627,
+      "height": 627
+    },
+    "portrait.cassian": {
+      "kind": "standalone",
+      "path": "assets/actors/portraits/portrait-cassian-gacha.png",
+      "width": 627,
+      "height": 627
+    },
+    "portrait.nia": {
+      "kind": "standalone",
+      "path": "assets/actors/portraits/portrait-nia-gacha.png",
+      "width": 627,
+      "height": 627
+    },
+    "profile.elara": {
+      "kind": "standalone",
+      "path": "assets/actors/profiles/elara_profile.png",
+      "width": 1672,
+      "height": 941
+    },
+    "profile.nia": {
+      "kind": "standalone",
+      "path": "assets/actors/profiles/nia_profile.png",
+      "width": 1672,
+      "height": 941
+    },
+    "profile.rowan": {
+      "kind": "standalone",
+      "path": "assets/actors/profiles/rowan_profile.png",
+      "width": 1672,
+      "height": 941
+    },
+    "profile.cassian": {
+      "kind": "standalone",
+      "path": "assets/actors/profiles/cassian_profile.png",
+      "width": 1672,
+      "height": 941
+    },
+    "prop.tutorial.tree.standalone": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/tree.png",
+      "width": 128,
+      "height": 128,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.flowers.standalone": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/flowers.png",
+      "width": 64,
+      "height": 64,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.waystone.standalone": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/waystone.png",
+      "width": 96,
+      "height": 128,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.log.standalone": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/log.png",
+      "width": 128,
+      "height": 72,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.campfire.standalone": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/campfire.png",
+      "width": 80,
+      "height": 80,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.slime.standalone": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/slime-marker.png",
+      "width": 72,
+      "height": 56,
+      "edge_alpha_pixels": 0
+    },
+    "backdrop.tutorial.generated": {
+      "kind": "standalone",
+      "path": "assets/backdrops/tutorial-battle.png",
+      "width": 960,
+      "height": 365
+    },
+    "menu.backdrop.darkForest": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dark-forest.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.darkForest.bg": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dark-forest-bg.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.darkForest.fg": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dark-forest-fg.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.town": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/town.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.town.bg": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/town-bg.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.town.fg": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/town-fg.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.dungeon": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dungeon.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.dungeon.bg": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dungeon-bg.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.backdrop.dungeon.fg": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dungeon-fg.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.transition.doorClose": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/doorclose_transition.png",
+      "width": 1671,
+      "height": 941
+    },
+    "menu.transition.doorOpen": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/dooropen_transition.png",
+      "width": 1672,
+      "height": 941
+    },
+    "menu.transition.doorFinal": {
+      "kind": "standalone",
+      "path": "assets/backdrops/menu/doorfinal_transition.png",
+      "width": 1672,
+      "height": 941
+    },
+    "enemy.slime.standalone": {
+      "kind": "standalone",
+      "path": "assets/enemies/tutorial/slime.png",
+      "width": 128,
+      "height": 96,
+      "edge_alpha_pixels": 0
+    },
+    "enemy.thorn.standalone": {
+      "kind": "standalone",
+      "path": "assets/enemies/tutorial/thorn-imp.png",
+      "width": 128,
+      "height": 128,
+      "edge_alpha_pixels": 0
+    },
+    "npc.moonroot.goblin_grunt.move": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/goblin-grunt-move.png",
+      "width": 576,
+      "height": 512,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "move",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 6,
+        "rows": {
+          "down": 0,
+          "left": 2,
+          "right": 1,
+          "up": 3
+        }
+      }
+    },
+    "npc.moonroot.visitor": {
+      "kind": "standalone",
+      "path": "assets/npcs/moonroot/moonroot-visitor.png",
+      "width": 96,
+      "height": 128,
+      "edge_alpha_pixels": 0
+    },
+    "npc.moonroot.floor1.sella.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/floor1/sella-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.moonroot.floor1.mapper.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/floor1/mapper-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.moonroot.floor1.marlo.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/floor1/marlo-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.moonroot.floor1.wounded_delver.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/floor1/wounded-delver-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.moonroot.floor1.rookie.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/floor1/rookie-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.moonroot.floor1.descent_guard.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/moonroot/floor1/descent-guard-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.tutorial.mira.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/tutorial/mira-idle.png",
+      "width": 256,
+      "height": 64,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 64,
+        "frame_height": 64,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.village.gate_guard.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/village/gate-guard-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.village.supply_clerk.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/village/supply-clerk-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "npc.village.rumor_merchant.idle": {
+      "kind": "spritesheet",
+      "path": "assets/npcs/village/rumor-merchant-idle.png",
+      "width": 384,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "idle",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2.5
+      }
+    },
+    "ui.modal": {
+      "kind": "standalone",
+      "path": "assets/ui/modal-panel.png",
+      "width": 280,
+      "height": 132,
+      "derived_from": "ui.dialogue"
+    },
+    "tile.tutorial.grass.soft": {
+      "kind": "tile",
+      "path": "assets/tiles/tutorial/grass-soft.png",
+      "width": 32,
+      "height": 32,
+      "derived_from": "tile.tutorial.grass"
+    },
+    "tile.tutorial.grass.deep": {
+      "kind": "tile",
+      "path": "assets/tiles/tutorial/grass-deep.png",
+      "width": 32,
+      "height": 32,
+      "derived_from": "tile.tutorial.grass"
+    },
+    "tile.tutorial.grass.clover": {
+      "kind": "tile",
+      "path": "assets/tiles/tutorial/grass-clover.png",
+      "width": 32,
+      "height": 32,
+      "derived_from": "tile.tutorial.grass"
+    },
+    "tile.tutorial.grass.sprout": {
+      "kind": "tile",
+      "path": "assets/tiles/tutorial/grass-sprout.png",
+      "width": 32,
+      "height": 32,
+      "derived_from": "tile.tutorial.grass"
+    },
+    "tile.tutorial.grass.wind": {
+      "kind": "spritesheet",
+      "path": "assets/tiles/tutorial/grass-wind.png",
+      "width": 128,
+      "height": 32,
+      "derived_from": "tile.tutorial.grass",
+      "animation": {
+        "name": "wind",
+        "frame_width": 32,
+        "frame_height": 32,
+        "frames": 4,
+        "fps": 3
+      }
+    },
+    "actor.rowan.move": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/rowan-move.png",
+      "width": 1536,
+      "height": 2048,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "run-8dir-hires",
+        "frame_width": 192,
+        "frame_height": 256,
+        "frames": 8,
+        "fps": 10.5,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "actor.rowan.idle": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/rowan-idle.png",
+      "width": 1536,
+      "height": 2048,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "idle-8dir-hires",
+        "frame_width": 192,
+        "frame_height": 256,
+        "frames": 8,
+        "fps": 4,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "actor.elara.move": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/elara-move.png",
+      "width": 768,
+      "height": 1024,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "run-8dir-tall",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 8,
+        "fps": 10.5,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "actor.elara.idle": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/elara-idle.png",
+      "width": 768,
+      "height": 1024,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "idle-8dir-tall",
+        "frame_width": 96,
+        "frame_height": 128,
+        "frames": 8,
+        "fps": 4,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "actor.cassian.move": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/cassian-move.png",
+      "width": 1536,
+      "height": 2048,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "run-8dir-hires",
+        "frame_width": 192,
+        "frame_height": 256,
+        "frames": 8,
+        "fps": 10.5,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "actor.cassian.idle": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/cassian-idle.png",
+      "width": 1536,
+      "height": 2048,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "idle-8dir-hires",
+        "frame_width": 192,
+        "frame_height": 256,
+        "frames": 8,
+        "fps": 4,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "actor.nia.move": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/nia-move.png",
+      "width": 1536,
+      "height": 2048,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "run-8dir-hires",
+        "frame_width": 192,
+        "frame_height": 256,
+        "frames": 8,
+        "fps": 10.5,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "prop.tutorial.tree.wind": {
+      "kind": "spritesheet",
+      "path": "assets/props/tutorial/tree-wind.png",
+      "width": 512,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "wind",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2
+      }
+    },
+    "prop.tutorial.tree.maple.wind": {
+      "kind": "spritesheet",
+      "path": "assets/props/tutorial/tree-maple-wind.png",
+      "width": 512,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "wind",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2
+      }
+    },
+    "prop.tutorial.tree.pine.wind": {
+      "kind": "spritesheet",
+      "path": "assets/props/tutorial/tree-pine-wind.png",
+      "width": 512,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "wind",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 4,
+        "fps": 2
+      }
+    },
+    "tile.tutorial.water.shimmer": {
+      "kind": "spritesheet",
+      "path": "assets/tiles/tutorial/water-shimmer.png",
+      "width": 128,
+      "height": 32,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "shimmer",
+        "frame_width": 32,
+        "frame_height": 32,
+        "frames": 4,
+        "fps": 5
+      }
+    },
+    "prop.tutorial.tent": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/tent.png",
+      "width": 128,
+      "height": 128,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.tent.interior": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/tent-interior.png",
+      "width": 128,
+      "height": 96,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.bedroll": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/bedroll.png",
+      "width": 80,
+      "height": 64,
+      "edge_alpha_pixels": 0
+    },
+    "prop.tutorial.supplies": {
+      "kind": "standalone",
+      "path": "assets/props/tutorial/supplies.png",
+      "width": 80,
+      "height": 80,
+      "edge_alpha_pixels": 0
+    },
+    "ui.title.panel": {
+      "kind": "standalone",
+      "path": "assets/ui/title-panel.png",
+      "width": 1418,
+      "height": 513,
+      "edge_alpha_pixels": 0
+    },
+    "ui.title.highlight": {
+      "kind": "standalone",
+      "path": "assets/ui/title-highlight.png",
+      "width": 947,
+      "height": 156,
+      "edge_alpha_pixels": 0
+    },
+    "village.roof.shop": {
+      "kind": "standalone",
+      "path": "assets/village/roof-shop.png",
+      "width": 192,
+      "height": 176,
+      "edge_alpha_pixels": 0
+    },
+    "village.roof.guild": {
+      "kind": "standalone",
+      "path": "assets/village/roof-guild.png",
+      "width": 192,
+      "height": 176,
+      "edge_alpha_pixels": 0
+    },
+    "village.roof.inn": {
+      "kind": "standalone",
+      "path": "assets/village/roof-inn.png",
+      "width": 192,
+      "height": 176,
+      "edge_alpha_pixels": 0
+    },
+    "village.roof.home": {
+      "kind": "standalone",
+      "path": "assets/village/roof-home.png",
+      "width": 176,
+      "height": 160,
+      "edge_alpha_pixels": 0
+    },
+    "village.interior.shop": {
+      "kind": "standalone",
+      "path": "assets/village/interior-shop.png",
+      "width": 192,
+      "height": 192,
+      "edge_alpha_pixels": 0
+    },
+    "village.interior.guild": {
+      "kind": "standalone",
+      "path": "assets/village/interior-guild.png",
+      "width": 192,
+      "height": 192,
+      "edge_alpha_pixels": 0
+    },
+    "village.interior.inn": {
+      "kind": "standalone",
+      "path": "assets/village/interior-inn.png",
+      "width": 192,
+      "height": 192,
+      "edge_alpha_pixels": 0
+    },
+    "village.interior.home": {
+      "kind": "standalone",
+      "path": "assets/village/interior-home.png",
+      "width": 176,
+      "height": 176,
+      "edge_alpha_pixels": 0
+    },
+    "village.fountain": {
+      "kind": "standalone",
+      "path": "assets/village/fountain.png",
+      "width": 128,
+      "height": 128,
+      "edge_alpha_pixels": 0
+    },
+    "village.market-stall": {
+      "kind": "standalone",
+      "path": "assets/village/market-stall.png",
+      "width": 128,
+      "height": 112,
+      "edge_alpha_pixels": 0
+    },
+    "village.dungeon-supplies": {
+      "kind": "standalone",
+      "path": "assets/village/dungeon-supplies.png",
+      "width": 128,
+      "height": 112,
+      "edge_alpha_pixels": 0
+    },
+    "village.notice-board": {
+      "kind": "standalone",
+      "path": "assets/village/notice-board.png",
+      "width": 128,
+      "height": 112,
+      "edge_alpha_pixels": 0
+    },
+    "village.lantern": {
+      "kind": "standalone",
+      "path": "assets/village/lantern.png",
+      "width": 64,
+      "height": 96,
+      "edge_alpha_pixels": 0
+    },
+    "village.bench": {
+      "kind": "standalone",
+      "path": "assets/village/bench.png",
+      "width": 112,
+      "height": 64,
+      "edge_alpha_pixels": 0
+    },
+    "village.ore-bundle": {
+      "kind": "standalone",
+      "path": "assets/village/ore-bundle.png",
+      "width": 96,
+      "height": 96,
+      "edge_alpha_pixels": 0
+    },
+    "village.herb-bundle": {
+      "kind": "standalone",
+      "path": "assets/village/herb-bundle.png",
+      "width": 96,
+      "height": 96,
+      "edge_alpha_pixels": 0
+    },
+    "tile.moonroot.floor.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.b": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.c": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.d": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-d.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/wall.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.door": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/door.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.bossFloor": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/boss-floor.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.pitfall": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/pitfall.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.spikePlate": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/spike-plate.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.dartLine": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/dart-line.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.poisonMist": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/poison-mist.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.alarmRune": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/alarm-rune.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.crumblingBridge": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/crumbling-bridge.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.teleportSnare": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/teleport-snare.png",
+      "width": 80,
+      "height": 80
+    },
+    "tile.moonroot.chest": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/chest.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.rootCrystal": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/root-crystal.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.debris": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/debris.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wallTop": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/wall-top.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wallFace": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-face.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wallCorner": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wallCapLeft": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-cap-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wallCapRight": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-cap-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.doorTop": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/door-top.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.doorFace": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/door-face.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.column": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/column.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.torch": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/torch.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.banner": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/banner.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.stairsDown": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/stairs-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.stairsUp": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/stairs-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.ironGrate": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/iron-grate.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.ledgeTrim": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/ledge-trim.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.waterChannel": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/water-channel.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.floorBase": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-floor-base.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.floorCracked": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-floor-cracked.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.floorRoots": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-floor-roots.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.floorCrystal": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-floor-crystal.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor1.light.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor1-light-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor1.light.b": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor1-light-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor1.light.c": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor1-light-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor1.light.d": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor1-light-d.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopStraight": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-straight.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopLeftEnd": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-left-end.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopRightEnd": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-right-end.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopCorner": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-corner.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceStraight": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-straight.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceLeftEdge": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-left-edge.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceRightEdge": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-right-edge.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceRoots": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-roots.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorTop": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-door-top.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorFace": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-face.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.torch": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-torch.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.banner": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-banner.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideLeft": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideRight": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideLeftTorch": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-left-torch.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideRightTorch": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-right-torch.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceTorch": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-torch.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTL": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tl.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTR": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tr.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBL": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-bl.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBR": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-br.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerLeft": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerRight": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.void": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/void.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.void.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/void-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.void.b": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/void-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.base.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-base-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.base.b": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-base-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.base.c": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-base-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.cracked.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-cracked-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.roots.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-roots-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.floor.detail.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/floor-detail-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.door.ns.closed.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/door-ns-closed-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.door.ns.open.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/door-ns-open-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.door.ns.closed.b": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/door-ns-closed-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.door.ns.open.b": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/door-ns-open-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.top.a": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/wall-top-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.top.b": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/wall-top-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.top.c": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/wall-top-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.face.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-face-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.face.b": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-face-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.face.roots": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-face-roots.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.side.left.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-side-left-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.side.left.b": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-side-left-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.side.right.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-side-right-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.side.right.b": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-side-right-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.corner.outer.tl.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner-outer-tl-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.corner.outer.tr.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner-outer-tr-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.corner.outer.bl.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner-outer-bl-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.corner.outer.br.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner-outer-br-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.corner.inner.left.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner-inner-left-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.wall.corner.inner.right.a": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/wall-corner-inner-right-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopStraightA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-straight-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceStraightA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-straight-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceTorchA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-torch-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideLeftA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-left-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideRightA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-right-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTLA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tl-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTRA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tr-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBLA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-bl-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBRA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-br-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerLeftA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-left-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerRightA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-right-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopStraightB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-straight-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceStraightB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-straight-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceTorchB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-torch-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideLeftB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-left-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideRightB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-right-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTLB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tl-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTRB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tr-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBLB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-bl-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBRB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-br-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerLeftB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-left-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerRightB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-right-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallTopStraightC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-top-straight-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceStraightC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-straight-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallFaceTorchC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-face-torch-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideLeftC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-left-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallSideRightC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-side-right-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTLC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tl-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterTRC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-tr-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBLC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-bl-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerOuterBRC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-outer-br-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerLeftC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-left-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerInnerRightC": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-inner-right-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallBottomStraight": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-bottom-straight.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallBottomStraightA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-bottom-straight-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallBottomStraightB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-bottom-straight-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallBottomStraightC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-bottom-straight-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorNsClosed": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ns-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorNsClosedA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ns-closed-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorNsClosedB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ns-closed-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorNsOpen": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ns-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorNsOpenA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ns-open-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorNsOpenB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ns-open-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwClosed": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwClosedA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-closed-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwClosedB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-closed-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwOpen": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwOpenA": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-open-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwOpenB": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-open-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwEastClosed": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-east-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwEastOpen": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-east-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwWestClosed": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-west-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.doorEwWestOpen": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/semantic-door-ew-west-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeLine": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-line.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeLineA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-line-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeLineB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-line-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeLineC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-line-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenSource64": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-source-64.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenWestA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-west-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenWestB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-west-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenWestC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-west-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenEastA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-east-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenEastB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-east-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeImagegenEastC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-imagegen-east-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeRotatedWestA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-rotated-west-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeRotatedWestB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-rotated-west-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeRotatedWestC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-rotated-west-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeRotatedEastA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-rotated-east-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeRotatedEastB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-rotated-east-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallEdgeRotatedEastC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-edge-rotated-east-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterTLA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-tl-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterTLB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-tl-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterTLC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-tl-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterTRA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-tr-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterTRB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-tr-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterTRC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-tr-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterBLA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-bl-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterBLB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-bl-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterBLC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-bl-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterBRA": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-br-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterBRB": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-br-b.png",
+      "width": 64,
+      "height": 64
+    },
+    "tile.moonroot.semantic.wallCornerCapOuterBRC": {
+      "kind": "tile",
+      "path": "assets/tiles/moonroot/semantic-wall-corner-cap-outer-br-c.png",
+      "width": 64,
+      "height": 64
+    },
+    "prop.guild.expedition_desk": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/expedition-desk.png",
+      "width": 166,
+      "height": 160
+    },
+    "prop.guild.map_board": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/expedition-desk.png",
+      "width": 166,
+      "height": 160
+    },
+    "prop.guild.field_kitchen.cookpot": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/field-kitchen-cookpot.png",
+      "width": 183,
+      "height": 180
+    },
+    "prop.guild.clean_water_barrel": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/field-kitchen-cookpot.png",
+      "width": 183,
+      "height": 180
+    },
+    "prop.guild.lantern_rack": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/expedition-desk.png",
+      "width": 166,
+      "height": 160
+    },
+    "prop.guild.bedroll_cluster": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/bedroll-cluster.png",
+      "width": 192,
+      "height": 79
+    },
+    "prop.guild.wounded_cot": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/wounded-cot.png",
+      "width": 192,
+      "height": 95
+    },
+    "prop.guild.supply_crate_stack.a": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/supply-crate-stack-a.png",
+      "width": 224,
+      "height": 115
+    },
+    "prop.guild.barricade.a": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/barricade-a.png",
+      "width": 192,
+      "height": 106
+    },
+    "prop.guild.barricade.reinforced": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/barricade-reinforced.png",
+      "width": 222,
+      "height": 116
+    },
+    "prop.dungeon.torn_bedrolls": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/torn-bedrolls.png",
+      "width": 192,
+      "height": 95
+    },
+    "prop.dungeon.broken_camp_pack": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/supply-crate-stack-a.png",
+      "width": 224,
+      "height": 115
+    },
+    "decal.guild.chalk_arrow": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/chalk-arrow.png",
+      "width": 96,
+      "height": 94
+    },
+    "decal.guild.warning_marks": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/warning-marks.png",
+      "width": 96,
+      "height": 88
+    },
+    "decal.guild.route_ribbon": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/route-ribbon.png",
+      "width": 88,
+      "height": 86
+    },
+    "decal.dungeon.blood_trail.subtle": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/blood-trail.png",
+      "width": 97,
+      "height": 96
+    },
+    "decal.dungeon.scorch_mark": {
+      "kind": "standalone",
+      "path": "assets/props/moonroot/floor1/scorch-mark.png",
+      "width": 97,
+      "height": 96
+    },
+    "prop.moonroot.root_cracked_altar": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/root-crystal.png",
+      "width": 64,
+      "height": 64
+    },
+    "decal.moonroot.glowing_root_crack": {
+      "kind": "standalone",
+      "path": "assets/tiles/moonroot/floor-roots-a.png",
+      "width": 64,
+      "height": 64
+    },
+    "actor.nia.idle": {
+      "kind": "spritesheet",
+      "path": "assets/actors/party/nia-idle.png",
+      "width": 1536,
+      "height": 2048,
+      "edge_alpha_pixels": 0,
+      "rendering": {
+        "smooth": true,
+        "quality": "high"
+      },
+      "animation": {
+        "name": "idle-8dir-hires",
+        "frame_width": 192,
+        "frame_height": 256,
+        "frames": 8,
+        "fps": 4,
+        "rows": {
+          "down": 0,
+          "down-right": 1,
+          "right": 2,
+          "up-right": 3,
+          "up": 4,
+          "up-left": 5,
+          "left": 6,
+          "down-left": 7
+        }
+      }
+    },
+    "battle.effect.slash": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/slash.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.shield_slash": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/shield-slash.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.shield_bash": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/shield-bash.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.pierce": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/pierce.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.smoke": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/smoke.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.fire": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/fire.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.frost": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/frost.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.arcane": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/arcane.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.heal": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/heal.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.barrier": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/barrier.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.effect.enemy_strike": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/enemy-strike.png",
+      "width": 768,
+      "height": 128,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "battle-effect-6",
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "trap.effect.spikes": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/spikes.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 14
+      }
+    },
+    "trap.effect.dart": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/dart.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 14
+      }
+    },
+    "trap.effect.poison": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/poison.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "trap.effect.crumble": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/crumble.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "trap.effect.alarm": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/alarm.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "trap.effect.teleport": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/teleport.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "trap.effect.pitfall": {
+      "kind": "spritesheet",
+      "path": "assets/effects/traps/pitfall.png",
+      "width": 480,
+      "height": 80,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "trap-effect-6",
+        "frame_width": 80,
+        "frame_height": 80,
+        "frames": 6,
+        "fps": 12
+      }
+    },
+    "battle.status_icons": {
+      "kind": "spritesheet",
+      "path": "assets/effects/battle/status-icons.png",
+      "width": 448,
+      "height": 64,
+      "edge_alpha_pixels": 0,
+      "animation": {
+        "name": "status-icons-7",
+        "frame_width": 64,
+        "frame_height": 64,
+        "frames": 7,
+        "fps": 1
+      }
+    },
+    "backdrop.battle.forest.a": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/forest-a.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.forest.b": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/forest-b.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.forest.c": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/forest-c.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.village.a": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/village-a.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.village.b": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/village-b.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.village.c": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/village-c.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.dungeon.a": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/dungeon-a.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.dungeon.b": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/dungeon-b.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.dungeon.c": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/dungeon-c.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.boss.a": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/boss-a.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.boss.b": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/boss-b.png",
+      "width": 960,
+      "height": 365
+    },
+    "backdrop.battle.boss.c": {
+      "kind": "standalone",
+      "path": "assets/backdrops/battle/boss-c.png",
+      "width": 960,
+      "height": 365
+    },
+    "ui.combat.panel": {
+      "kind": "standalone",
+      "path": "assets/ui/combat/panel.png",
+      "width": 912,
+      "height": 220
+    },
+    "ui.combat.option": {
+      "kind": "standalone",
+      "path": "assets/ui/combat/option.png",
+      "width": 360,
+      "height": 48
+    },
+    "ui.combat.summary_panel": {
+      "kind": "standalone",
+      "path": "assets/ui/combat/summary-panel.png",
+      "width": 736,
+      "height": 500
+    },
+    "ui.combat.summary_button": {
+      "kind": "standalone",
+      "path": "assets/ui/combat/summary-button.png",
+      "width": 178,
+      "height": 40
+    },
+    "ui.victory.harvest_panel": {
+      "kind": "standalone",
+      "path": "assets/ui/victory/harvest-panel.png",
+      "width": 912,
+      "height": 560
+    },
+    "ui.victory.harvest_option": {
+      "kind": "standalone",
+      "path": "assets/ui/victory/harvest-option.png",
+      "width": 600,
+      "height": 76
+    },
+    "ui.victory.harvest_side_panel": {
+      "kind": "standalone",
+      "path": "assets/ui/victory/harvest-side-panel.png",
+      "width": 260,
+      "height": 338
+    },
+    "ui.victory.harvest_button": {
+      "kind": "standalone",
+      "path": "assets/ui/victory/harvest-button.png",
+      "width": 220,
+      "height": 52
+    },
+    "journal.npc.quartermaster_sella": {
+      "kind": "standalone",
+      "path": "assets/journal/npc-quartermaster-sella.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.npc.guild_mapper": {
+      "kind": "standalone",
+      "path": "assets/journal/npc-guild-mapper.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.npc.cook_marlo": {
+      "kind": "standalone",
+      "path": "assets/journal/npc-cook-marlo.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.npc.wounded_delver": {
+      "kind": "standalone",
+      "path": "assets/journal/npc-wounded-delver.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.npc.guild_rookie": {
+      "kind": "standalone",
+      "path": "assets/journal/npc-guild-rookie.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.npc.descent_guard": {
+      "kind": "standalone",
+      "path": "assets/journal/npc-descent-guard.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.practice": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-practice.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.pitfall": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-pitfall.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.spikes": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-spikes.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.darts": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-darts.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.poison": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-poison.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.alarm": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-alarm.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.crumble": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-crumble.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.trap.teleport": {
+      "kind": "standalone",
+      "path": "assets/journal/trap-teleport.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.training_slime": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-training-slime.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.thorn_imp": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-thorn-imp.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.road_wisp": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-road-wisp.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.bramble_rat": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-bramble-rat.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.moonroot_bat": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-moonroot-bat.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.hollow_guard": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-hollow-guard.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.crystal_ooze": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-crystal-ooze.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.vorthane": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-vorthane.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.deep_moonroot_bat": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-deep-moonroot-bat.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.gloom_ooze": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-gloom-ooze.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.goblin_overview": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-goblin-overview.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.goblin_scout": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-goblin-scout.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.goblin_grunt": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-goblin-grunt.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.goblin_trapper": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-goblin-trapper.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.monster.rootbound_guard": {
+      "kind": "standalone",
+      "path": "assets/journal/monster-rootbound-guard.png",
+      "width": 512,
+      "height": 512
+    },
+    "journal.floor.1": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-1.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.2": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-2.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.3": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-3.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.4": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-4.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.5": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-5.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.6": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-6.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.7": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-7.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.8": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-8.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.9": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-9.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.10": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-10.png",
+      "width": 768,
+      "height": 384
+    },
+    "journal.floor.11": {
+      "kind": "standalone",
+      "path": "assets/journal/floor-11.png",
+      "width": 768,
+      "height": 384
+    },
+    "ui.notification.centered": {
+      "kind": "standalone",
+      "path": "assets/ui/notification-panel-centered.png",
+      "width": 900,
+      "height": 220
+    },
+    "journal.ui.book_spread": {
+      "kind": "standalone",
+      "path": "assets/journal/ui-book-spread.png",
+      "width": 900,
+      "height": 600
+    }
+  },
+  "npc_sprites": {
+    "mira": {
+      "idle": "npc.tutorial.mira.idle"
+    },
+    "gate_guard": {
+      "idle": "npc.village.gate_guard.idle"
+    },
+    "supply_clerk": {
+      "idle": "npc.village.supply_clerk.idle"
+    },
+    "rumor_merchant": {
+      "idle": "npc.village.rumor_merchant.idle"
+    },
+    "npc_floor_1_quartermaster": {
+      "idle": "npc.moonroot.floor1.sella.idle"
+    },
+    "npc_floor_1_mapper": {
+      "idle": "npc.moonroot.floor1.mapper.idle"
+    },
+    "npc_floor_1_cook": {
+      "idle": "npc.moonroot.floor1.marlo.idle"
+    },
+    "npc_floor_1_wounded_delver": {
+      "idle": "npc.moonroot.floor1.wounded_delver.idle"
+    },
+    "npc_floor_1_rookie": {
+      "idle": "npc.moonroot.floor1.rookie.idle"
+    },
+    "npc_floor_1_descent_guard": {
+      "idle": "npc.moonroot.floor1.descent_guard.idle"
+    }
+  },
+  "atlases": {
+    "main": {
+      "path": "assets/atlases/main-atlas.png",
+      "width": 1254,
+      "height": 1254,
+      "regions": {
+        "actor.rowan": {
+          "x": 17,
+          "y": 20,
+          "w": 122,
+          "h": 122
+        },
+        "actor.elara": {
+          "x": 302,
+          "y": 21,
+          "w": 105,
+          "h": 121
+        },
+        "actor.cassian": {
+          "x": 445,
+          "y": 21,
+          "w": 154,
+          "h": 122
+        },
+        "actor.nia": {
+          "x": 655,
+          "y": 27,
+          "w": 107,
+          "h": 113
+        },
+        "portrait.rowan": {
+          "x": 17,
+          "y": 301,
+          "w": 145,
+          "h": 141
+        },
+        "portrait.elara": {
+          "x": 181,
+          "y": 301,
+          "w": 146,
+          "h": 141
+        },
+        "portrait.cassian": {
+          "x": 344,
+          "y": 301,
+          "w": 146,
+          "h": 141
+        },
+        "portrait.nia": {
+          "x": 506,
+          "y": 301,
+          "w": 139,
+          "h": 141
+        },
+        "card.knight": {
+          "x": 14,
+          "y": 462,
+          "w": 149,
+          "h": 191
+        },
+        "card.priest": {
+          "x": 177,
+          "y": 462,
+          "w": 151,
+          "h": 191
+        },
+        "card.mage": {
+          "x": 340,
+          "y": 462,
+          "w": 151,
+          "h": 191
+        },
+        "card.thief": {
+          "x": 500,
+          "y": 462,
+          "w": 146,
+          "h": 191
+        },
+        "tile.grass": {
+          "x": 775,
+          "y": 30,
+          "w": 110,
+          "h": 110
+        },
+        "tile.path": {
+          "x": 896,
+          "y": 30,
+          "w": 110,
+          "h": 110
+        },
+        "tile.water": {
+          "x": 1013,
+          "y": 29,
+          "w": 91,
+          "h": 111
+        },
+        "tile.bridge": {
+          "x": 1115,
+          "y": 28,
+          "w": 128,
+          "h": 112
+        },
+        "tile.stone": {
+          "x": 671,
+          "y": 161,
+          "w": 112,
+          "h": 112
+        },
+        "tile.village": {
+          "x": 791,
+          "y": 159,
+          "w": 144,
+          "h": 114
+        },
+        "tile.dungeonFloor": {
+          "x": 672,
+          "y": 295,
+          "w": 111,
+          "h": 110
+        },
+        "tile.dungeonWall": {
+          "x": 810,
+          "y": 294,
+          "w": 107,
+          "h": 110
+        },
+        "tile.bossFloor": {
+          "x": 943,
+          "y": 294,
+          "w": 108,
+          "h": 110
+        },
+        "prop.tree": {
+          "x": 681,
+          "y": 432,
+          "w": 70,
+          "h": 86
+        },
+        "prop.pine": {
+          "x": 765,
+          "y": 431,
+          "w": 65,
+          "h": 88
+        },
+        "prop.flowers": {
+          "x": 940,
+          "y": 438,
+          "w": 78,
+          "h": 53
+        },
+        "prop.rocks": {
+          "x": 1085,
+          "y": 439,
+          "w": 68,
+          "h": 52
+        },
+        "prop.chest": {
+          "x": 675,
+          "y": 537,
+          "w": 74,
+          "h": 67
+        },
+        "prop.door": {
+          "x": 950,
+          "y": 535,
+          "w": 62,
+          "h": 79
+        },
+        "prop.crystalBlue": {
+          "x": 1105,
+          "y": 525,
+          "w": 61,
+          "h": 86
+        },
+        "prop.counter": {
+          "x": 804,
+          "y": 620,
+          "w": 128,
+          "h": 63
+        },
+        "prop.sign": {
+          "x": 682,
+          "y": 719,
+          "w": 54,
+          "h": 56
+        },
+        "ui.dialogue": {
+          "x": 15,
+          "y": 676,
+          "w": 280,
+          "h": 132
+        },
+        "ui.menu": {
+          "x": 315,
+          "y": 676,
+          "w": 132,
+          "h": 132
+        },
+        "ui.command": {
+          "x": 462,
+          "y": 676,
+          "w": 178,
+          "h": 132
+        },
+        "ui.parchment": {
+          "x": 707,
+          "y": 799,
+          "w": 154,
+          "h": 156
+        },
+        "ui.status": {
+          "x": 870,
+          "y": 796,
+          "w": 368,
+          "h": 151
+        },
+        "ui.slot": {
+          "x": 732,
+          "y": 964,
+          "w": 55,
+          "h": 58
+        },
+        "ui.cursor": {
+          "x": 19,
+          "y": 960,
+          "w": 40,
+          "h": 42
+        },
+        "ui.banner": {
+          "x": 406,
+          "y": 959,
+          "w": 272,
+          "h": 53
+        },
+        "icon.potion": {
+          "x": 14,
+          "y": 844,
+          "w": 67,
+          "h": 66
+        },
+        "icon.ether": {
+          "x": 95,
+          "y": 844,
+          "w": 65,
+          "h": 66
+        },
+        "icon.bread": {
+          "x": 175,
+          "y": 844,
+          "w": 66,
+          "h": 66
+        },
+        "icon.stew": {
+          "x": 257,
+          "y": 844,
+          "w": 67,
+          "h": 66
+        },
+        "icon.antidote": {
+          "x": 339,
+          "y": 844,
+          "w": 65,
+          "h": 66
+        },
+        "icon.feather": {
+          "x": 419,
+          "y": 844,
+          "w": 67,
+          "h": 66
+        },
+        "icon.sword": {
+          "x": 499,
+          "y": 844,
+          "w": 67,
+          "h": 66
+        },
+        "icon.charm": {
+          "x": 582,
+          "y": 844,
+          "w": 67,
+          "h": 66
+        },
+        "icon.key": {
+          "x": 663,
+          "y": 844,
+          "w": 66,
+          "h": 66
+        },
+        "enemy.slime": {
+          "x": 23,
+          "y": 1040,
+          "w": 88,
+          "h": 85
+        },
+        "enemy.thorn": {
+          "x": 144,
+          "y": 1038,
+          "w": 93,
+          "h": 90
+        },
+        "enemy.wisp": {
+          "x": 315,
+          "y": 1035,
+          "w": 70,
+          "h": 92
+        },
+        "enemy.rat": {
+          "x": 443,
+          "y": 1039,
+          "w": 105,
+          "h": 89
+        },
+        "enemy.bat": {
+          "x": 620,
+          "y": 1040,
+          "w": 91,
+          "h": 89
+        },
+        "enemy.guard": {
+          "x": 744,
+          "y": 1034,
+          "w": 92,
+          "h": 96
+        },
+        "enemy.ooze": {
+          "x": 865,
+          "y": 1042,
+          "w": 84,
+          "h": 82
+        },
+        "enemy.boss": {
+          "x": 986,
+          "y": 966,
+          "w": 258,
+          "h": 167
+        },
+        "backdrop.tutorial": {
+          "x": 12,
+          "y": 1129,
+          "w": 300,
+          "h": 114
+        },
+        "backdrop.village": {
+          "x": 326,
+          "y": 1129,
+          "w": 298,
+          "h": 114
+        },
+        "backdrop.dungeon": {
+          "x": 640,
+          "y": 1129,
+          "w": 285,
+          "h": 114
+        },
+        "backdrop.boss": {
+          "x": 970,
+          "y": 1129,
+          "w": 274,
+          "h": 114
+        }
+      }
+    },
+    "tutorial": {
+      "path": "assets/atlases/tutorial-terrain.png",
+      "width": 512,
+      "height": 384,
+      "regions": {
+        "tile.tutorial.grass": {
+          "x": 0,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.grassFlowers": {
+          "x": 32,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.path": {
+          "x": 64,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.pathH": {
+          "x": 96,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.pathV": {
+          "x": 128,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.water": {
+          "x": 160,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.waterLeft": {
+          "x": 192,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.waterRight": {
+          "x": 224,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.shore": {
+          "x": 256,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "tile.tutorial.bridge": {
+          "x": 288,
+          "y": 0,
+          "w": 32,
+          "h": 32
+        },
+        "prop.tutorial.tree": {
+          "x": 0,
+          "y": 64,
+          "w": 128,
+          "h": 128
+        },
+        "prop.tutorial.pine": {
+          "x": 128,
+          "y": 64,
+          "w": 96,
+          "h": 128
+        },
+        "prop.tutorial.flowers": {
+          "x": 224,
+          "y": 64,
+          "w": 64,
+          "h": 64
+        },
+        "prop.tutorial.rocks": {
+          "x": 288,
+          "y": 64,
+          "w": 80,
+          "h": 80
+        },
+        "prop.tutorial.log": {
+          "x": 368,
+          "y": 64,
+          "w": 144,
+          "h": 80
+        },
+        "prop.tutorial.waystone": {
+          "x": 0,
+          "y": 224,
+          "w": 96,
+          "h": 128
+        },
+        "prop.tutorial.campfire": {
+          "x": 96,
+          "y": 224,
+          "w": 96,
+          "h": 96
+        },
+        "prop.tutorial.crate": {
+          "x": 192,
+          "y": 224,
+          "w": 72,
+          "h": 72
+        },
+        "prop.tutorial.slimeMarker": {
+          "x": 264,
+          "y": 224,
+          "w": 96,
+          "h": 72
+        }
+      }
+    }
+  }
+}

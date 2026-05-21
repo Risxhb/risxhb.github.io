@@ -1,0 +1,21 @@
+.tmp/
+dist-pages/
+
+# Generated and local-only output
+eve/qa-*.png
+eve/eve/
+eve/assets/runs/
+**/__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs and local env
+*.log
+.env
+.env.*

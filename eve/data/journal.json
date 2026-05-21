@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "sections": [
+    {
+      "id": "guild",
+      "label": "Guild Floor",
+      "entries": [
+        {
+          "id": "guild-floor-1",
+          "kind": "floor-overview",
+          "title": "Floor 1: Guild Forward Base",
+          "mapId": "moonroot_hollow",
+          "floor": 1,
+          "art": "journal.floor.1",
+          "summary": "The guild has pushed a small forward base into the first floor of Moonroot Hollow. Lantern racks, bedrolls, chalk marks, and barricades turn the entry rooms into a working lesson for new delvers.",
+          "notes": [
+            "Guild rooms are bright and mostly safe.",
+            "North of the training barricades, the Hollow starts answering back.",
+            "The mapper's chalk is the party's best early warning system."
+          ]
+        },
+        {
+          "id": "npc-quartermaster-sella",
+          "kind": "npc",
+          "npcId": "npc_floor_1_quartermaster",
+          "title": "Quartermaster Sella",
+          "role": "Forward-base provisioner",
+          "art": "journal.npc.quartermaster_sella",
+          "summary": "Sella keeps the base supplied and measures courage by how many practical things a delver remembers to buy before leaving lamplight.",
+          "notes": [
+            "Runs the item shop on Floor 1.",
+            "Her shelves mark the safest edge of guild control."
+          ]
+        },
+        {
+          "id": "npc-guild-mapper",
+          "kind": "npc",
+          "npcId": "npc_floor_1_mapper",
+          "title": "Guild Mapper",
+          "role": "Route chalker and field instructor",
+          "art": "journal.npc.guild_mapper",
+          "summary": "The mapper teaches new delvers to trust marked paths, distrust empty stone, and write down what the dungeon tries to make them forget.",
+          "notes": [
+            "Starts the Floor 1 field lesson.",
+            "Chalk marks signal routes where someone returned with steady hands."
+          ]
+        },
+        {
+          "id": "npc-cook-marlo",
+          "kind": "npc",
+          "npcId": "npc_floor_1_cook",
+          "title": "Cook Marlo",
+          "role": "Field cook",
+          "art": "journal.npc.cook_marlo",
+          "summary": "Marlo keeps a low cookfire burning at the edge of the base, turning food into courage before the doors make courage expensive.",
+          "notes": [
+            "Runs the food shop on Floor 1.",
+            "Dungeon meat should be cooked longer than pride thinks necessary."
+          ]
+        },
+        {
+          "id": "npc-wounded-delver",
+          "kind": "npc",
+          "npcId": "npc_floor_1_wounded_delver",
+          "title": "Wounded Delver",
+          "role": "Recovering scout",
+          "art": "journal.npc.wounded_delver",
+          "summary": "A hurt delver in the infirmary has already paid for several lessons the party can learn more cheaply by listening.",
+          "notes": [
+            "Warns that safety becomes a story past the chalk fork.",
+            "Proof that the first floor is still a dungeon."
+          ]
+        },
+        {
+          "id": "npc-guild-rookie",
+          "kind": "npc",
+          "npcId": "npc_floor_1_rookie",
+          "title": "Guild Rookie",
+          "role": "Training-floor delver",
+          "art": "journal.npc.guild_rookie",
+          "summary": "The rookie repeats the rules with the nervous precision of someone who has decided the rules might keep all their toes attached.",
+          "notes": [
+            "Points rookies toward the marked practice plates.",
+            "A reminder that every veteran was new once."
+          ]
+        },
+        {
+          "id": "npc-descent-guard",
+          "kind": "npc",
+          "npcId": "npc_floor_1_descent_guard",
+          "title": "Descent Guard",
+          "role": "Stair watch",
+          "art": "journal.npc.descent_guard",
+          "summary": "The guard watches the stairs down with a veteran's patience and an exact sense for when a party has not yet learned enough.",
+          "notes": [
+            "Blocks the lesson from becoming a funeral march.",
+            "The second floor is beyond routine guild control."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "traps",
+      "label": "Traps",
+      "entries": [
+        {
+          "id": "trap-practice",
+          "kind": "trap",
+          "trapType": "practice",
+          "title": "Practice Plate",
+          "art": "journal.trap.practice",
+          "summary": "Guild-safe pressure plates teach boot discipline before the Hollow's real traps start collecting mistakes.",
+          "effect": "Armed for instruction rather than injury.",
+          "counter": "Use marked plates to learn the shape of a trap before trusting unmarked stone.",
+          "unlockDefault": true
+        },
+        {
+          "id": "trap-spikes",
+          "kind": "trap",
+          "trapType": "spikes",
+          "title": "Spike Plate",
+          "art": "journal.trap.spikes",
+          "summary": "Spring-driven spikes punish careless steps and clustered movement.",
+          "effect": "Damages the party when triggered.",
+          "counter": "Watch for regular plates, scratches, and repeated stone seams."
+        },
+        {
+          "id": "trap-darts",
+          "kind": "trap",
+          "trapType": "darts",
+          "title": "Dart Line",
+          "art": "journal.trap.darts",
+          "summary": "Wall seams can hide dart launchers aimed at the lead delver.",
+          "effect": "Damages the leader.",
+          "counter": "Let the scout check long straight corridors and suspicious wall slits."
+        },
+        {
+          "id": "trap-poison",
+          "kind": "trap",
+          "trapType": "poison",
+          "title": "Poison Mist",
+          "art": "journal.trap.poison",
+          "summary": "Old vents exhale toxic mist into rooms that look safer than they are.",
+          "effect": "Damages the whole party.",
+          "counter": "Carry antidotes and avoid lingering near cracked floor vents."
+        },
+        {
+          "id": "trap-alarm",
+          "kind": "trap",
+          "trapType": "alarm",
+          "title": "Alarm Rune",
+          "art": "journal.trap.alarm",
+          "summary": "A glowing rune that wakes nearby creatures and turns quiet rooms loud.",
+          "effect": "Starts an alarm encounter.",
+          "counter": "Treat warm glyphs and clean circular marks as live threats."
+        },
+        {
+          "id": "trap-crumble",
+          "kind": "trap",
+          "trapType": "crumble",
+          "title": "Crumbling Bridge",
+          "art": "journal.trap.crumble",
+          "summary": "False stone and cracked bridges hold just long enough to be believed.",
+          "effect": "Damages the party when the floor gives way.",
+          "counter": "Cross slowly when stone color changes or support roots look hollow."
+        },
+        {
+          "id": "trap-teleport",
+          "kind": "trap",
+          "trapType": "teleport",
+          "title": "Teleport Snare",
+          "art": "journal.trap.teleport",
+          "summary": "Moonroot snares fold a party across the floor without asking where the plan went.",
+          "effect": "Moves the party to another position on the floor.",
+          "counter": "Avoid blue circular traces and rooms with too much untouched dust."
+        },
+        {
+          "id": "trap-pitfall",
+          "kind": "trap",
+          "trapType": "pitfall",
+          "title": "Pitfall",
+          "art": "journal.trap.pitfall",
+          "summary": "Rare false floors drop delvers deeper, but the Hollow will not skip an unbeaten boss gate.",
+          "effect": "Drops the party one to three floors, capped by uncleared boss floors.",
+          "counter": "Probe isolated floor panels and never sprint over new darkness."
+        }
+      ]
+    },
+    {
+      "id": "monsters",
+      "label": "Monsters",
+      "entries": [
+        {
+          "id": "monster-goblin-overview",
+          "kind": "monster-family",
+          "family": "goblin",
+          "title": "Goblins",
+          "art": "journal.monster.goblin_overview",
+          "enemyIds": ["goblin-scout", "goblin-grunt", "goblin-trapper"],
+          "summary": "Moonroot goblins move in scavenger packs, prize useful scrap, and adapt quickly to guild habits. Scouts test paths first, grunts hold ground, and trappers turn loose wire into bad news.",
+          "weakness": "Disrupt their formation before the clever one gets time to prepare.",
+          "abilities": ["Pack ambush", "Scavenged gear", "Trap craft"]
+        },
+        {
+          "id": "monster-training-slime",
+          "kind": "monster",
+          "enemyId": "training-slime",
+          "title": "Training Slime",
+          "art": "journal.monster.training_slime",
+          "summary": "A soft-bodied lesson creature used to teach basic battle rhythm before the Hollow raises the stakes.",
+          "weakness": "Low defense and poor speed.",
+          "abilities": ["Body slam"]
+        },
+        {
+          "id": "monster-thorn-imp",
+          "kind": "monster",
+          "enemyId": "thorn-imp",
+          "title": "Thorn Imp",
+          "art": "journal.monster.thorn_imp",
+          "summary": "A quick thorn-backed nuisance that favors sharp lunges and ugly timing.",
+          "weakness": "Fragile if pinned down early.",
+          "abilities": ["Needle swipe", "Bramble feint"]
+        },
+        {
+          "id": "monster-road-wisp",
+          "kind": "monster",
+          "enemyId": "road-wisp",
+          "title": "Road Wisp",
+          "art": "journal.monster.road_wisp",
+          "summary": "A drifting spirit-light that lashes out with small arcs of magic.",
+          "weakness": "Low body and poor defense.",
+          "abilities": ["Static flicker", "Light lash"]
+        },
+        {
+          "id": "monster-bramble-rat",
+          "kind": "monster",
+          "enemyId": "bramble-rat",
+          "title": "Bramble Rat",
+          "art": "journal.monster.bramble_rat",
+          "summary": "A fast, mean scavenger that treats ankles as invitations.",
+          "weakness": "Predictable once forced into a straight fight.",
+          "abilities": ["Bite", "Skitter rush"]
+        },
+        {
+          "id": "monster-moonroot-bat",
+          "kind": "monster",
+          "enemyId": "moonroot-bat",
+          "title": "Moonroot Bat",
+          "art": "journal.monster.moonroot_bat",
+          "summary": "A crystal-touched cave bat that reads air currents better than most delvers read maps.",
+          "weakness": "Low defense; punish it when it dives.",
+          "abilities": ["Dive strike", "Shriek"]
+        },
+        {
+          "id": "monster-goblin-scout",
+          "kind": "monster",
+          "enemyId": "goblin-scout",
+          "family": "goblin",
+          "title": "Goblin Scout",
+          "art": "journal.monster.goblin_scout",
+          "summary": "A quick first-contact goblin that tests weak lines and runs toward useful noise.",
+          "weakness": "Light armor and poor magic.",
+          "abilities": ["Quick stab", "Signal yelp"]
+        },
+        {
+          "id": "monster-goblin-grunt",
+          "kind": "monster",
+          "enemyId": "goblin-grunt",
+          "family": "goblin",
+          "title": "Goblin Grunt",
+          "art": "journal.monster.goblin_grunt",
+          "summary": "A tougher goblin that makes up for poor finesse with a shield, a club, and complete confidence in both.",
+          "weakness": "Slower than scouts and vulnerable to being outmaneuvered.",
+          "abilities": ["Club swing", "Shield shove"]
+        },
+        {
+          "id": "monster-goblin-trapper",
+          "kind": "monster",
+          "enemyId": "goblin-trapper",
+          "family": "goblin",
+          "title": "Goblin Trapper",
+          "art": "journal.monster.goblin_trapper",
+          "summary": "A specialist goblin carrying wire, darts, bait, and too many ideas.",
+          "weakness": "Interrupt it before tools become terrain.",
+          "abilities": ["Dart toss", "Snare setup"]
+        },
+        {
+          "id": "monster-hollow-guard",
+          "kind": "monster",
+          "enemyId": "hollow-guard",
+          "title": "Hollow Guard",
+          "art": "journal.monster.hollow_guard",
+          "summary": "A stone-heavy defender shaped by the dungeon's deeper pressure.",
+          "weakness": "Slow and easier to manage with guarded turns.",
+          "abilities": ["Heavy strike", "Body block"]
+        },
+        {
+          "id": "monster-crystal-ooze",
+          "kind": "monster",
+          "enemyId": "crystal-ooze",
+          "title": "Crystal Ooze",
+          "art": "journal.monster.crystal_ooze",
+          "summary": "An ooze threaded with blue crystal that stores enough magic to make poking it feel like a debate.",
+          "weakness": "Slow; strike before it gathers force.",
+          "abilities": ["Crystal pulse", "Acid press"]
+        },
+        {
+          "id": "monster-vorthane",
+          "kind": "monster",
+          "enemyId": "vorthane",
+          "title": "Vorthane, Warden of the Backroom",
+          "art": "journal.monster.vorthane",
+          "summary": "The first great gatekeeper of Moonroot Hollow, heavy with old authority and root-cracked power.",
+          "weakness": "Long fights favor preparation, guarding, and steady healing.",
+          "abilities": ["Warden strike", "Moonroot pressure"]
+        },
+        {
+          "id": "monster-deep-moonroot-bat",
+          "kind": "monster",
+          "enemyId": "deep-moonroot-bat",
+          "title": "Deep Moonroot Bat",
+          "art": "journal.monster.deep_moonroot_bat",
+          "summary": "A deeper bat grown meaner, faster, and brighter around the crystals.",
+          "weakness": "Still fragile when hit cleanly.",
+          "abilities": ["Deep dive", "Echo shriek"]
+        },
+        {
+          "id": "monster-gloom-ooze",
+          "kind": "monster",
+          "enemyId": "gloom-ooze",
+          "title": "Gloom Ooze",
+          "art": "journal.monster.gloom_ooze",
+          "summary": "A darker ooze that turns the floor's dimness into a weapon.",
+          "weakness": "Slow movement and poor reactions.",
+          "abilities": ["Gloom press", "Clinging mass"]
+        },
+        {
+          "id": "monster-rootbound-guard",
+          "kind": "monster",
+          "enemyId": "rootbound-guard",
+          "title": "Rootbound Guard",
+          "art": "journal.monster.rootbound_guard",
+          "summary": "A hardened guard anchored by roots and built to make retreat look sensible.",
+          "weakness": "Low agility; control the pace.",
+          "abilities": ["Rooted smash", "Guard stance"]
+        }
+      ]
+    },
+    {
+      "id": "floors",
+      "label": "Floors",
+      "entries": [
+        {
+          "id": "floor-1",
+          "kind": "floor",
+          "floor": 1,
+          "mapId": "moonroot_hollow",
+          "title": "Moonroot Hollow - Floor 1",
+          "art": "journal.floor.1",
+          "summary": "A guild-held forward base that teaches the language of doors, chalk, traps, and goblin signs."
+        },
+        {
+          "id": "floor-2",
+          "kind": "floor",
+          "floor": 2,
+          "mapId": "moonroot_floor_2",
+          "title": "Moonroot Hollow - Floor 2",
+          "art": "journal.floor.2",
+          "summary": "The guild's lesson ends and live dungeon stone begins: cisterns, archives, alarms, and hidden pressure plates."
+        },
+        {
+          "id": "floor-3",
+          "kind": "floor",
+          "floor": 3,
+          "mapId": "moonroot_floor_3",
+          "title": "Moonroot Hollow - Floor 3",
+          "art": "journal.floor.3",
+          "summary": "A contested floor of dim roots, poison vents, and unstable paths."
+        },
+        {
+          "id": "floor-4",
+          "kind": "floor",
+          "floor": 4,
+          "mapId": "moonroot_floor_4",
+          "title": "Moonroot Hollow - Floor 4",
+          "art": "journal.floor.4",
+          "summary": "A floor where wall seams and dart lines start to matter more than bravery."
+        },
+        {
+          "id": "floor-5",
+          "kind": "floor",
+          "floor": 5,
+          "mapId": "moonroot_floor_5",
+          "title": "Moonroot Hollow - Floor 5",
+          "art": "journal.floor.5",
+          "summary": "The Hollow grows trickier here, mixing alarms, teleport snares, and crystal oozes."
+        },
+        {
+          "id": "floor-6",
+          "kind": "floor",
+          "floor": 6,
+          "mapId": "moonroot_floor_6",
+          "title": "Moonroot Hollow - Floor 6",
+          "art": "journal.floor.6",
+          "summary": "A damp, hostile stretch of poison, alarms, and paths that dislike staying where they were."
+        },
+        {
+          "id": "floor-7",
+          "kind": "floor",
+          "floor": 7,
+          "mapId": "moonroot_floor_7",
+          "title": "Moonroot Hollow - Floor 7",
+          "art": "journal.floor.7",
+          "summary": "A darker floor where spikes and snares make clean routes feel earned."
+        },
+        {
+          "id": "floor-8",
+          "kind": "floor",
+          "floor": 8,
+          "mapId": "moonroot_floor_8",
+          "title": "Moonroot Hollow - Floor 8",
+          "art": "journal.floor.8",
+          "summary": "Pitfalls join the lesson, and the Hollow starts testing how carefully the party remembers boss gates."
+        },
+        {
+          "id": "floor-9",
+          "kind": "floor",
+          "floor": 9,
+          "mapId": "moonroot_floor_9",
+          "title": "Moonroot Hollow - Floor 9",
+          "art": "journal.floor.9",
+          "summary": "The last stretch before the first warden, thick with collapsing stone and hard guards."
+        },
+        {
+          "id": "floor-10",
+          "kind": "floor",
+          "floor": 10,
+          "mapId": "moonroot_floor_10",
+          "title": "Moonroot Hollow - Floor 10",
+          "art": "journal.floor.10",
+          "summary": "A boss floor built around Vorthane's threshold. The descent does not continue until the warden falls."
+        },
+        {
+          "id": "floor-11",
+          "kind": "floor",
+          "floor": 11,
+          "mapId": "moonroot_floor_11",
+          "title": "Moonroot Hollow - Floor 11",
+          "art": "journal.floor.11",
+          "summary": "Beyond the first gate, the dungeon grows deeper, darker, and less interested in warning anyone twice."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1394 @@
+{
+  "schema_version": 1,
+  "id": "brindlemarket_village",
+  "name": "Brindlemarket Village",
+  "tileSize": 32,
+  "width": 80,
+  "height": 54,
+  "defaultTile": "tile.grass",
+  "spawn": {
+    "x": 2,
+    "y": 26
+  },
+  "spawns": {
+    "west_gate": {
+      "x": 2,
+      "y": 26
+    },
+    "moon_gate_return": {
+      "x": 76,
+      "y": 12
+    },
+    "town_square": {
+      "x": 40,
+      "y": 30
+    }
+  },
+  "fills": [
+    {
+      "tile": "tile.path",
+      "rect": [
+        0,
+        26,
+        80,
+        2
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        12,
+        10,
+        2,
+        32
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        38,
+        8,
+        2,
+        38
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        58,
+        10,
+        2,
+        36
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        18,
+        14,
+        42,
+        2
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        18,
+        40,
+        42,
+        2
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        58,
+        10,
+        22,
+        2
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        30,
+        20,
+        20,
+        14
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        30,
+        26,
+        20,
+        2
+      ]
+    },
+    {
+      "tile": "tile.path",
+      "rect": [
+        38,
+        20,
+        2,
+        14
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        18,
+        17,
+        10,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        50,
+        17,
+        10,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        16,
+        33,
+        10,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        42,
+        33,
+        10,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        60,
+        19,
+        14,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        6,
+        17,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        6,
+        31,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        28,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        44,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        62,
+        7,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        28,
+        41,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        44,
+        41,
+        8,
+        7
+      ]
+    },
+    {
+      "tile": "tile.stone",
+      "rect": [
+        66,
+        33,
+        8,
+        7
+      ]
+    }
+  ],
+  "blocked": [
+    [
+      0,
+      0,
+      80,
+      1
+    ],
+    [
+      0,
+      53,
+      80,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      26
+    ],
+    [
+      0,
+      28,
+      1,
+      25
+    ],
+    [
+      79,
+      0,
+      1,
+      10
+    ],
+    [
+      79,
+      12,
+      1,
+      41
+    ],
+    [
+      38,
+      24,
+      4,
+      4
+    ],
+    [
+      20,
+      18,
+      6,
+      1
+    ],
+    [
+      20,
+      18,
+      1,
+      5
+    ],
+    [
+      25,
+      18,
+      1,
+      5
+    ],
+    [
+      20,
+      22,
+      3,
+      1
+    ],
+    [
+      24,
+      22,
+      2,
+      1
+    ],
+    [
+      52,
+      18,
+      6,
+      1
+    ],
+    [
+      52,
+      18,
+      1,
+      5
+    ],
+    [
+      57,
+      18,
+      1,
+      5
+    ],
+    [
+      52,
+      22,
+      3,
+      1
+    ],
+    [
+      56,
+      22,
+      2,
+      1
+    ],
+    [
+      18,
+      34,
+      6,
+      1
+    ],
+    [
+      18,
+      34,
+      1,
+      5
+    ],
+    [
+      23,
+      34,
+      1,
+      5
+    ],
+    [
+      18,
+      38,
+      3,
+      1
+    ],
+    [
+      22,
+      38,
+      2,
+      1
+    ],
+    [
+      44,
+      34,
+      6,
+      1
+    ],
+    [
+      44,
+      34,
+      1,
+      5
+    ],
+    [
+      49,
+      34,
+      1,
+      5
+    ],
+    [
+      44,
+      38,
+      3,
+      1
+    ],
+    [
+      48,
+      38,
+      2,
+      1
+    ],
+    [
+      62,
+      20,
+      6,
+      1
+    ],
+    [
+      62,
+      20,
+      1,
+      5
+    ],
+    [
+      67,
+      20,
+      1,
+      5
+    ],
+    [
+      62,
+      24,
+      3,
+      1
+    ],
+    [
+      66,
+      24,
+      2,
+      1
+    ],
+    [
+      7,
+      18,
+      5,
+      1
+    ],
+    [
+      7,
+      18,
+      1,
+      5
+    ],
+    [
+      11,
+      18,
+      1,
+      5
+    ],
+    [
+      7,
+      22,
+      2,
+      1
+    ],
+    [
+      10,
+      22,
+      2,
+      1
+    ],
+    [
+      7,
+      32,
+      5,
+      1
+    ],
+    [
+      7,
+      32,
+      1,
+      5
+    ],
+    [
+      11,
+      32,
+      1,
+      5
+    ],
+    [
+      7,
+      36,
+      2,
+      1
+    ],
+    [
+      10,
+      36,
+      2,
+      1
+    ],
+    [
+      68,
+      20,
+      5,
+      1
+    ],
+    [
+      68,
+      20,
+      1,
+      5
+    ],
+    [
+      72,
+      20,
+      1,
+      5
+    ],
+    [
+      68,
+      24,
+      2,
+      1
+    ],
+    [
+      71,
+      24,
+      2,
+      1
+    ],
+    [
+      68,
+      34,
+      5,
+      1
+    ],
+    [
+      68,
+      34,
+      1,
+      5
+    ],
+    [
+      72,
+      34,
+      1,
+      5
+    ],
+    [
+      68,
+      38,
+      2,
+      1
+    ],
+    [
+      71,
+      38,
+      2,
+      1
+    ],
+    [
+      29,
+      8,
+      5,
+      1
+    ],
+    [
+      29,
+      8,
+      1,
+      5
+    ],
+    [
+      33,
+      8,
+      1,
+      5
+    ],
+    [
+      29,
+      12,
+      2,
+      1
+    ],
+    [
+      32,
+      12,
+      2,
+      1
+    ],
+    [
+      45,
+      8,
+      5,
+      1
+    ],
+    [
+      45,
+      8,
+      1,
+      5
+    ],
+    [
+      49,
+      8,
+      1,
+      5
+    ],
+    [
+      45,
+      12,
+      2,
+      1
+    ],
+    [
+      48,
+      12,
+      2,
+      1
+    ],
+    [
+      64,
+      8,
+      5,
+      1
+    ],
+    [
+      64,
+      8,
+      1,
+      5
+    ],
+    [
+      68,
+      8,
+      1,
+      5
+    ],
+    [
+      64,
+      12,
+      2,
+      1
+    ],
+    [
+      67,
+      12,
+      2,
+      1
+    ],
+    [
+      29,
+      42,
+      5,
+      1
+    ],
+    [
+      29,
+      42,
+      1,
+      5
+    ],
+    [
+      33,
+      42,
+      1,
+      5
+    ],
+    [
+      29,
+      46,
+      2,
+      1
+    ],
+    [
+      32,
+      46,
+      2,
+      1
+    ],
+    [
+      45,
+      42,
+      5,
+      1
+    ],
+    [
+      45,
+      42,
+      1,
+      5
+    ],
+    [
+      49,
+      42,
+      1,
+      5
+    ],
+    [
+      45,
+      46,
+      2,
+      1
+    ],
+    [
+      48,
+      46,
+      2,
+      1
+    ]
+  ],
+  "buildings": [
+    {
+      "id": "pippas-provisions",
+      "name": "Pippa's Provisions",
+      "rect": [
+        20,
+        18,
+        6,
+        5
+      ],
+      "entry": [
+        23,
+        22
+      ],
+      "interiorRect": [
+        21,
+        19,
+        4,
+        4
+      ],
+      "roofAsset": "village.roof.shop",
+      "interiorAsset": "village.interior.shop",
+      "district": "market"
+    },
+    {
+      "id": "tovins-tools",
+      "name": "Tovin's Tools",
+      "rect": [
+        52,
+        18,
+        6,
+        5
+      ],
+      "entry": [
+        55,
+        22
+      ],
+      "interiorRect": [
+        53,
+        19,
+        4,
+        4
+      ],
+      "roofAsset": "village.roof.guild",
+      "interiorAsset": "village.interior.guild",
+      "district": "craft-row"
+    },
+    {
+      "id": "lumas-hearth",
+      "name": "Luma's Hearth",
+      "rect": [
+        18,
+        34,
+        6,
+        5
+      ],
+      "entry": [
+        21,
+        38
+      ],
+      "interiorRect": [
+        19,
+        35,
+        4,
+        4
+      ],
+      "roofAsset": "village.roof.inn",
+      "interiorAsset": "village.interior.inn",
+      "district": "inn-row"
+    },
+    {
+      "id": "elder-hall",
+      "name": "Elder Hall",
+      "rect": [
+        44,
+        34,
+        6,
+        5
+      ],
+      "entry": [
+        47,
+        38
+      ],
+      "interiorRect": [
+        45,
+        35,
+        4,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.home",
+      "district": "civic"
+    },
+    {
+      "id": "moonroot-guild",
+      "name": "Moonroot Guildhall",
+      "rect": [
+        62,
+        20,
+        6,
+        5
+      ],
+      "entry": [
+        65,
+        24
+      ],
+      "interiorRect": [
+        63,
+        21,
+        4,
+        4
+      ],
+      "roofAsset": "village.roof.guild",
+      "interiorAsset": "village.interior.guild",
+      "district": "dungeon-gate"
+    },
+    {
+      "id": "wayfarer-house",
+      "name": "Wayfarer's House",
+      "rect": [
+        7,
+        18,
+        5,
+        5
+      ],
+      "entry": [
+        9,
+        22
+      ],
+      "interiorRect": [
+        8,
+        19,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.home",
+      "district": "residential-west"
+    },
+    {
+      "id": "rootcutter-house",
+      "name": "Rootcutter House",
+      "rect": [
+        7,
+        32,
+        5,
+        5
+      ],
+      "entry": [
+        9,
+        36
+      ],
+      "interiorRect": [
+        8,
+        33,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.home",
+      "district": "residential-west"
+    },
+    {
+      "id": "ledger-house",
+      "name": "Ledger House",
+      "rect": [
+        68,
+        20,
+        5,
+        5
+      ],
+      "entry": [
+        70,
+        24
+      ],
+      "interiorRect": [
+        69,
+        21,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.home",
+      "district": "dungeon-gate"
+    },
+    {
+      "id": "delver-bunks",
+      "name": "Delver Bunks",
+      "rect": [
+        68,
+        34,
+        5,
+        5
+      ],
+      "entry": [
+        70,
+        38
+      ],
+      "interiorRect": [
+        69,
+        35,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.inn",
+      "interiorAsset": "village.interior.inn",
+      "district": "dungeon-gate"
+    },
+    {
+      "id": "carpenter-yard",
+      "name": "Carpenter Yard",
+      "rect": [
+        29,
+        8,
+        5,
+        5
+      ],
+      "entry": [
+        31,
+        12
+      ],
+      "interiorRect": [
+        30,
+        9,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.shop",
+      "interiorAsset": "village.interior.shop",
+      "district": "craft-row"
+    },
+    {
+      "id": "apothecary",
+      "name": "Moonroot Apothecary",
+      "rect": [
+        45,
+        8,
+        5,
+        5
+      ],
+      "entry": [
+        47,
+        12
+      ],
+      "interiorRect": [
+        46,
+        9,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.shop",
+      "interiorAsset": "village.interior.shop",
+      "district": "market"
+    },
+    {
+      "id": "storehouse",
+      "name": "Expedition Storehouse",
+      "rect": [
+        64,
+        8,
+        5,
+        5
+      ],
+      "entry": [
+        66,
+        12
+      ],
+      "interiorRect": [
+        65,
+        9,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.guild",
+      "district": "dungeon-gate"
+    },
+    {
+      "id": "south-cottage-a",
+      "name": "South Cottage",
+      "rect": [
+        29,
+        42,
+        5,
+        5
+      ],
+      "entry": [
+        31,
+        46
+      ],
+      "interiorRect": [
+        30,
+        43,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.home",
+      "district": "residential-south"
+    },
+    {
+      "id": "south-cottage-b",
+      "name": "Weaver Cottage",
+      "rect": [
+        45,
+        42,
+        5,
+        5
+      ],
+      "entry": [
+        47,
+        46
+      ],
+      "interiorRect": [
+        46,
+        43,
+        3,
+        4
+      ],
+      "roofAsset": "village.roof.home",
+      "interiorAsset": "village.interior.home",
+      "district": "residential-south"
+    }
+  ],
+  "props": [
+    {
+      "id": "fountain",
+      "asset": "village.fountain",
+      "x": 40,
+      "y": 27,
+      "drawW": 128,
+      "drawH": 128,
+      "anchorX": 48,
+      "anchorY": 96
+    },
+    {
+      "id": "west_market_stall",
+      "asset": "village.market-stall",
+      "x": 31,
+      "y": 23,
+      "drawW": 92,
+      "drawH": 80,
+      "anchorY": 58
+    },
+    {
+      "id": "east_market_stall",
+      "asset": "village.market-stall",
+      "x": 49,
+      "y": 23,
+      "drawW": 92,
+      "drawH": 80,
+      "anchorY": 58
+    },
+    {
+      "id": "south_market_stall",
+      "asset": "village.market-stall",
+      "x": 33,
+      "y": 31,
+      "drawW": 88,
+      "drawH": 77,
+      "anchorY": 56
+    },
+    {
+      "id": "guild_supplies",
+      "asset": "village.dungeon-supplies",
+      "x": 61,
+      "y": 27,
+      "drawW": 88,
+      "drawH": 76,
+      "anchorY": 54
+    },
+    {
+      "id": "gate_supplies",
+      "asset": "village.dungeon-supplies",
+      "x": 73,
+      "y": 12,
+      "drawW": 84,
+      "drawH": 73,
+      "anchorY": 52
+    },
+    {
+      "id": "notice_square",
+      "asset": "village.notice-board",
+      "x": 35,
+      "y": 24,
+      "drawW": 80,
+      "drawH": 70,
+      "anchorY": 52
+    },
+    {
+      "id": "notice_gate",
+      "asset": "village.notice-board",
+      "x": 65,
+      "y": 14,
+      "drawW": 80,
+      "drawH": 70,
+      "anchorY": 52
+    },
+    {
+      "id": "ore_bundle_gate",
+      "asset": "village.ore-bundle",
+      "x": 70,
+      "y": 13,
+      "drawW": 66,
+      "drawH": 66,
+      "anchorY": 46
+    },
+    {
+      "id": "ore_bundle_guild",
+      "asset": "village.ore-bundle",
+      "x": 61,
+      "y": 24,
+      "drawW": 58,
+      "drawH": 58,
+      "anchorY": 42
+    },
+    {
+      "id": "herbs_apothecary",
+      "asset": "village.herb-bundle",
+      "x": 46,
+      "y": 14,
+      "drawW": 54,
+      "drawH": 54,
+      "anchorY": 38
+    },
+    {
+      "id": "herbs_market",
+      "asset": "village.herb-bundle",
+      "x": 29,
+      "y": 28,
+      "drawW": 54,
+      "drawH": 54,
+      "anchorY": 38
+    },
+    {
+      "id": "bench_north",
+      "asset": "village.bench",
+      "x": 37,
+      "y": 22,
+      "drawW": 84,
+      "drawH": 48,
+      "anchorY": 30
+    },
+    {
+      "id": "bench_south",
+      "asset": "village.bench",
+      "x": 44,
+      "y": 31,
+      "drawW": 84,
+      "drawH": 48,
+      "anchorY": 30
+    },
+    {
+      "id": "west_lantern",
+      "asset": "village.lantern",
+      "x": 16,
+      "y": 26,
+      "drawW": 40,
+      "drawH": 60,
+      "anchorY": 44
+    },
+    {
+      "id": "square_lantern_nw",
+      "asset": "village.lantern",
+      "x": 31,
+      "y": 21,
+      "drawW": 40,
+      "drawH": 60,
+      "anchorY": 44
+    },
+    {
+      "id": "square_lantern_se",
+      "asset": "village.lantern",
+      "x": 49,
+      "y": 32,
+      "drawW": 40,
+      "drawH": 60,
+      "anchorY": 44
+    },
+    {
+      "id": "gate_lantern",
+      "asset": "village.lantern",
+      "x": 76,
+      "y": 11,
+      "drawW": 40,
+      "drawH": 60,
+      "anchorY": 44
+    },
+    {
+      "id": "guild_counter",
+      "asset": "prop.counter",
+      "x": 63,
+      "y": 23
+    },
+    {
+      "id": "pippa_counter",
+      "asset": "prop.counter",
+      "x": 22,
+      "y": 21
+    },
+    {
+      "id": "tovin_counter",
+      "asset": "prop.counter",
+      "x": 54,
+      "y": 21
+    },
+    {
+      "id": "luma_chest",
+      "asset": "prop.chest",
+      "x": 21,
+      "y": 37
+    },
+    {
+      "id": "elder_sign",
+      "asset": "prop.sign",
+      "x": 47,
+      "y": 39
+    },
+    {
+      "id": "moon_gate_marker",
+      "asset": "prop.crystalBlue",
+      "x": 77,
+      "y": 10
+    }
+  ],
+  "npcs": [
+    {
+      "id": "elder_bram",
+      "name": "Elder Bram",
+      "asset": "actor.rowan",
+      "x": 47,
+      "y": 37,
+      "script": "elder-bram",
+      "drawW": 92,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "pippa",
+      "name": "Pippa",
+      "asset": "actor.elara",
+      "x": 23,
+      "y": 21,
+      "script": "pippa",
+      "drawW": 88,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "tovin",
+      "name": "Tovin",
+      "asset": "actor.rowan",
+      "x": 55,
+      "y": 21,
+      "script": "tovin",
+      "drawW": 92,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "luma",
+      "name": "Luma",
+      "asset": "actor.elara",
+      "x": 21,
+      "y": 37,
+      "script": "luma",
+      "drawW": 88,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "nia_npc",
+      "name": "Nia",
+      "asset": "actor.nia",
+      "x": 35,
+      "y": 30,
+      "script": "nia-rumor",
+      "drawW": 88,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "porter_moss",
+      "name": "Porter Moss",
+      "asset": "actor.cassian",
+      "x": 60,
+      "y": 26,
+      "script": "porter-moss",
+      "drawW": 72,
+      "drawH": 108,
+      "anchorY": 81
+    },
+    {
+      "id": "wounded_delver",
+      "name": "Wounded Delver",
+      "asset": "actor.rowan",
+      "x": 64,
+      "y": 23,
+      "script": "wounded-delver",
+      "drawW": 92,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "fountain_runner",
+      "name": "Fountain Runner",
+      "asset": "actor.elara",
+      "x": 43,
+      "y": 25,
+      "script": "fountain-runner",
+      "drawW": 88,
+      "drawH": 118,
+      "anchorY": 88
+    },
+    {
+      "id": "gate_guard",
+      "name": "Gate Guard",
+      "asset": "actor.cassian",
+      "x": 76,
+      "y": 10,
+      "drawW": 86,
+      "drawH": 138,
+      "anchorY": 103,
+      "script": "gate-guard"
+    },
+    {
+      "id": "supply_clerk",
+      "name": "Supply Clerk",
+      "asset": "actor.elara",
+      "x": 66,
+      "y": 11,
+      "drawW": 86,
+      "drawH": 138,
+      "anchorY": 103,
+      "script": "supply-clerk"
+    },
+    {
+      "id": "rumor_merchant",
+      "name": "Rumor Merchant",
+      "asset": "actor.rowan",
+      "x": 31,
+      "y": 28,
+      "drawW": 86,
+      "drawH": 138,
+      "anchorY": 103,
+      "script": "rumor-merchant"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "road_wisp",
+      "x": 72,
+      "y": 11,
+      "enemies": [
+        "road-wisp",
+        "bramble-rat"
+      ],
+      "flag": "village_road_won"
+    }
+  ],
+  "exits": [
+    {
+      "x": 0,
+      "y": 26,
+      "to": "emberleaf_trail",
+      "spawn": "east_return"
+    },
+    {
+      "x": 0,
+      "y": 27,
+      "to": "emberleaf_trail",
+      "spawn": "east_return"
+    },
+    {
+      "x": 79,
+      "y": 10,
+      "to": "moonroot_hollow",
+      "spawn": "entrance",
+      "requires": "quest_q_moonroot_started"
+    },
+    {
+      "x": 79,
+      "y": 11,
+      "to": "moonroot_hollow",
+      "spawn": "entrance",
+      "requires": "quest_q_moonroot_started"
+    }
+  ],
+  "backdrop": "backdrop.village",
+  "battleBackdrops": [
+    "backdrop.battle.village.a",
+    "backdrop.battle.village.b",
+    "backdrop.battle.village.c"
+  ]
+}

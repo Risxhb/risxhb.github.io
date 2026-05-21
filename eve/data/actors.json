@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "party": [
+    {
+      "id": "rowan",
+      "name": "Rowan Valeguard",
+      "class": "Templar",
+      "asset": "actor.rowan",
+      "sprites": {
+        "move": "actor.rowan.move",
+        "idle": "actor.rowan.idle"
+      },
+      "portrait": "portrait.rowan",
+      "profile": "profile.rowan",
+      "profileLayout": "scene",
+      "card": "card.knight",
+      "role": "Protector",
+      "lore": "A Templar of Elara's dawnlit order, Rowan bears a kite shield and an oath to keep her light standing when the dark presses close.",
+      "profileBio": "Rowan Valeguard once served Brindlemarket's old watch, but his oath found sharper purpose at Elara Sunmere's shrine. Initiated into her dawnlit order as a Templar protector, he carries a blue-gold kite shield marked with sanctuary stars and holds the line wherever her healing light must reach. Rowan still speaks with the plain steadiness of a village guard; only the armor changed. His promise did not. He walks beside Elara so her hands can mend, guide, and bless without fear of what waits in the dark.",
+      "level": 1,
+      "xp": 0,
+      "draw": {
+        "w": 120,
+        "h": 150,
+        "anchorY": 112
+      },
+      "stats": {
+        "hp": 118,
+        "mp": 24,
+        "attack": 15,
+        "magic": 4,
+        "defense": 13,
+        "agility": 7
+      },
+      "skills": [
+        "guard-break",
+        "iron-wall",
+        "rallying-strike"
+      ],
+      "ultimate": "oathkeepers-stand"
+    },
+    {
+      "id": "elara",
+      "name": "Elara Sunmere",
+      "class": "Priest",
+      "asset": "actor.elara",
+      "sprites": {
+        "move": "actor.elara.move",
+        "idle": "actor.elara.idle"
+      },
+      "portrait": "portrait.elara",
+      "profile": "profile.elara",
+      "profileLayout": "scene",
+      "card": "card.priest",
+      "role": "Healer",
+      "lore": "A shrine keeper who learned to fold dawnlight into practical miracles after the village roots began to darken.",
+      "profileBio": "Elara Sunmere keeps the first lamp lit at Brindlemarket's hillside shrine, tending prayers before dawn and wounds after dusk. When Moonroot Hollow began pressing its shadow into the village roots, she learned to fold dawnlight into practical miracles: mending torn flesh, cleansing poison, and wrapping allies in a veil warm enough to steady their courage. Gentle by habit and stubborn by oath, Elara walks with the party so no one has to face the dark without a hand to guide them back.",
+      "level": 1,
+      "xp": 0,
+      "draw": {
+        "w": 112,
+        "h": 150,
+        "anchorY": 112
+      },
+      "stats": {
+        "hp": 86,
+        "mp": 42,
+        "attack": 7,
+        "magic": 15,
+        "defense": 8,
+        "agility": 9
+      },
+      "skills": [
+        "mend",
+        "radiant-veil",
+        "cleanse"
+      ],
+      "ultimate": "dawn-sanctuary"
+    },
+    {
+      "id": "cassian",
+      "name": "Cassian Runevale",
+      "class": "Mage",
+      "asset": "actor.cassian",
+      "sprites": {
+        "move": "actor.cassian.move",
+        "idle": "actor.cassian.idle"
+      },
+      "portrait": "portrait.cassian",
+      "profile": "profile.cassian",
+      "profileLayout": "scene",
+      "card": "card.mage",
+      "role": "Caster",
+      "lore": "A runaway academy scholar chasing Moonroot crystals, Cassian would rather be right than safe, which worries everyone else.",
+      "profileBio": "Cassian Runevale left the academy with more questions than permission. Moonroot crystals fascinate him, and the Hollow's impossible geometry keeps tempting him closer to danger than the party would prefer. Behind the dry remarks and perfect posture is a caster who trusts precision, theory, and one very bright arcane answer when the dark refuses to move.",
+      "level": 1,
+      "xp": 0,
+      "draw": {
+        "w": 112,
+        "h": 150,
+        "anchorY": 112
+      },
+      "stats": {
+        "hp": 78,
+        "mp": 50,
+        "attack": 6,
+        "magic": 18,
+        "defense": 6,
+        "agility": 8
+      },
+      "skills": [
+        "ember-bolt",
+        "frost-sigil",
+        "arc-burst"
+      ],
+      "ultimate": "astral-cascade"
+    },
+    {
+      "id": "nia",
+      "name": "Nia Quickwhisker",
+      "class": "Thief",
+      "asset": "actor.nia",
+      "sprites": {
+        "move": "actor.nia.move",
+        "idle": "actor.nia.idle"
+      },
+      "portrait": "portrait.nia",
+      "profile": "profile.nia",
+      "profileLayout": "scene",
+      "card": "card.thief",
+      "role": "Scout",
+      "lore": "A white-haired cat girl scout who knows every roofline in Brindlemarket and every rumor about Moonroot Hollow.",
+      "profileBio": "Nia Quickwhisker knows the village from roof tiles to cellar locks, and she has opinions about all of it. She scouts ahead by moonlight, marks safe paths, and returns with pockets full of useful things she insists were unattended. Quick, watchful, and hard to corner, Nia keeps the party moving before trouble realizes it has been spotted.",
+      "level": 1,
+      "xp": 0,
+      "draw": {
+        "w": 112,
+        "h": 150,
+        "anchorY": 112
+      },
+      "stats": {
+        "hp": 92,
+        "mp": 32,
+        "attack": 13,
+        "magic": 8,
+        "defense": 7,
+        "agility": 16
+      },
+      "skills": [
+        "backstab",
+        "smoke-step",
+        "pilfer"
+      ],
+      "ultimate": "nine-lives-gambit"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "training-slime",
+      "name": "Training Slime",
+      "asset": "enemy.slime.standalone",
+      "drawW": 122,
+      "drawH": 92,
+      "stats": {
+        "hp": 28,
+        "mp": 0,
+        "attack": 7,
+        "magic": 0,
+        "defense": 2,
+        "agility": 4
+      },
+      "xp": 7,
+      "gold": 4
+    },
+    {
+      "id": "thorn-imp",
+      "name": "Thorn Imp",
+      "asset": "enemy.thorn.standalone",
+      "drawW": 106,
+      "drawH": 106,
+      "stats": {
+        "hp": 36,
+        "mp": 4,
+        "attack": 9,
+        "magic": 4,
+        "defense": 3,
+        "agility": 8
+      },
+      "xp": 10,
+      "gold": 6
+    },
+    {
+      "id": "road-wisp",
+      "name": "Road Wisp",
+      "asset": "enemy.wisp",
+      "stats": {
+        "hp": 34,
+        "mp": 10,
+        "attack": 5,
+        "magic": 10,
+        "defense": 2,
+        "agility": 12
+      },
+      "xp": 11,
+      "gold": 7
+    },
+    {
+      "id": "bramble-rat",
+      "name": "Bramble Rat",
+      "asset": "enemy.rat",
+      "stats": {
+        "hp": 42,
+        "mp": 0,
+        "attack": 11,
+        "magic": 0,
+        "defense": 4,
+        "agility": 13
+      },
+      "xp": 12,
+      "gold": 8
+    },
+    {
+      "id": "moonroot-bat",
+      "name": "Moonroot Bat",
+      "asset": "enemy.bat",
+      "stats": {
+        "hp": 46,
+        "mp": 4,
+        "attack": 12,
+        "magic": 5,
+        "defense": 4,
+        "agility": 15
+      },
+      "xp": 15,
+      "gold": 9
+    },
+    {
+      "id": "goblin-scout",
+      "name": "Goblin Scout",
+      "asset": "npc.moonroot.goblin_grunt.move",
+      "drawW": 112,
+      "drawH": 130,
+      "stats": {
+        "hp": 54,
+        "mp": 0,
+        "attack": 13,
+        "magic": 1,
+        "defense": 5,
+        "agility": 14
+      },
+      "xp": 18,
+      "gold": 11
+    },
+    {
+      "id": "goblin-grunt",
+      "name": "Goblin Grunt",
+      "asset": "npc.moonroot.goblin_grunt.move",
+      "drawW": 112,
+      "drawH": 130,
+      "stats": {
+        "hp": 70,
+        "mp": 0,
+        "attack": 16,
+        "magic": 1,
+        "defense": 8,
+        "agility": 9
+      },
+      "xp": 22,
+      "gold": 14
+    },
+    {
+      "id": "goblin-trapper",
+      "name": "Goblin Trapper",
+      "asset": "npc.moonroot.goblin_grunt.move",
+      "drawW": 112,
+      "drawH": 130,
+      "stats": {
+        "hp": 58,
+        "mp": 6,
+        "attack": 12,
+        "magic": 4,
+        "defense": 5,
+        "agility": 16
+      },
+      "xp": 24,
+      "gold": 13
+    },
+    {
+      "id": "hollow-guard",
+      "name": "Hollow Guard",
+      "asset": "enemy.guard",
+      "stats": {
+        "hp": 72,
+        "mp": 0,
+        "attack": 15,
+        "magic": 2,
+        "defense": 9,
+        "agility": 7
+      },
+      "xp": 22,
+      "gold": 14
+    },
+    {
+      "id": "crystal-ooze",
+      "name": "Crystal Ooze",
+      "asset": "enemy.ooze",
+      "stats": {
+        "hp": 64,
+        "mp": 14,
+        "attack": 9,
+        "magic": 13,
+        "defense": 7,
+        "agility": 5
+      },
+      "xp": 20,
+      "gold": 12
+    },
+    {
+      "id": "vorthane",
+      "name": "Vorthane, Warden of the Backroom",
+      "asset": "enemy.boss",
+      "boss": true,
+      "stats": {
+        "hp": 260,
+        "mp": 40,
+        "attack": 18,
+        "magic": 16,
+        "defense": 10,
+        "agility": 9
+      },
+      "xp": 95,
+      "gold": 60
+    },
+    {
+      "id": "deep-moonroot-bat",
+      "name": "Deep Moonroot Bat",
+      "asset": "enemy.bat",
+      "stats": {
+        "hp": 66,
+        "mp": 8,
+        "attack": 16,
+        "magic": 8,
+        "defense": 6,
+        "agility": 17
+      },
+      "xp": 24,
+      "gold": 14
+    },
+    {
+      "id": "gloom-ooze",
+      "name": "Gloom Ooze",
+      "asset": "enemy.ooze",
+      "stats": {
+        "hp": 88,
+        "mp": 20,
+        "attack": 12,
+        "magic": 17,
+        "defense": 9,
+        "agility": 6
+      },
+      "xp": 28,
+      "gold": 18
+    },
+    {
+      "id": "rootbound-guard",
+      "name": "Rootbound Guard",
+      "asset": "enemy.guard",
+      "stats": {
+        "hp": 104,
+        "mp": 0,
+        "attack": 20,
+        "magic": 4,
+        "defense": 12,
+        "agility": 8
+      },
+      "xp": 34,
+      "gold": 22
+    }
+  ]
+}

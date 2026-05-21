@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "scripts": {
+    "mira-intro": [
+      { "kind": "say", "speaker": "Mira", "text": "You are awake. Good. WASD moves you, Enter talks, and Escape opens the field menu." },
+      { "kind": "startQuest", "quest": "q-tutorial" },
+      { "kind": "advanceQuest", "quest": "q-tutorial", "stage": 1 },
+      { "kind": "giveItem", "item": "potion", "count": 2 },
+      { "kind": "say", "speaker": "Mira", "text": "Quest: A Leaf Still Burning. Gather three Emberleaf from the trail flowers." },
+      { "kind": "say", "speaker": "Mira", "text": "After that, cross to the slime on the bridge and win one clean fight. Return to me when both are done." }
+    ],
+    "mira-return": [
+      { "kind": "checkFlag", "flag": "tutorial_complete", "goto": "done" },
+      { "kind": "checkAll", "flags": ["emberleaf_done", "tutorial_combat_won"], "goto": "ready" },
+      { "kind": "say", "speaker": "Mira", "text": "Quest: gather three Emberleaf, then defeat the bridge slime. Your quest log tracks the next step." }
+    ],
+    "mira-return:ready": [
+      { "kind": "say", "speaker": "Mira", "text": "You have the leaves and a real victory. Brindlemarket needs you now." },
+      { "kind": "advanceQuest", "quest": "q-tutorial", "stage": 4 },
+      { "kind": "completeQuest", "quest": "q-tutorial" },
+      { "kind": "setFlag", "flag": "tutorial_complete", "value": true },
+      { "kind": "say", "speaker": "Mira", "text": "Quest complete. The east road is open; follow it to Brindlemarket." }
+    ],
+    "mira-return:done": [
+      { "kind": "say", "speaker": "Mira", "text": "Follow the road east. Brindlemarket is waiting." }
+    ],
+    "waystone": [
+      { "kind": "say", "speaker": "Old Waystone", "text": "Moonroot Hollow opens only to those who bring light, nerve, and a key cut from old roots." }
+    ],
+    "elder-bram": [
+      { "kind": "say", "speaker": "Elder Bram", "text": "The roots beneath our village are sick. Moonroot Hollow holds the bloom we need." },
+      { "kind": "startQuest", "quest": "q-moonroot" },
+      { "kind": "setFlag", "flag": "quest_q_moonroot_started", "value": true },
+      { "kind": "say", "speaker": "Elder Bram", "text": "Prepare at the market, then take the north-east gate." }
+    ],
+    "pippa": [
+      { "kind": "say", "speaker": "Pippa", "text": "Pouches light? Shelves full. Take a look." },
+      { "kind": "openShop", "shop": "item-shop" }
+    ],
+    "luma": [
+      { "kind": "say", "speaker": "Luma", "text": "A warm bowl and a clean bandage fix more than pride." },
+      { "kind": "openShop", "shop": "food-shop" }
+    ],
+    "tovin": [
+      { "kind": "say", "speaker": "Tovin", "text": "Blades, buckles, and practical things." },
+      { "kind": "openShop", "shop": "gear-shop" }
+    ],
+    "nia-rumor": [
+      { "kind": "say", "speaker": "Nia", "text": "A merchant is selling fake Moonroot charms. I saw the paint still wet." },
+      { "kind": "startQuest", "quest": "q-fake-merchant" },
+      { "kind": "say", "speaker": "Nia", "text": "After the dungeon, remind me. I know where a real lucky thread is hidden." }
+    ],
+    "porter-moss": [
+      { "kind": "say", "speaker": "Porter Moss", "text": "Every crate here is paid for by someone brave enough to step into Moonroot Hollow and lucky enough to come back." }
+    ],
+    "wounded-delver": [
+      { "kind": "say", "speaker": "Wounded Delver", "text": "The healers say I should rest. The guild says my map is worth more than my sword arm. Both are probably right." }
+    ],
+    "fountain-runner": [
+      { "kind": "say", "speaker": "Fountain Runner", "text": "Toss a coin for the fountain, then run to the gate before the delvers take all the stew." }
+    ],
+    "gate-guard": [
+      { "kind": "say", "speaker": "Gate Guard", "text": "Moonroot Hollow keeps this town fed, shod, and scared. Elder Bram decides who passes the north-east gate." }
+    ],
+    "supply-clerk": [
+      { "kind": "say", "speaker": "Supply Clerk", "text": "Rope, lantern oil, antidotes, clean socks. The dungeon taxes fools first and the unprepared second." }
+    ],
+    "rumor-merchant": [
+      { "kind": "say", "speaker": "Rumor Merchant", "text": "Buy a charm, hear a rumor, ignore both if you value your purse. Nia has been watching me too closely." }
+    ],
+    "echo-sprite": [
+      { "kind": "say", "speaker": "Echo Sprite", "text": "The backroom wakes when the key is found and three lanterns remember the moon." }
+    ],
+    "moon-gate": [
+      { "kind": "checkFlag", "flag": "moon_gate_open", "goto": "open" },
+      { "kind": "say", "speaker": "Moon Gate", "text": "The stone waits for a root key and three lit lanterns." }
+    ],
+    "moon-gate:open": [
+      { "kind": "say", "speaker": "Moon Gate", "text": "The backroom opens." },
+      { "kind": "transferMap", "map": "moonroot_hollow", "spawn": "boss_room" }
+    ],
+    "floor_1_quartermaster_intro": [
+      { "kind": "say", "speaker": "Quartermaster Sella", "text": "Forward base is open. Take the warm stones while you can; the north rooms are already arguing with us." },
+      { "kind": "openShop", "shop": "item-shop" }
+    ],
+    "floor_1_mapper_intro": [
+      { "kind": "say", "speaker": "Guild Mapper", "text": "Chalk means someone came back. Missing chalk means either no one went there, or no one returned with hands steady enough to mark it." },
+      { "kind": "startQuest", "quest": "q-moonroot-floor1" },
+      { "kind": "advanceQuest", "quest": "q-moonroot-floor1", "stage": 1 },
+      { "kind": "say", "speaker": "Guild Mapper", "text": "Field lesson: follow the marked plates north. Let the safe spike plate teach your boots before the real traps do. Press Q if you need the Quest Log to repeat the objective." }
+    ],
+    "floor_1_cooking_intro": [
+      { "kind": "say", "speaker": "Cook Marlo", "text": "Eat before the doors. Dungeon courage burns fast, and stew is cheaper than a rescue party." },
+      { "kind": "openShop", "shop": "food-shop" }
+    ],
+    "floor_1_wounded_delver_warning": [
+      { "kind": "say", "speaker": "Wounded Delver", "text": "The base is safe. Past the chalk fork, safe becomes a story people tell new delvers." }
+    ],
+    "floor_1_rookie_training_hint": [
+      { "kind": "say", "speaker": "Guild Rookie", "text": "Practice plates are marked here. Deeper down, the Hollow lets you find the lesson with your boots. Press Q to check the Quest Log before you wander." },
+      { "kind": "startQuest", "quest": "q-moonroot-floor1" },
+      { "kind": "advanceQuest", "quest": "q-moonroot-floor1", "stage": 1 }
+    ],
+    "floor_1_descent_warning": [
+      { "kind": "say", "speaker": "Descent Guard", "text": "Floor two is past guild control. Check your supplies, then step down like the stairs are listening." },
+      { "kind": "completeQuestIfStage", "quest": "q-moonroot-floor1", "stage": 7 },
+      { "kind": "checkFlag", "flag": "quest_q_moonroot_floor1_complete", "goto": "complete" },
+      { "kind": "say", "speaker": "Descent Guard", "text": "Bring me a reading from the root-cracked shrine before you take the stairs. Floor two does not grade gently." }
+    ],
+    "floor_1_descent_warning:complete": [
+      { "kind": "say", "speaker": "Descent Guard", "text": "You've read the marks, sprung the traps, and seen what goblins leave behind. That is enough warning for floor two." }
+    ],
+    "floor_1_shrine_lore": [
+      { "kind": "say", "speaker": "Root-Cracked Shrine", "text": "Moonroot light leaks through the stone. It feels less like a blessing than a wound kept open." },
+      { "kind": "advanceQuest", "quest": "q-moonroot-floor1", "stage": 7 }
+    ],
+    "field_kitchen_intro": [
+      { "kind": "say", "speaker": "Cookpot", "text": "The cookfire is banked low, ready for whatever the party brings back from the Hollow." }
+    ],
+    "training_dummy": [
+      { "kind": "say", "speaker": "Training Barricade", "text": "Fresh cuts on the wood mark where rookies learned to stop swinging and start looking." }
+    ],
+    "moonroot-provisioner": [
+      { "kind": "say", "speaker": "Provisioner Sella", "text": "Floor one is where pride learns to read the stones before the stones read back." },
+      { "kind": "openShop", "shop": "item-shop" }
+    ],
+    "moonroot-cook": [
+      { "kind": "say", "speaker": "Cook Marlo", "text": "Eat before descending. The Hollow does not pause for empty hands or empty bellies." },
+      { "kind": "openShop", "shop": "food-shop" }
+    ],
+    "moonroot-smith": [
+      { "kind": "say", "speaker": "Smith Tovin", "text": "Past floor ten, the stone starts hitting back. Gear up while the lamps are still friendly." },
+      { "kind": "openShop", "shop": "gear-shop" }
+    ],
+    "floor-guard-a": [
+      { "kind": "say", "speaker": "Floor Guard", "text": "Floor two is live dungeon. The traps will not announce themselves like these training rooms." }
+    ],
+    "floor-guard-b": [
+      { "kind": "say", "speaker": "Floor Guard", "text": "Boss floors lock the descent. Beat the warden on floor ten before floor eleven opens." }
+    ],
+    "dungeon-checkpoints": [
+      { "kind": "say", "speaker": "Root Crystal", "text": "Checkpoint crystals wait at floors 25, 50, and 75. Once reached, they become return anchors." }
+    ],
+    "trap-pitfall": [
+      { "kind": "say", "speaker": "Pitfall Exhibit", "text": "Real pitfalls are rare. They drop delvers deeper by one to three floors early on, but never past an unbeaten boss floor." }
+    ],
+    "trap-spikes": [
+      { "kind": "say", "speaker": "Spike Plate Exhibit", "text": "A spike plate punishes careless steps. In the Hollow, the safest sign is often the one you almost missed." }
+    ],
+    "trap-darts": [
+      { "kind": "say", "speaker": "Dart Line Exhibit", "text": "Dart lines fire from old wall seams. The leader usually catches the first lesson." }
+    ],
+    "trap-poison": [
+      { "kind": "say", "speaker": "Poison Mist Exhibit", "text": "Poison mist vents pressure into a room. Antidotes are cheap until you need one." }
+    ],
+    "trap-alarm": [
+      { "kind": "say", "speaker": "Alarm Rune Exhibit", "text": "Alarm runes wake nearby creatures. If the floor goes quiet, check your footing." }
+    ],
+    "trap-crumble": [
+      { "kind": "say", "speaker": "Crumbling Bridge Exhibit", "text": "Crumbling bridges hold just long enough to make you trust them." }
+    ],
+    "trap-teleport": [
+      { "kind": "say", "speaker": "Teleport Snare Exhibit", "text": "Teleport snares do not kill. They separate plans from reality, which is sometimes worse." }
+    ],
+    "goblin-grunt": [
+      { "kind": "say", "speaker": "Goblin Grunt", "text": "Two steps. Four directions. Goblin follows the guild rules." }
+    ],
+    "moonroot-visitor": [
+      { "kind": "say", "speaker": "Moonroot Visitor", "text": "Spliced in for a visual test. If the scale feels strange, blame the model mismatch." }
+    ]
+  },
+  "npcDialogues": {
+    "mira-intro": {
+      "speaker": "Mira",
+      "talk": [
+        "The guild likes its lessons neat, but the road never holds still long enough to be neat.",
+        "Emberleaf grows where old heat lingers. Pick it cleanly and the plant comes back stronger.",
+        "Brindlemarket sends more runners than it admits. Someone has to teach them which end of fear is useful.",
+        "My job is keeping new delvers alive until the guild can make them someone else's problem.",
+        "Life near Moonroot Hollow is all lists: supplies, warnings, names returned, names missing."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Mira's trail rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-tutorial", "script": "mira-intro" }]
+    },
+    "mira-return": {
+      "speaker": "Mira",
+      "talk": [
+        "You learn faster than most, which means the road will start asking harder questions.",
+        "The guild calls this a field exercise. The Hollow calls everything practice until it hurts.",
+        "Keep your pack light enough to run and full enough to survive being wrong.",
+        "Brindlemarket has stew, gossip, and six versions of every warning. Listen to at least two.",
+        "I miss quiet mornings, but quiet mornings do not usually need a blade nearby."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Mira's return rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-tutorial", "script": "mira-return" }]
+    },
+    "elder-bram": {
+      "speaker": "Elder Bram",
+      "talk": [
+        "The guild guards the Hollow, but Brindlemarket pays the cost when it stirs.",
+        "A village built above hungry roots learns to count every harvest twice.",
+        "My job is choosing which bad news becomes an order and which waits until morning.",
+        "The old families remember when Moonroot light meant blessing. Now it means we check the locks.",
+        "If the guild seems cautious, good. Caution is the only tradition the Hollow has not swallowed."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Elder Bram's village rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-moonroot", "script": "elder-bram" }]
+    },
+    "pippa": {
+      "speaker": "Pippa",
+      "talk": [
+        "Guild coin spends well, but guild rush orders always arrive five minutes before trouble.",
+        "I stock rope for clever people and extra rope for the ones who think they are clever.",
+        "Market life is mostly counting jars, smiling at panic, and pretending the shelves refill themselves.",
+        "The Hollow teaches brand loyalty. Survive once with my antidote and you come back for another.",
+        "If you hear glass clinking in my pack, that is profit trying not to break."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Pippa's market rumour with final story copy later."] },
+      "shopOption": { "script": "pippa", "label": "Shop" }
+    },
+    "luma": {
+      "speaker": "Luma",
+      "talk": [
+        "The guild underestimates stew because stew never writes reports.",
+        "A warm meal before the floor can turn a disaster into a story with a punchline.",
+        "My job is feeding people who swear they are not scared and charging them anyway.",
+        "Brindlemarket survives on Moonroot silver, garden onions, and everyone checking on everyone else.",
+        "If the benches look scratched, blame armor, ambition, and boots that forgot the mud outside."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Luma's hearth rumour with final story copy later."] },
+      "shopOption": { "script": "luma", "label": "Shop" }
+    },
+    "tovin": {
+      "speaker": "Tovin",
+      "talk": [
+        "The guild wants gear light, cheap, and unbreakable. They may pick two if I like them.",
+        "A blade tells me more about a delver than their boast does.",
+        "My job is hammering fear into useful shapes: buckles, edge guards, hinge pins, sense.",
+        "Life in Brindlemarket rings like an anvil. Work, warning bell, work again.",
+        "Moonroot dust gets into scabbards. Clean your steel before the floor cleans it for you."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Tovin's forge rumour with final story copy later."] },
+      "shopOption": { "script": "tovin", "label": "Shop" }
+    },
+    "nia-rumor": {
+      "speaker": "Nia",
+      "talk": [
+        "The guild posts guards at gates and forgets rooftops have opinions.",
+        "I hear more from loose shingles than most people hear from witnesses.",
+        "My job is knowing who lied, who paid, and who thinks those are different skills.",
+        "Brindlemarket is small enough that every secret has errands to run.",
+        "Moonroot Hollow makes people nervous. Nervous people drop better clues."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Nia's rooftop rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-fake-merchant", "script": "nia-rumor" }]
+    },
+    "porter-moss": {
+      "speaker": "Porter Moss",
+      "talk": [
+        "The guild calls them requisitions. I call them boxes that bite my knees.",
+        "Every crate going into the Hollow weighs more after you read the destination tag.",
+        "My job is lifting supplies and pretending I do not count how many come back unused.",
+        "Brindlemarket's streets look peaceful because half of us are busy carrying the panic indoors.",
+        "If you need something moved fast, pay before the alarm bell starts."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Porter Moss's supply rumour with final story copy later."] }
+    },
+    "wounded-delver": {
+      "speaker": "Wounded Delver",
+      "talk": [
+        "The guild says rest. My leg agrees, but my pride keeps filing objections.",
+        "Floor stone has a sound when it is about to betray you. I learned it one step late.",
+        "My job used to be scouting. For now it is being a warning with bandages.",
+        "Life after a bad run is soup, sleep, and remembering which friends made it out.",
+        "Do not mock chalk marks. Chalk marks are promises from people who paid for them."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the wounded delver's warning rumour with final story copy later."] }
+    },
+    "fountain-runner": {
+      "speaker": "Fountain Runner",
+      "talk": [
+        "Guild messages move faster when someone small can dodge carts.",
+        "I know every shortcut between the fountain, the gate, and Luma's back door.",
+        "My job is running notes before the ink dries or the news gets worse.",
+        "Brindlemarket life is loudest at the square, which is why I listen there.",
+        "If you toss a coin in the fountain, wish for dry socks. Heroes forget practical magic."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the fountain runner's square rumour with final story copy later."] }
+    },
+    "gate-guard": {
+      "speaker": "Gate Guard",
+      "talk": [
+        "The guild would rather delay ten heroes than bury one fool.",
+        "Gate duty is mostly saying no until someone important says it louder.",
+        "My job is watching the road, the Hollow, and the faces people make between them.",
+        "Brindlemarket sleeps better when this gate is boring. I treasure boring.",
+        "If Elder Bram has not cleared you, the north-east path stays a view."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the gate guard's road rumour with final story copy later."] }
+    },
+    "supply-clerk": {
+      "speaker": "Supply Clerk",
+      "talk": [
+        "The guild can lose a sword and call it variance. Lose a ledger and everyone learns my name.",
+        "Floor kits go out clean and return muddy, dented, or not at all.",
+        "My job is making sure panic has a receipt and a spare lantern.",
+        "Brindlemarket runs on inventory. Food, bandages, nails, patience.",
+        "If you skip antidotes, the Hollow will notice and invoice you personally."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the supply clerk's guild rumour with final story copy later."] }
+    },
+    "rumor-merchant": {
+      "speaker": "Rumor Merchant",
+      "talk": [
+        "The guild sells certainty. I sell the cheaper thing people actually buy.",
+        "A charm is only fake if the customer stops believing before leaving the stall.",
+        "My job is reading faces and pricing hope by the thread.",
+        "Brindlemarket calls me dishonest, then asks what I heard by supper.",
+        "Moonroot fear polishes coins better than any cloth."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the rumor merchant's paid rumour with final story copy later."] }
+    },
+    "echo-sprite": {
+      "speaker": "Echo Sprite",
+      "talk": [
+        "Guild boots beat once. The floor answers twice.",
+        "Moonroot light remembers names better than stone remembers shape.",
+        "My job is echo, warning, mistake, maybe all three.",
+        "Life here is listening to doors dream about being walls.",
+        "The Hollow repeats what it likes and eats what it loves."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the Echo Sprite's cryptic rumour with final story copy later."] }
+    },
+    "floor_1_quartermaster_intro": {
+      "speaker": "Quartermaster Sella",
+      "talk": [
+        "The guild base holds because every rope, ration, and lantern has a place.",
+        "Floor one is polite by dungeon standards, which is not the same as safe.",
+        "My job is telling brave people they packed like optimists.",
+        "Life down here smells like oilcloth, hot stone, and arguments over inventory.",
+        "If you borrow guild supplies, bring back either the item or a very convincing apology."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Sella's quartermaster rumour with final story copy later."] },
+      "shopOption": { "script": "floor_1_quartermaster_intro", "label": "Shop" }
+    },
+    "floor_1_mapper_intro": {
+      "speaker": "Guild Mapper",
+      "talk": [
+        "The guild trusts maps because maps at least admit where they stop knowing.",
+        "Floor one teaches markings, sightlines, and the humility to turn around.",
+        "My job is converting other people's near misses into useful chalk.",
+        "Life at the forward base is quiet until someone finds a new way to be surprised.",
+        "Read the floor before you read the room. The floor lies less often."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the mapper's floor-one rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-moonroot-floor1", "script": "floor_1_mapper_intro" }]
+    },
+    "floor_1_cooking_intro": {
+      "speaker": "Cook Marlo",
+      "talk": [
+        "The guild measures morale in bowls whether the captains admit it or not.",
+        "Floor one burns through courage faster than lamp oil.",
+        "My job is keeping delvers fed enough to make better mistakes.",
+        "Life at the cookfire is steam, gossip, and checking who skips seconds.",
+        "A full belly will not save you from a trap, but it may help you notice one."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Marlo's field-kitchen rumour with final story copy later."] },
+      "shopOption": { "script": "floor_1_cooking_intro", "label": "Shop" }
+    },
+    "floor_1_wounded_delver_warning": {
+      "speaker": "Wounded Delver",
+      "talk": [
+        "The guild put my cot near the route so rookies can see what rushing buys.",
+        "Floor one is the handshake. Deeper floors are the grip tightening.",
+        "My current job is lying still and being educational.",
+        "Life in the infirmary is counting drips, footsteps, and how long pride takes to heal.",
+        "When the chalk changes color, slow down. Someone paid blood for that note."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the floor-one wounded delver rumour with final story copy later."] }
+    },
+    "floor_1_rookie_training_hint": {
+      "speaker": "Guild Rookie",
+      "talk": [
+        "The guild says everyone starts somewhere. I keep wishing somewhere had fewer spikes.",
+        "Floor one looks smaller on the map and louder under your boots.",
+        "My job today is learning, not screaming, though the schedule allows overlap.",
+        "Life at base is veterans giving advice and then laughing when you write it down.",
+        "I practice watching the floor. The floor practices looking innocent."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the rookie's training rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-moonroot-floor1", "script": "floor_1_rookie_training_hint" }]
+    },
+    "floor_1_descent_warning": {
+      "speaker": "Descent Guard",
+      "talk": [
+        "The guild stops calling it training at the stairs.",
+        "Floor one is supervised danger. Floor two is danger with opinions.",
+        "My job is making sure no one descends with empty packs or full arrogance.",
+        "Life at this post is listening to stairs and judging footsteps.",
+        "If you hesitate here, good. Hesitation means some part of you is still taking notes."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the descent guard's stairs rumour with final story copy later."] },
+      "questOptions": [{ "quest": "q-moonroot-floor1", "script": "floor_1_descent_warning" }]
+    },
+    "moonroot-provisioner": {
+      "speaker": "Provisioner Sella",
+      "talk": [
+        "The guild keeps caches on every stable floor and arguments beside most of them.",
+        "A lower floor changes what supplies mean. Rope becomes retreat, oil becomes time.",
+        "My job is turning lists into survival before the Hollow edits them.",
+        "Life between descents is sorting what came back from what needs replacing.",
+        "Pack for the floor you fear, not the floor you hope to find."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Provisioner Sella's deep-floor rumour with final story copy later."] },
+      "shopOption": { "script": "moonroot-provisioner", "label": "Shop" }
+    },
+    "moonroot-cook": {
+      "speaker": "Cook Marlo",
+      "talk": [
+        "The guild can plan routes all day. Hunger plans faster.",
+        "Dungeon floors make every meal taste like a checkpoint.",
+        "My job is feeding the brave, the lost, and the people pretending those are separate.",
+        "Life near the descent is a pot that never quite cools.",
+        "Eat while the lamps are friendly."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Cook Marlo's deep-floor rumour with final story copy later."] },
+      "shopOption": { "script": "moonroot-cook", "label": "Shop" }
+    },
+    "moonroot-smith": {
+      "speaker": "Smith Tovin",
+      "talk": [
+        "The guild sends me dents and asks for miracles by morning.",
+        "Past the early floors, armor stops being fashion and starts being evidence.",
+        "My job is arguing with metal until it agrees to keep someone alive.",
+        "Life beside the anvil is simple: heat, strike, quench, repeat, bill.",
+        "If your shield has new scratches, thank it before asking me to fix it."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Smith Tovin's deep-floor rumour with final story copy later."] },
+      "shopOption": { "script": "moonroot-smith", "label": "Shop" }
+    },
+    "floor-guard-a": {
+      "speaker": "Floor Guard",
+      "talk": [
+        "The guild posts us where confidence usually outruns memory.",
+        "Floor two stops explaining itself. Watch corners and quiet rooms.",
+        "My job is repeating warnings until someone survives long enough to repeat them back.",
+        "Life on guard is counting boots in and boots out.",
+        "The safest delver is the one who still thinks the floor can surprise them."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Floor Guard A's patrol rumour with final story copy later."] }
+    },
+    "floor-guard-b": {
+      "speaker": "Floor Guard",
+      "talk": [
+        "The guild tracks boss floors like storms with stairs.",
+        "Every tenth floor changes the rules just enough to punish habits.",
+        "My job is keeping people from treating a locked descent like a suggestion.",
+        "Life here is paperwork, passwords, and waiting for the next alarm.",
+        "If the route forward closes, earn it open. That is the Hollow's language."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace Floor Guard B's boss-floor rumour with final story copy later."] }
+    },
+    "dungeon-checkpoints": {
+      "speaker": "Root Crystal",
+      "talk": [
+        "The guild marks crystals as anchors. The crystals do not ask what anchors are for.",
+        "Some floors remember arrivals more clearly than departures.",
+        "My job is waiting, shining, and pretending waiting is not a kind of hunger.",
+        "Life in crystal time is footsteps, silence, then footsteps again.",
+        "Touch the deep checkpoints carefully. Return paths notice who uses them."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the checkpoint crystal rumour with final story copy later."] }
+    },
+    "goblin-grunt": {
+      "speaker": "Goblin Grunt",
+      "talk": [
+        "Guild boots loud. Goblin boots smart.",
+        "Floor has corners. Corners have goblins. Good floor.",
+        "My job is walking, watching, and not getting yelled at by bigger goblin.",
+        "Life in Hollow is shiny rocks, bad soup, and running when armor clanks.",
+        "Two steps one way, two steps back. Very official patrol."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the goblin grunt rumour with final story copy later."] }
+    },
+    "moonroot-visitor": {
+      "speaker": "Moonroot Visitor",
+      "talk": [
+        "The guild said this floor was under control. I have questions about their definition.",
+        "Moonroot light makes every shadow look like it has been invited.",
+        "My job was observing. Now it is standing very still and hoping that counts.",
+        "Life as a visitor is mostly realizing the locals packed better than you did.",
+        "If the scale of this place feels wrong, trust that feeling."
+      ],
+      "rumours": { "placeholder": true, "lines": ["RUMOUR PLACEHOLDER: Replace the Moonroot Visitor's odd rumour with final story copy later."] }
+    }
+  }
+}

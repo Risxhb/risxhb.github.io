@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "quests": [
+    {
+      "id": "q-tutorial",
+      "name": "A Leaf Still Burning",
+      "description": "Mira teaches the party the basics of gathering, fighting, and following the road toward Brindlemarket.",
+      "stages": ["Talk to Mira", "Collect 3 Emberleaf", "Win your first fight", "Return to Mira", "Reach Brindlemarket"],
+      "objectives": [
+        { "text": "Find Mira on Emberleaf Trail and ask what the road needs from you." },
+        { "text": "Gather three Emberleaf from the glowing trail flowers." },
+        { "text": "Defeat the bridge slime and learn how the party handles combat." },
+        { "text": "Return to Mira with the Emberleaf and news that the bridge is safe." },
+        { "text": "Follow the east road into Brindlemarket." }
+      ],
+      "rewards": { "xp": 25, "gold": 12, "items": [{ "id": "potion", "count": 1 }] }
+    },
+    {
+      "id": "q-herbs",
+      "name": "Market Herbs",
+      "description": "Pippa needs Emberleaf for market remedies and will pay for a clean bundle.",
+      "stages": ["Speak to Pippa", "Bring her 3 Emberleaf", "Collect your reward"],
+      "objectives": [
+        { "text": "Find Pippa in Brindlemarket and hear what herbs she needs." },
+        { "text": "Bring Pippa three Emberleaf from the trail." },
+        { "text": "Talk to Pippa again to collect the market reward." }
+      ],
+      "rewards": { "xp": 20, "gold": 16, "items": [{ "id": "bread", "count": 2 }] }
+    },
+    {
+      "id": "q-fake-merchant",
+      "name": "Nia's Rooftop Rumor",
+      "description": "Nia has heard about a merchant with a story that does not add up.",
+      "stages": ["Speak to Nia", "Confront the fake merchant", "Return to Nia"],
+      "objectives": [
+        { "text": "Speak with Nia and learn why the rooftop rumor matters." },
+        { "text": "Find the suspicious merchant and press them for the truth." },
+        { "text": "Return to Nia with what you learned." }
+      ],
+      "rewards": { "xp": 30, "gold": 18, "items": [{ "id": "lucky-thread", "count": 1 }] }
+    },
+    {
+      "id": "q-moonroot-floor1",
+      "name": "Floor One Field Lessons",
+      "description": "The guild uses Floor 1 to teach rookies how Moonroot Hollow thinks: read markings, survive real traps, clear scouts, inspect the shrine, and report before Floor 2.",
+      "stages": ["Report to the Guild Mapper", "Step on the marked spike plate", "Cross the gas vent", "Survive the dart line", "Claim the side cache", "Clear the broken camp goblins", "Inspect the root-cracked shrine", "Speak with the Descent Guard"],
+      "objectives": [
+        { "text": "Find the mapper in the forward base and accept the field lesson." },
+        { "text": "Use the marked practice plate to learn what a spike warning looks like." },
+        { "text": "Pass through the torch-depot route and survive the visible green gas vent." },
+        { "text": "Cross the chalk-marked fork and watch for dart slits along the wall." },
+        { "text": "Open the side cache beyond the crumbling bridge and take the supplies." },
+        { "text": "Defeat the goblin scouts at the broken camp so the route is safe." },
+        { "text": "Read the shrine north of the camp and learn what the Moonroot is doing to the stone." },
+        { "text": "Report to the Descent Guard to finish Floor 1 training before taking the stairs." }
+      ],
+      "rewards": { "xp": 40, "gold": 20, "items": [{ "id": "antidote", "count": 1 }] }
+    },
+    {
+      "id": "q-moonroot",
+      "name": "The Root Beneath the Moon",
+      "description": "Brindlemarket's elders need the party to open Moonroot Hollow, reach its heart, and return with proof the danger can be faced.",
+      "stages": ["Speak to Elder Bram", "Find the Moonroot Key", "Open the backroom", "Defeat Vorthane", "Return with the Moonroot Bloom"],
+      "objectives": [
+        { "text": "Speak with Elder Bram about Moonroot Hollow and the sealed route." },
+        { "text": "Find the Moonroot Key hidden somewhere in the Hollow." },
+        { "text": "Use the key to open the backroom path." },
+        { "text": "Defeat Vorthane at the root of the Hollow." },
+        { "text": "Return to Brindlemarket with the Moonroot Bloom." }
+      ],
+      "rewards": { "xp": 75, "gold": 50, "items": [{ "id": "ether", "count": 1 }] }
+    }
+  ]
+}

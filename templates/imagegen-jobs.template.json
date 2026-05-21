@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "created_at": "{{created_at}}",
+  "run_dir": "{{run_dir}}",
+  "primary_generation_skill": "$imagegen",
+  "jobs": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "moonroot_hollow",
+  "name": "Moonroot Hollow",
+  "tileSize": 32,
+  "width": 40,
+  "height": 28,
+  "defaultTile": "tile.dungeonFloor",
+  "spawn": { "x": 2, "y": 23 },
+  "spawns": { "entrance": { "x": 2, "y": 23 }, "boss_room": { "x": 36, "y": 5 } },
+  "fills": [
+    { "tile": "tile.dungeonWall", "rect": [0, 0, 40, 2] },
+    { "tile": "tile.bossFloor", "rect": [34, 1, 5, 8] },
+    { "tile": "tile.water", "rect": [13, 18, 5, 3] }
+  ],
+  "blocked": [[0,0,40,1],[0,27,40,1],[0,0,1,28],[39,0,1,28],[8,18,2,7],[19,14,2,10],[31,6,2,6],[33,6,1,2]],
+  "props": [
+    { "asset": "prop.crystalBlue", "x": 29, "y": 12, "pickup": "moonroot-key", "flag": "has_moonroot_key" },
+    { "asset": "prop.crystalBlue", "x": 37, "y": 4, "pickup": "moonroot-bloom", "requires": "boss_defeated" },
+    { "asset": "prop.chest", "x": 18, "y": 21, "pickup": "lucky-thread" },
+    { "asset": "prop.door", "x": 33, "y": 6, "script": "moon-gate" },
+    { "asset": "prop.crystalBlue", "x": 11, "y": 17, "flagOnInteract": "lantern_1_lit" },
+    { "asset": "prop.crystalBlue", "x": 24, "y": 18, "flagOnInteract": "lantern_2_lit" },
+    { "asset": "prop.crystalBlue", "x": 30, "y": 7, "flagOnInteract": "lantern_3_lit" }
+  ],
+  "npcs": [
+    { "id": "echo_sprite", "name": "Echo Sprite", "asset": "enemy.wisp", "x": 12, "y": 18, "script": "echo-sprite" }
+  ],
+  "encounters": [
+    { "id": "bat_pack", "x": 12, "y": 17, "enemies": ["moonroot-bat", "moonroot-bat"], "flag": "bat_pack_won" },
+    { "id": "guard", "x": 23, "y": 14, "enemies": ["hollow-guard", "crystal-ooze"], "flag": "guard_won" },
+    { "id": "key_guard", "x": 28, "y": 12, "enemies": ["hollow-guard"], "flag": "key_guard_won" },
+    { "id": "vorthane", "x": 36, "y": 5, "enemies": ["vorthane"], "flag": "boss_defeated" }
+  ],
+  "exits": [
+    { "x": 0, "y": 23, "to": "brindlemarket_village", "spawn": "moon_gate_return" }
+  ],
+  "backdrop": "backdrop.dungeon",
+  "bossBackdrop": "backdrop.boss"
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "supportedDamageTypes": ["slash", "blunt", "pierce", "fire", "magic"],
+  "harvestProfiles": [
+    {
+      "enemyId": "goblin-scout",
+      "harvestChoices": 2,
+      "harvestOptions": {
+        "trophy": {
+          "label": "Take trophy",
+          "description": "Recover ears or proof for bounty.",
+          "common": ["goblin_ear"],
+          "byKillingDamageType": {
+            "slash": ["clean_goblin_ear"],
+            "blunt": ["clean_goblin_ear"],
+            "pierce": ["goblin_ear"],
+            "fire": ["burned_goblin_ear"],
+            "magic": ["goblin_ear"]
+          }
+        },
+        "meat": {
+          "label": "Butcher meat",
+          "description": "Recover edible meat for cooking or bait.",
+          "common": ["goblin_meat"],
+          "byKillingDamageType": {
+            "slash": ["goblin_meat"],
+            "blunt": ["bruised_goblin_meat"],
+            "pierce": ["goblin_meat"],
+            "fire": ["charred_goblin_meat"],
+            "magic": ["goblin_meat"]
+          }
+        },
+        "pouch": {
+          "label": "Search pouch",
+          "description": "Look for crumbs, coins, maps, or stolen supplies.",
+          "common": ["stolen_crumbs", "coin_pouch"],
+          "rare": ["guild_button"]
+        },
+        "gear": {
+          "label": "Strip gear",
+          "description": "Recover weapons, cloth, straps, or salvage.",
+          "common": ["crude_dagger", "tattered_cloth"],
+          "rare": ["leather_strap"]
+        }
+      }
+    },
+    {
+      "enemyId": "goblin-grunt",
+      "harvestChoices": 2,
+      "harvestOptions": {
+        "trophy": {
+          "label": "Take trophy",
+          "description": "Recover ears or proof for bounty.",
+          "common": ["goblin_ear"],
+          "byKillingDamageType": {
+            "slash": ["clean_goblin_ear"],
+            "blunt": ["clean_goblin_ear"],
+            "pierce": ["goblin_ear"],
+            "fire": ["burned_goblin_ear"],
+            "magic": ["goblin_ear"]
+          }
+        },
+        "meat": {
+          "label": "Butcher meat",
+          "description": "Recover edible meat for cooking or bait.",
+          "common": ["goblin_meat"],
+          "byKillingDamageType": {
+            "slash": ["goblin_meat"],
+            "blunt": ["bruised_goblin_meat"],
+            "pierce": ["goblin_meat"],
+            "fire": ["charred_goblin_meat"],
+            "magic": ["goblin_meat"]
+          }
+        },
+        "pouch": {
+          "label": "Search pouch",
+          "description": "Look for coin, rations, or stolen supplies.",
+          "common": ["coin_pouch", "chewed_ration"],
+          "rare": ["guild_button"]
+        },
+        "gear": {
+          "label": "Strip gear",
+          "description": "Recover weapons, shields, armor scraps, or straps.",
+          "common": ["crude_club", "cracked_shield", "worn_armor_scrap"],
+          "rare": ["leather_strap"]
+        }
+      }
+    },
+    {
+      "enemyId": "goblin-trapper",
+      "harvestChoices": 2,
+      "harvestOptions": {
+        "trophy": {
+          "label": "Take trophy",
+          "description": "Recover specialist proof for bounty.",
+          "common": ["trapper_ear"],
+          "byKillingDamageType": {
+            "slash": ["trapper_ear"],
+            "blunt": ["trapper_ear"],
+            "pierce": ["trapper_ear"],
+            "fire": ["burned_goblin_ear"],
+            "magic": ["trapper_ear"]
+          }
+        },
+        "meat": {
+          "label": "Butcher meat",
+          "description": "Recover edible meat for cooking or bait.",
+          "common": ["goblin_meat"],
+          "byKillingDamageType": {
+            "slash": ["goblin_meat"],
+            "blunt": ["bruised_goblin_meat"],
+            "pierce": ["goblin_meat"],
+            "fire": ["charred_goblin_meat"],
+            "magic": ["goblin_meat"]
+          }
+        },
+        "pouch": {
+          "label": "Search pouch",
+          "description": "Look for wire, bait, oil, or trap goods.",
+          "common": ["wire_spool", "bait_pouch", "oil_flask"],
+          "rare": ["trap_diagram"]
+        },
+        "gear": {
+          "label": "Strip gear",
+          "description": "Recover darts, tools, cloth, or trap kits.",
+          "common": ["dart_bundle", "tool_pouch", "tattered_cloth"],
+          "rare": ["usable_trap_kit"]
+        }
+      }
+    }
+  ],
+  "reactions": [
+    { "id": "loot.first_clean_goblin_ear", "itemIds": ["clean_goblin_ear"], "speaker": "Nia", "text": "Careful cut. Guild pays better when they can recognize the ear." },
+    { "id": "loot.first_burned_goblin_ear", "itemIds": ["burned_goblin_ear"], "speaker": "Cassian", "text": "Fire remains effective. Economically unfortunate, but effective." },
+    { "id": "loot.first_goblin_meat", "itemIds": ["goblin_meat", "bruised_goblin_meat", "charred_goblin_meat"], "speaker": "Elara", "text": "Cook it all the way through. Then cook it again." },
+    { "id": "loot.first_trapper_tools", "itemIds": ["wire_spool", "dart_bundle", "tool_pouch", "bait_pouch", "oil_flask"], "speaker": "Nia", "text": "Wire, darts, bait. This one came prepared." },
+    { "id": "loot.first_gear_salvage", "itemIds": ["crude_dagger", "crude_club", "cracked_shield", "worn_armor_scrap", "leather_strap"], "speaker": "Rowan", "text": "Poor make, but metal is metal." }
+  ]
+}

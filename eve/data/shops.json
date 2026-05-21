@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "shops": [
+    { "id": "food-shop", "name": "Luma's Hearth Foods", "greeting": "Warm food steadies brave feet.", "items": [{ "id": "bread" }, { "id": "stew" }] },
+    { "id": "item-shop", "name": "Pippa's Provisions", "greeting": "Buy smart, come back alive.", "items": [{ "id": "potion" }, { "id": "ether" }, { "id": "antidote" }, { "id": "revive-feather" }] },
+    { "id": "gear-shop", "name": "Tovin's Tools", "greeting": "A clean edge is cheaper than a funeral.", "items": [{ "id": "iron-sword" }] }
+  ]
+}

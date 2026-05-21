@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "sprite_set_id": "{{sprite_set_id}}",
+  "display_name": "{{display_name}}",
+  "description": "{{description}}",
+  "created_at": "{{created_at}}",
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cell_width": 192,
+    "cell_height": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 6,
+      "purpose": "neutral breathing or blinking loop",
+      "motion_beats": ["settled neutral", "small inhale", "blink", "small exhale", "return", "loop hold"]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frames": 8,
+      "purpose": "rightward locomotion loop",
+      "motion_beats": ["contact", "push", "passing", "lift", "contact", "push", "passing", "lift"]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frames": 8,
+      "purpose": "leftward locomotion loop",
+      "motion_beats": ["contact", "push", "passing", "lift", "contact", "push", "passing", "lift"],
+      "mirror_candidate_of": "running-right"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frames": 4,
+      "purpose": "greeting gesture",
+      "motion_beats": ["neutral", "arm raises", "wave peak", "return"]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frames": 5,
+      "purpose": "anticipation, lift, peak, descent, settle",
+      "motion_beats": ["anticipation crouch", "lift", "peak", "descent", "settle"]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frames": 8,
+      "purpose": "sad, failed, or deflated reaction",
+      "motion_beats": ["neutral", "realize", "deflate", "low hold", "lowest hold", "recovering", "almost neutral", "loop hold"]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frames": 6,
+      "purpose": "patient waiting loop",
+      "motion_beats": ["neutral", "look aside", "blink", "shift weight", "look back", "loop hold"]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frames": 6,
+      "purpose": "generic in-place running loop",
+      "motion_beats": ["contact", "push", "passing", "contact", "push", "passing"]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frames": 6,
+      "purpose": "focused inspecting or review loop",
+      "motion_beats": ["neutral focus", "lean in", "inspect", "blink", "lean back", "loop hold"]
+    }
+  ],
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [255, 0, 255],
+    "name": "magenta"
+  },
+  "safe_margins": {
+    "x": 18,
+    "y": 16
+  },
+  "subject_notes": "{{subject_notes}}",
+  "style_contract": "{{style_contract}}",
+  "negative_style_constraints": [
+    "polished illustration",
+    "painterly rendering",
+    "anime key art",
+    "3D render",
+    "vector app-icon polish",
+    "glossy lighting",
+    "soft gradients",
+    "realistic fur or material texture",
+    "anti-aliased high-detail edges",
+    "complex tiny accessories",
+    "text or labels",
+    "loose effects",
+    "scenery",
+    "shadows or glows",
+    "magenta or near-magenta inside the subject"
+  ],
+  "primary_generation_skill": "$imagegen",
+  "canonical_identity_reference": {
+    "path": "references/canonical-base.png",
+    "source_job": "base"
+  }
+}
