@@ -43,7 +43,7 @@ The field loop includes:
 - Tile exits between maps.
 - Encounters when stepping onto encounter tiles.
 - Dungeon traps and dungeon-region visibility.
-- Camera zoom between 0.75x and 2x with the mouse wheel; new games default to the 0.75x zoomed-out view.
+- Camera zoom between 0.65x and 2x with the mouse wheel; new games default to the 0.65x zoomed-out view.
 
 ## Current Story And Content
 

@@ -1,7 +1,7 @@
 import { createAmbienceState, hydrateAmbienceState, serializeAmbienceState } from "./ambience.js";
 
 const SAVE_KEY = "eve-rpg-save-v1";
-export const CAMERA_ZOOM_MIN = 0.75;
+export const CAMERA_ZOOM_MIN = 0.65;
 export const CAMERA_ZOOM_MAX = 2;
 export const CAMERA_ZOOM_DEFAULT = CAMERA_ZOOM_MIN;
 

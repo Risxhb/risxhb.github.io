@@ -223,7 +223,7 @@ function createTutorialFloor() {
     openThreshold("threshold_fork_to_broken_camp", 31, 7, "ns", "corridor_fork_to_broken_camp", { length: 2 }),
     openThreshold("threshold_broken_camp_to_shrine", 22, 5, "ew", "corridor_broken_camp_to_shrine", { length: 3 }),
     openThreshold("threshold_base_to_quartermaster", 30, 35, "ew", "corridor_base_to_quartermaster", { length: 2 }),
-    openThreshold("threshold_quartermaster_to_infirmary", 37, 30, "ns", "corridor_quartermaster_to_infirmary"),
+    openThreshold("threshold_quartermaster_to_infirmary", 37, 30, "ns", "corridor_quartermaster_to_infirmary", { walls: false }),
     openThreshold("threshold_base_to_kitchen", 11, 29, "ns", "corridor_base_to_kitchen")
   ];
 
@@ -686,10 +686,11 @@ function cellsRect(x, y, w, h, tile, region) {
 }
 
 function openThreshold(id, x, y, orientation, region, extra = {}) {
-  return { id, x, y, orientation, region, length: extra.length ?? 1 };
+  return { id, x, y, orientation, region, length: extra.length ?? 1, walls: extra.walls ?? true };
 }
 
 function thresholdWallCells(threshold) {
+  if (threshold.walls === false) return [];
   const cells = [];
   const length = threshold.length ?? 1;
   for (let offset = 0; offset < length; offset++) {
