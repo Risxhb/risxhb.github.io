@@ -1,88 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="The homepage for Eve: Moonroot Hollow, a browser RPG prototype with dungeon floors, party followers, quests, and NPC dialogue."
-    />
-    <title>Eve: Moonroot Hollow</title>
-    <link rel="icon" href="data:," />
-    <link rel="canonical" href="https://risxhb.github.io/" />
-    <link rel="stylesheet" href="./landing.css" />
-  </head>
-  <body>
-    <header class="site-header" aria-label="Site navigation">
-      <a class="brand" href="https://risxhb.github.io/">Eve</a>
-      <nav class="site-nav">
-        <a href="#game">Game</a>
-        <a href="#updates">Updates</a>
-        <a href="https://risxhb.github.io/eve/">Play</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Play Codex City, a browser-playable isometric city builder with drag zoning, traffic, services, disasters, saves, and generated cell sprites.">
+  <title>Codex City - Build. Grow. Endure.</title>
+  <link rel="canonical" href="https://risxhb.github.io/">
+  <link rel="stylesheet" href="./landing.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Risxhb games home"><span class="brand-mark">CC</span> Codex City</a>
+    <nav aria-label="Games and page sections">
+      <a href="#highlights">Highlights</a>
+      <a href="./codex-city/">Codex City</a>
+      <a href="./eve/">Dungeon crawler</a>
+    </nav>
+  </header>
 
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Browser RPG prototype</p>
-          <h1 id="page-title">Eve: Moonroot Hollow</h1>
-          <p class="hero-copy">
-            A canvas-native fantasy slice with a living party, handmade-feeling
-            scenes, and a dungeon threshold waiting below the surface.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="https://risxhb.github.io/eve/">Play Eve</a>
-            <a class="button secondary" href="#updates">Updates</a>
-          </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Browser-playable isometric city builder</p>
+        <h1 id="hero-title">Build a city.<br><span>Keep it alive.</span></h1>
+        <p class="lede">Drag neighborhoods into place, lay roads, manage services, watch traffic move, and hold the line when fire, flood, tornadoes, and earthquakes arrive.</p>
+        <div class="actions">
+          <a class="button primary" href="./codex-city/">Play Codex City <span aria-hidden="true">-></span></a>
+          <a class="button ghost" href="./eve/">Play the dungeon crawler</a>
         </div>
-      </section>
+        <ul class="proof" aria-label="Project facts">
+          <li><strong>187</strong><span>world sprites</span></li>
+          <li><strong>12</strong><span>imagegen residences</span></li>
+          <li><strong>16</strong><span>road masks</span></li>
+        </ul>
+      </div>
+      <figure class="hero-art">
+        <picture>
+          <source srcset="./assets/media/codex-city-gameplay.gif" type="image/gif">
+          <img src="./assets/media/codex-city-showcase.png" alt="A bright, dense isometric Codex City beside a river, with homes, businesses, roads, civic services, and traffic." width="1776" height="888">
+        </picture>
+        <figcaption><span class="live-dot" aria-hidden="true"></span> Playable on GitHub Pages</figcaption>
+      </figure>
+    </section>
 
-      <section class="info-band" id="game" aria-labelledby="game-title">
-        <div class="content-grid">
+    <section class="ticker" aria-label="Game systems">
+      <span>Residential</span><span>Commercial</span><span>Industrial</span><span>Traffic</span><span>Crime</span><span>Fire</span><span>Utilities</span><span>Disasters</span>
+    </section>
+
+    <section class="highlights" id="highlights" aria-labelledby="highlights-title">
+      <div class="section-heading">
+        <p class="eyebrow">Mayor, the map is yours</p>
+        <h2 id="highlights-title">Every block is a decision.</h2>
+        <p>Codex City turns a blank region into a living system. Growth is earned through access, power, water, jobs, safety, and sane finances.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature feature-wide">
+          <span class="feature-number">01</span>
           <div>
-            <p class="eyebrow">Current build</p>
-            <h2 id="game-title">Moonroot Hollow is open from the Eve project build.</h2>
+            <h3>Paint the shape you mean</h3>
+            <p>Click and drag roads in clean lines. Drag residential, commercial, and industrial zones from corner to corner and preview the whole rectangle.</p>
           </div>
-          <p>
-            Eve is a canvas-native fantasy RPG slice about a party leaving
-            Brindlemarket and descending into Moonroot Hollow. The public
-            homepage can live at the root of GitHub Pages while every play link
-            sends visitors into the game hosted under the Eve project path.
-          </p>
-        </div>
-      </section>
-
-      <section class="updates-band" id="updates" aria-labelledby="updates-title">
-        <article class="update-post">
-          <p class="eyebrow">Development update</p>
-          <h2 id="updates-title">Dungeon Journal, Party Follow, And Floor One Field Lessons</h2>
-          <p class="post-meta">Latest homepage notes for the Eve playable build.</p>
-          <p>
-            Dungeon journal work now gives the build a proper in-game reference
-            for Moonroot Hollow, including floor entries, traps, monsters, NPCs,
-            and the guild forward base on floor one. The party solo-to-follow
-            movement pass is also in, so the lead character can travel while the
-            rest of the group follows in formation.
-          </p>
-          <p>
-            The playable dungeon path now has two working authored levels:
-            floor one as a guild training base and floor two as the first live
-            dungeon descent. NPC quest hooks and dialogue menus have been wired
-            through the village, tutorial, shops, floor-one guild characters,
-            and the descent guard so the current build feels more like a real
-            RPG loop instead of a static map tour.
-          </p>
-          <ul class="update-list">
-            <li>Dungeon journal entries for floors, traps, monsters, and floor-one NPCs.</li>
-            <li>Visible party leader and follower movement for the field party.</li>
-            <li>Two authored Moonroot levels with traps, loot, encounters, and descent flow.</li>
-            <li>NPC quest starts, shop options, dialogue menus, and objective progression.</li>
-          </ul>
-          <a class="text-link" href="https://risxhb.github.io/eve/">Play the current Eve build</a>
+          <div class="zone-demo" aria-hidden="true">
+            <i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i>
+            <i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i>
+          </div>
         </article>
-      </section>
-    </main>
-  </body>
+        <article class="feature">
+          <span class="feature-number">02</span>
+          <h3>Actual cell sprites</h3>
+            <p>Residential buildings and road masks are imagegen-created isometric cell sprites with pads, sidewalks, trees, cars, rooftop details, curbs, crosswalks, and density tiers.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">03</span>
+          <h3>Services with consequences</h3>
+          <p>Police, fire, hospitals, schools, transit, parks, power, water, and landfills all cost money and work only when the city can reach them.</p>
+        </article>
+        <article class="feature feature-alert">
+          <span class="feature-number">04</span>
+          <h3>Plan for the bad day</h3>
+          <p>Structure fires, floods, tornadoes, and earthquakes damage real districts. Emergency coverage and road access matter when the budget keeps ticking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="world" aria-labelledby="world-title">
+      <div class="world-art">
+        <img src="./assets/media/codex-city-concept-board.png" alt="Codex City isometric art sheet showing terrain, roads, buildings, services, vehicles, and effects." loading="lazy">
+      </div>
+      <div class="world-copy">
+        <p class="eyebrow">A coherent pixel world</p>
+        <h2 id="world-title">Built from the ground diamond up.</h2>
+        <p>The browser version loads the same manifest-backed world pack: imagegen residential cell sprites, imagegen road masks, all bridge connections, animated water, emergency vehicles, and disaster effects.</p>
+        <a class="text-link" href="./codex-city/">Play Codex City in your browser <span aria-hidden="true">-></span></a>
+      </div>
+    </section>
+
+    <section class="games" aria-labelledby="games-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Two worlds, one doorstep</p>
+        <h2 id="games-title">Choose your next problem.</h2>
+      </div>
+      <div class="game-grid">
+        <a class="game-card city-card" href="./codex-city/">
+          <span class="tag">Play in browser</span>
+          <h3>Codex City</h3>
+          <p>Build, budget, route, rescue.</p>
+          <span class="card-link">Play Codex City -></span>
+        </a>
+        <a class="game-card eve-card" href="./eve/">
+          <span class="tag">Play in browser</span>
+          <h3>Eve: Moonroot Hollow</h3>
+          <p>Gather your party and descend.</p>
+          <span class="card-link">Enter the dungeon -></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a href="./">Risxhb Games</a><span>Two handmade worlds, still growing.</span></footer>
+</body>
 </html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Play Codex City in your browser: an isometric city builder with drag zoning, roads, services, traffic, crime, disasters, and saves.">
+  <title>Codex City - Play in Browser</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <canvas id="game" aria-label="Codex City playable isometric canvas"></canvas>
+
+  <header class="topbar" aria-label="City dashboard">
+    <a class="brand" href="../" aria-label="Back to Risxhb Games"><span>CC</span> Codex City</a>
+    <div class="stats" id="stats">Loading city...</div>
+    <div class="top-actions">
+      <button id="pauseBtn" type="button">Pause</button>
+      <button id="saveBtn" type="button">Save</button>
+      <button id="menuBtn" type="button">Menu</button>
+    </div>
+  </header>
+
+  <aside class="panel inspector" aria-label="City report">
+    <h2>City report</h2>
+    <div id="report" class="report-grid"></div>
+    <label class="slider">Tax <input id="taxSlider" type="range" min="1" max="18" value="9"><span id="taxLabel">9%</span></label>
+    <div class="speed-row" role="group" aria-label="Simulation speed">
+      <button data-speed="1" type="button">1x</button>
+      <button data-speed="2" type="button">2x</button>
+      <button data-speed="4" type="button">4x</button>
+    </div>
+    <p id="status" class="status" aria-live="polite">Welcome, Mayor.</p>
+  </aside>
+
+  <nav class="toolbar" aria-label="Build tools">
+    <button data-tool="road" class="active" type="button">Road</button>
+    <button data-tool="residential" type="button">Residential</button>
+    <button data-tool="commercial" type="button">Commercial</button>
+    <button data-tool="industrial" type="button">Industrial</button>
+    <button data-tool="police" type="button">Police</button>
+    <button data-tool="fire" type="button">Fire</button>
+    <button data-tool="hospital" type="button">Hospital</button>
+    <button data-tool="school" type="button">School</button>
+    <button data-tool="park" type="button">Park</button>
+    <button data-tool="power" type="button">Power</button>
+    <button data-tool="water_tower" type="button">Water</button>
+    <button data-tool="transit" type="button">Transit</button>
+    <button data-tool="landfill" type="button">Landfill</button>
+    <button data-tool="bulldoze" type="button">Bulldoze</button>
+  </nav>
+
+  <div class="emergencies" role="group" aria-label="Trigger disaster test events">
+    <button data-disaster="fire" type="button">Fire</button>
+    <button data-disaster="flood" type="button">Flood</button>
+    <button data-disaster="quake" type="button">Quake</button>
+    <button data-disaster="tornado" type="button">Tornado</button>
+  </div>
+
+  <section id="menu" class="menu open" aria-label="Main menu">
+    <div class="menu-card">
+      <p class="eyebrow">Browser-playable city builder</p>
+      <h1>Codex City</h1>
+      <p>Drag roads and zones, grow neighborhoods, fund services, route traffic, and survive city-scale disasters.</p>
+      <div class="menu-actions">
+        <button id="newBtn" type="button">Start New Game</button>
+        <button id="loadBtn" type="button">Load Save</button>
+        <button id="editorBtn" type="button">Map Editor</button>
+        <button id="settingsBtn" type="button">Settings</button>
+        <a href="../">Exit to main page</a>
+      </div>
+      <p class="hint">Tip: R/C/I zones fill rectangles when dragged. Roads and bulldoze use the exact dragged path. Right-drag pans; mouse wheel zooms.</p>
+    </div>
+  </section>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

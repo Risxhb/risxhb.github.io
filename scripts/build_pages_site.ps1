@@ -76,6 +76,17 @@ $landingCss = $landingCss -replace "\./eve/", "./$GameFolderName/"
 [System.IO.File]::WriteAllText((Join-Path $outputPath "landing.css"), $landingCss, [System.Text.UTF8Encoding]::new($false))
 Copy-Item -LiteralPath (Join-Path $root ".nojekyll") -Destination (Join-Path $outputPath ".nojekyll")
 
+$mediaSource = Join-Path $root "assets\media"
+if (Test-Path -LiteralPath $mediaSource) {
+  New-Item -ItemType Directory -Path (Join-Path $outputPath "assets") -Force | Out-Null
+  Copy-Item -LiteralPath $mediaSource -Destination (Join-Path $outputPath "assets\media") -Recurse -Force
+}
+
+$codexSource = Join-Path $root "codex-city"
+if (Test-Path -LiteralPath $codexSource) {
+  Copy-Item -LiteralPath $codexSource -Destination (Join-Path $outputPath "codex-city") -Recurse -Force
+}
+
 $gameSource = Join-Path $root "eve"
 $gameDestination = Join-Path $outputPath $GameFolderName
 New-Item -ItemType Directory -Path $gameDestination | Out-Null
