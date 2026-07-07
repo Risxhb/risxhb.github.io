@@ -114,15 +114,9 @@ function newCity(editor = false) {
 }
 
 function seedStarterTown(city) {
-  for (let x = 8; x <= 22; x++) buildRoad(city, x, 16, true);
-  for (let y = 10; y <= 23; y++) buildRoad(city, 15, y, true);
-  for (let x = 9; x <= 13; x++) for (let y = 11; y <= 14; y++) setZone(city, x, y, "residential", true);
-  for (let x = 17; x <= 20; x++) for (let y = 11; y <= 13; y++) setZone(city, x, y, "commercial", true);
-  for (let x = 18; x <= 22; x++) for (let y = 18; y <= 21; y++) setZone(city, x, y, "industrial", true);
-  placeCivic(city, 12, 18, "park", true);
-  placeCivic(city, 10, 20, "power", true);
-  placeCivic(city, 13, 20, "water_tower", true);
-  placeCivic(city, 17, 15, "fire", true);
+  // New games should feel like a true founding moment: one outside road
+  // connection, then the player builds every zone, service, and utility.
+  for (let x = 0; x <= 8; x++) buildRoad(city, x, 16, true);
   city.money = mapEditor ? 500000 : 15000;
 }
 

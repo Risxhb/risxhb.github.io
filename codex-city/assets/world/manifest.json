@@ -899,7 +899,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "98053761100E52C5B38C3609CCA936AFCA9726602C3CD307CD35B59436D3E7A0"
+      "sha256": "41A62CDFCCFC8D4EA89957637AB7CA74CC0DF8B7A1200B865F6320FB88184B17"
     },
     "effect.fire.1": {
       "path": "effect/fire/1.png",
@@ -912,7 +912,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "FE8E33B7B6B498F33914F067D5ED980463EA8296619C8263C96A9263FD9504D5"
+      "sha256": "9319FF82D119BBBF09152C5571765A9DB36B90810E0738E3AE13A49ED35DA17F"
     },
     "effect.fire.2": {
       "path": "effect/fire/2.png",
@@ -925,7 +925,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "0BA05F444018B6C32900DF0CF989195E260CBC7A80887933281858C0B23E6560"
+      "sha256": "CA324C7D99831D51710E4238C95B80E109A25A8CE21F9FF5BB9884FA4B1584EA"
     },
     "effect.fire.3": {
       "path": "effect/fire/3.png",
@@ -938,7 +938,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "9728D9D4304C6AFC8EBE699F872E5B80F12BDE1AAEBFAC432BC161150E767C33"
+      "sha256": "8EAF62BD643C7B11417E2B9A24FBA04C05D8FFC44447208B150FE1EC9F0F11BE"
     },
     "effect.fire.4": {
       "path": "effect/fire/4.png",
@@ -951,7 +951,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "F99AF75841AAA9C8361E86E890E39826FEC1DADA585D1DF753B685618AB7263D"
+      "sha256": "F893F16B6D5A34082C58D7143BB2C9F92C0FAC06918B9D763037FEE765F0B1DE"
     },
     "effect.fire.5": {
       "path": "effect/fire/5.png",
@@ -964,7 +964,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "78DD281B7007D2BE03FA9CF8512B52BF50EB1D7091B0BCA8E6934B381A4FE51D"
+      "sha256": "6CF0F1BEA0DC6525F9DDDD85D0D9D2C7529C509A5A6BCBBDCE9201371FDB944E"
     },
     "effect.flood.0": {
       "path": "effect/flood/0.png",
@@ -977,7 +977,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "A9E52E3A5E7ACB89C700E9CCD4A6F060105596DB32E200F0A9B1B7DE470D604A"
+      "sha256": "6367666C404A2AD6BA68942D9278C12E04E2C14665954DE129FF3C90C2336359"
     },
     "effect.flood.1": {
       "path": "effect/flood/1.png",
@@ -990,7 +990,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "F1625A944F830F688FAAE4207505BF74D4396A6E86B0748D054357E11F26ECC5"
+      "sha256": "5C6E179C2F1FBDA89ECBE83F6635F740F22B14FA849D258C860A35A14EC78B88"
     },
     "effect.flood.2": {
       "path": "effect/flood/2.png",
@@ -1003,7 +1003,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "A9E52E3A5E7ACB89C700E9CCD4A6F060105596DB32E200F0A9B1B7DE470D604A"
+      "sha256": "26A843FA40E2C2B9E08A119C86F5CB56B2BD00DE8C9290DE3EC5B7FABFC219D0"
     },
     "effect.flood.3": {
       "path": "effect/flood/3.png",
@@ -1016,7 +1016,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "F1625A944F830F688FAAE4207505BF74D4396A6E86B0748D054357E11F26ECC5"
+      "sha256": "AC203E653729A47B1215EFF88D4AB52AF7D77D2FD4F7CB4387E7BA6B18377C13"
     },
     "effect.quake.0": {
       "path": "effect/quake/0.png",
@@ -1029,7 +1029,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "9887C2A6DE10E5405F7785B7439390C3E1B3F809545CBEBD57F4D79546600C94"
+      "sha256": "4E3177C2CE2A5AB396451BBCBE34F7752FE9D606638D7D58182D4DA069B946A9"
     },
     "effect.quake.1": {
       "path": "effect/quake/1.png",
@@ -1042,7 +1042,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "540F601625E0F86A41FDD9AD0781D81A5BEE6CE623F5E8E2E507E58F2718A4BB"
+      "sha256": "0C6491E188AA73114CE300E51DA1303481FF59A0E99A5E396C53FB5F00EA5D13"
     },
     "effect.quake.2": {
       "path": "effect/quake/2.png",
@@ -1055,7 +1055,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "71F8E130F5EA9CB7321259E60311A93EB2F690B969675E4C8C5919776AB70E36"
+      "sha256": "A57B6A1B20B39C4B95B333BEADB70B0915AC10928B174A5960475929C78DEE86"
     },
     "effect.quake.3": {
       "path": "effect/quake/3.png",
@@ -1068,7 +1068,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "DCF980E925FC64749B3E19A15C89A5AE33A667462FF6FAACFF04F58074995FFF"
+      "sha256": "4AA1091149126FC401071848DEDB26596B74E3C79CAEE17BEE9228D85642A24A"
     },
     "effect.quake.4": {
       "path": "effect/quake/4.png",
@@ -1081,7 +1081,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "03B8677D04682F094983EFAC581EC20EBFB5D7CC0826C7FD76CCC2431982AF51"
+      "sha256": "FB0BD5ECB327CAC720DE6E32B614AA0FA14551DA0CDBA56CC6CDB92F9C470A4F"
     },
     "effect.quake.5": {
       "path": "effect/quake/5.png",
@@ -1094,7 +1094,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "97AC8E8172ADFB08897F2EC11022B8D7F1D8A626F8FBCE76818A6F2FDE2F35D3"
+      "sha256": "0F35F26E4CDE20C7A2C840ED3CE4A0F1D0BB3DEC3522EE5275862955C95658C0"
     },
     "effect.smoke.0": {
       "path": "effect/smoke/0.png",
@@ -1107,7 +1107,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "83774B239BEBBB2C62F69F33C555D847049C51E5A55C48B9C2DEEF8A11F15315"
+      "sha256": "50D4EAEA5E347C62C17F3ED8D6F13F0D89F01E0F65DFC7E5622AEFD3C184A612"
     },
     "effect.smoke.1": {
       "path": "effect/smoke/1.png",
@@ -1120,7 +1120,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "D33C58A68573E75F6D8F6B0BCD7DAEDF5B7FDA9DA77D624B441E0C25CCB1907A"
+      "sha256": "52DD8D72C6BAB1C7CD3F64FF21660536C0585ACB11F6235D3753E0A1B5D8507A"
     },
     "effect.smoke.2": {
       "path": "effect/smoke/2.png",
@@ -1133,7 +1133,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "FB75E05B07608590F59C0D7EC03B1B90624205E2933C0E5576DB1268A85199C7"
+      "sha256": "70437E76925F3D46993286A9153F1E0DFDF53CBC9B384FE44589E394F4CC5D20"
     },
     "effect.smoke.3": {
       "path": "effect/smoke/3.png",
@@ -1146,7 +1146,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "C75DBB22995286F6A4286C889A8736E452D817C841C10E8B0F9D7968A43AB174"
+      "sha256": "1940748E2340ADD9A2FC205800B7C2639CCA0C98E8E36DA8CBC42AE5531EE292"
     },
     "effect.smoke.4": {
       "path": "effect/smoke/4.png",
@@ -1159,7 +1159,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "FAA3A1BD4DD32834539CE4CC7FB09196D43D92CAD86E172DEF336889204E038C"
+      "sha256": "D2CB5416CF9FAC7E8C4065498DB7949E183B874DD4A3D6F1931233D214DC0429"
     },
     "effect.smoke.5": {
       "path": "effect/smoke/5.png",
@@ -1172,7 +1172,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "EC97366FFC590C18ECF311FE0C4DAE150987A38F63FF8AA73B392A5F47E83DB2"
+      "sha256": "CE9E77CAACE195994B43CEBB5FBA810DE67FA766DA85F172F5873DD46A991265"
     },
     "effect.tornado.0": {
       "path": "effect/tornado/0.png",
@@ -1185,7 +1185,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "CB7AABBA2087D11A9A241769BAEDA6FF3D978B58F0E80EE968C94DB961A728B7"
+      "sha256": "398930F9F73B3BF86346CAEB3F9B60F333E8D3891099CC9D5326C5978A0E1FF4"
     },
     "effect.tornado.1": {
       "path": "effect/tornado/1.png",
@@ -1198,7 +1198,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "9F4BE4AA8DF3ED1D52BF49646B37EB2C9D2B03DE0BD47171F0019EF00B6FDE7C"
+      "sha256": "0315F506747205DD1066C5A716A11A4ADCDEA3D6C939CEC7A648CB2328BEAE66"
     },
     "effect.tornado.2": {
       "path": "effect/tornado/2.png",
@@ -1211,7 +1211,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "C59F62039C0EE58A8F09292D767BEF3A9F93E7EE47CDEA187CCF9690DB7BF057"
+      "sha256": "F2FE5B8284393CD1DEB435F0749437FDC866D223B238B81D0BAC8533426A6C0D"
     },
     "effect.tornado.3": {
       "path": "effect/tornado/3.png",
@@ -1224,7 +1224,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "CB7AABBA2087D11A9A241769BAEDA6FF3D978B58F0E80EE968C94DB961A728B7"
+      "sha256": "7AE3C5EBA6DC1E8B9F4AF116E09EBD3F24E1C2DBEBF0C40C9D72D73AB397F8EC"
     },
     "effect.tornado.4": {
       "path": "effect/tornado/4.png",
@@ -1237,7 +1237,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "9F4BE4AA8DF3ED1D52BF49646B37EB2C9D2B03DE0BD47171F0019EF00B6FDE7C"
+      "sha256": "3D921CF2B980AEC6062536AAE8C27BFF9604D599356F490BBD6E91526A5472F2"
     },
     "effect.tornado.5": {
       "path": "effect/tornado/5.png",
@@ -1250,7 +1250,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "C59F62039C0EE58A8F09292D767BEF3A9F93E7EE47CDEA187CCF9690DB7BF057"
+      "sha256": "A6D086560983459F899EBFA3FDDA85CFD26DF9BA54D7EAF867795194000AF9BB"
     },
     "effect.tornado.6": {
       "path": "effect/tornado/6.png",
@@ -1263,7 +1263,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "CB7AABBA2087D11A9A241769BAEDA6FF3D978B58F0E80EE968C94DB961A728B7"
+      "sha256": "A9FCFD7D0F002200D3136EBEABEA3F902FA752EEAD4EB12880235F148F8F871D"
     },
     "effect.tornado.7": {
       "path": "effect/tornado/7.png",
@@ -1276,7 +1276,7 @@
         80
       ],
       "layer": "effect",
-      "sha256": "9F4BE4AA8DF3ED1D52BF49646B37EB2C9D2B03DE0BD47171F0019EF00B6FDE7C"
+      "sha256": "C40490CACB2D97D2286291653736C540F5A7D74C305CEAD2965FB28629548086"
     },
     "preview.commercial.invalid": {
       "path": "preview/commercial/invalid.png",
@@ -1289,7 +1289,7 @@
         16
       ],
       "layer": "overlay",
-      "sha256": "7BE3C499CF9EC14634FEFCA91755205AD475ACCD58C9DB7F0A780C3C2EBF334B"
+      "sha256": "8CC936C2165A361A1B7440EDB77F93FEA43A06945CD3DA0055C3647297BAA3CF"
     },
     "preview.commercial.valid": {
       "path": "preview/commercial/valid.png",
@@ -1302,7 +1302,7 @@
         16
       ],
       "layer": "overlay",
-      "sha256": "B0B5CE283720CD43B0D6941DE2D78BD394DA93D48173316B46763701176D8568"
+      "sha256": "1813320B6E17ABCDAFC0466397B879DFB08CC45DF14F8ECABEF22850237A6CA1"
     },
     "preview.industrial.invalid": {
       "path": "preview/industrial/invalid.png",
@@ -1315,7 +1315,7 @@
         16
       ],
       "layer": "overlay",
-      "sha256": "7BE3C499CF9EC14634FEFCA91755205AD475ACCD58C9DB7F0A780C3C2EBF334B"
+      "sha256": "A749F324D355560566FDF7B3ECDCA85D89486411D49C54880FE31FC75819B1B2"
     },
     "preview.industrial.valid": {
       "path": "preview/industrial/valid.png",
@@ -1328,7 +1328,7 @@
         16
       ],
       "layer": "overlay",
-      "sha256": "2C44B0DB1498FAF5D8FCB4847C39E7B5FD745DFDC62E8636B4183C0967C26A11"
+      "sha256": "4ED74F88E143D1FB6A24D7CA9E40FE33734CE106D87E2489D228E0C694138C6D"
     },
     "preview.residential.invalid": {
       "path": "preview/residential/invalid.png",
@@ -1341,7 +1341,7 @@
         16
       ],
       "layer": "overlay",
-      "sha256": "7BE3C499CF9EC14634FEFCA91755205AD475ACCD58C9DB7F0A780C3C2EBF334B"
+      "sha256": "5C95F3E8E373B5B0C9D85DA616EFE9AF69A43F66DC5130840823FDC81CCF8612"
     },
     "preview.residential.valid": {
       "path": "preview/residential/valid.png",
@@ -1354,7 +1354,7 @@
         16
       ],
       "layer": "overlay",
-      "sha256": "33572D7AE27198B159A13BD1F8E4F3FBDFA234E6120DD4A055B396EFD7D0F7EE"
+      "sha256": "5902E13765D5DED17BABE4DCD0AFB01F1F7384F6EC0695D8B9861A0FD0DA7D00"
     },
     "prop.flowerbed": {
       "path": "prop/flowerbed.png",
@@ -1367,7 +1367,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "BC658F1ACB17657961256C6F1871DF93E870A9B7E8B5309F85005A249D73A3FD"
+      "sha256": "E71DE6978C7E813EB04768A150003DD1E9FD05FDEF70A7031EF2F93F74542072"
     },
     "prop.streetlight": {
       "path": "prop/streetlight.png",
@@ -1380,7 +1380,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "96CA4F4EFEE0FDDBA1E0B281DAC4E31C61B20171E0CDAF797FE1A3010F535F5D"
+      "sha256": "289B8901ED2691629C1C15294C7CC09DF5D53733E9F6CBA101CB6618661C07E4"
     },
     "prop.tree_oak": {
       "path": "prop/tree_oak.png",
@@ -1393,7 +1393,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "0F3D395A4804D4F15BDDE8B063018374F99529FD4D197553DD05D3240BFB0D93"
+      "sha256": "166081B5B395E177B762CD5CCA4584AEACCE9B4E973D69619B3FB19CB1DE4F56"
     },
     "prop.tree_palm": {
       "path": "prop/tree_palm.png",
@@ -1406,7 +1406,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "9A6D4A264D023181847FC81C52A403721820C966B0BABA89E468BE5E0635E256"
+      "sha256": "74B55E70BF1484584839272F4BDB49AC2B61A65A885CAA39D75B3EA518E28760"
     },
     "prop.tree_pine": {
       "path": "prop/tree_pine.png",
@@ -1419,7 +1419,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "A0D181E1A65A8ABD732D2C16E438010BE3D59A63261248DD58A92997725A1D07"
+      "sha256": "02BAE7A6C7E41C423BD382CFC74C7483C53AD7597794CF40073ACD46EE92916B"
     },
     "road.00": {
       "path": "road/00.png",
@@ -1640,7 +1640,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "D553FEB4D027EB2FE2EE991C35223A41D3A87A87414DF50FE65F456B35393C09"
+      "sha256": "B506C40171AF94EBA23ABFBD120935C4D1973ED70B21AC321C0EF991B8723717"
     },
     "shore.01": {
       "path": "shore/01.png",
@@ -1653,7 +1653,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "E60EBB3CB62D213ECAEE49E8D774A1CCEC9DA8BCD9E7F9F2D6AA81100FEB7756"
+      "sha256": "9575A73217C44744374BFFB298039FA77B45118DB6313E351972219EF9DAE094"
     },
     "shore.02": {
       "path": "shore/02.png",
@@ -1666,7 +1666,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "6453554D9FE5C37F6A0B36BA30F74C90E6A8D039A52D8DB0CF3ED99DC50EC1B5"
+      "sha256": "C39E852EB7F113F7DF52DDFD930CAAE06E25B67999F6D34F061D17E6F8F788DB"
     },
     "shore.03": {
       "path": "shore/03.png",
@@ -1679,7 +1679,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "2C65E5A8E4157E90C4115F6D297836FF0D8831AA119AF54EFE6436C1DA1ED16C"
+      "sha256": "B9B61AD2FC96896F6EBD55CD08CF0BEB12D0A0FBFD2142417B493C346A6225FD"
     },
     "shore.04": {
       "path": "shore/04.png",
@@ -1692,7 +1692,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "F33F08438555DEB15EF98B774A15DC40E0C63C8D3070118AD2EE6F6E1103FBA1"
+      "sha256": "8D7C6D719DD868A0F088DD445FC4076B313A4B5170590CD2AA37B810E7DEF44D"
     },
     "shore.05": {
       "path": "shore/05.png",
@@ -1705,7 +1705,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "D4177F19EC506016D7EABD7321FAF94BF314855AA2931920A1FB97C3A4130AFD"
+      "sha256": "7F1356A01D0708A822E5BA716E4336DAE87A1C3B94BB87A7626D34BA296649D8"
     },
     "shore.06": {
       "path": "shore/06.png",
@@ -1718,7 +1718,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "815B2D7E664DF1245678AFD2D1DB416BAFE127782B98D8C8F90B00A31FE14E5A"
+      "sha256": "48C4B4D39C1C27655F7DC8654C73F1FC33996C955C8C19269AAAF6800325CC44"
     },
     "shore.07": {
       "path": "shore/07.png",
@@ -1731,7 +1731,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "BF9E0ECE047EC5A14F1A9842B67E69BAED24EA0F44336403784DAA817B31A62F"
+      "sha256": "C3FE7DA801D81456E56C9CBB1422B9AB1C4F846F759336021F0C1A3A95AA8E44"
     },
     "shore.08": {
       "path": "shore/08.png",
@@ -1744,7 +1744,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "AF4675B8D1F3EB8685C51F502EC9A69A93845319C8E1B5A8AD18183A007156CB"
+      "sha256": "EFB024FA11213CD5F792662A707AB3614A1AD0CED2B1FE0EC7F7DE4D976923BC"
     },
     "shore.09": {
       "path": "shore/09.png",
@@ -1757,7 +1757,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "1BC0805AD9C730FE3ED19D37AB65C1C1C56CF1BAEF910D6E74D3D80C9E0F008C"
+      "sha256": "C51B427243B359064490E00FC7DF2782582E56F7A1BA55AD72FC8F553AE519CC"
     },
     "shore.0a": {
       "path": "shore/0a.png",
@@ -1770,7 +1770,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "29D781B49CC311239060EBBA7DD8CB0687A4FA0720591F8A649BDB6CA7902A52"
+      "sha256": "7299041CEB8FF76F476DDD1EBD1051A731D8A8AAB39B0B925F75588BC919B53D"
     },
     "shore.0b": {
       "path": "shore/0b.png",
@@ -1783,7 +1783,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "3C439C492F3240D087A59259BA945CDD407F618BE8D9494295BC8F9ED6996A6E"
+      "sha256": "9F69AA8CF186CA0E4273B1B8964CC90351131107B5B9DE9BCE30FE1FEFA5DDAE"
     },
     "shore.0c": {
       "path": "shore/0c.png",
@@ -1796,7 +1796,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "83C700AC36861B2B43E2C731949EB0E8872FDC71FEB9DC6985F2C5A52690F776"
+      "sha256": "BDC748CBAD67BBE3178CC31098A27E10FDF5D52D3F13D584FDDA6617D8C8D9E7"
     },
     "shore.0d": {
       "path": "shore/0d.png",
@@ -1809,7 +1809,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "FB143FD468EF42580B5A2EA508F9C733CDF7F4073EFBC3DD1065B6E0696279EF"
+      "sha256": "89D60DF432CE51E3658E6B37D39145E1AE588FFABD7DD66999553C938073887C"
     },
     "shore.0e": {
       "path": "shore/0e.png",
@@ -1822,7 +1822,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "DC60425F12E681E0BDFEA2FFC1DF041FA48C3A156C82D62125CF47C7F1515C31"
+      "sha256": "65E1D2B457A30EB5E177EE56958635A3CC9371A204380E311986080214C747E8"
     },
     "shore.0f": {
       "path": "shore/0f.png",
@@ -1835,7 +1835,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "B35453D80F3203B144EE6AFABFFCB97E470677B1680E3EC4EC85082DE43D7656"
+      "sha256": "64F162BFE762B7FB6F01FB453501BB517437A3FF0CC5C1C841C4DFBA611D8CA9"
     },
     "terrain.forest.0": {
       "path": "terrain/forest/0.png",
@@ -1848,7 +1848,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "A5D517150F25FC2024405AF7FC47F1483E69790DBEE3BBF8D134983F364039A3"
+      "sha256": "D33DDAAEB39853386656C959946C78E3C29DA92004F87F262E39E8483A7DFA06"
     },
     "terrain.forest.1": {
       "path": "terrain/forest/1.png",
@@ -1861,7 +1861,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "94E8B6257BA3AB19786BB11926279C7AA0272AE42B0C0F50C51341D97CEF13BE"
+      "sha256": "B34C721CA9E4F3B73378EA8576448581100734A1D67C49A47AC9F5693E9CC55F"
     },
     "terrain.grass.0": {
       "path": "terrain/grass/0.png",
@@ -1874,7 +1874,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "4B1BCC751F3D5C2A78EB0F012D5B38E8FC3DB3AEC36878D469535875731BFFDE"
+      "sha256": "187305D444AC4961070462498DC81EC67608AA3AC8FEC6CD836F607FE104D26B"
     },
     "terrain.grass.1": {
       "path": "terrain/grass/1.png",
@@ -1887,7 +1887,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "9F39794862649E1070373B235EF9882FC7C4A1E69E31DE59D24FFDFC8BFD6B69"
+      "sha256": "1A42B5DE5671680B1A6DE349C19EBB5A5C7DD82EF61E824365EC1FB856BFA1E8"
     },
     "terrain.grass.2": {
       "path": "terrain/grass/2.png",
@@ -1900,7 +1900,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "BB3FAF1BCFCC7AC863C8DB8CA127A09566B6437A95E71444BFF11B9B589776A4"
+      "sha256": "AFEB924F0AFE145686E8D181E63B5CE08A958C6B5F791592787D1DF44CB6C6A3"
     },
     "terrain.grass.3": {
       "path": "terrain/grass/3.png",
@@ -1913,7 +1913,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "0AB0F868AE4D2B1DE6B9C8312735F481FD58D1A0085F2D1096FE5F5202BDCBB4"
+      "sha256": "D473AF1C4D35E7DDF91FD4A3F63EB345B122B197885B6742B0DC441BCFE5BDEA"
     },
     "terrain.hill.0": {
       "path": "terrain/hill/0.png",
@@ -1926,7 +1926,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "DEBF74F30AFA0B03B9AFB02154477952C64482F1F2C4015B86A14898E1A5FF60"
+      "sha256": "FDD6977040D312AE7DECE1AA8DDF305ACF6BAAE0C8A0A252A918D2AB49433995"
     },
     "terrain.hill.1": {
       "path": "terrain/hill/1.png",
@@ -1939,7 +1939,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "661BDFFCD5B3BD00A015492FF63E511E8C75592FEF59A3E74B32455A9CF63DE3"
+      "sha256": "12DF9B7F3B8B71400286DFD5947BA79CA366FBEA05EF6AC07C584B4624C349E1"
     },
     "terrain.hill.2": {
       "path": "terrain/hill/2.png",
@@ -1952,7 +1952,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "3BE873425722EC12E7B2D474E27808942EDCF1F0A14CA2299EA2C2B969E18A55"
+      "sha256": "838F59668C3BABDF3BD86276661B73599DC908FAC98267766E6CB75B2FE008C6"
     },
     "terrain.water.0": {
       "path": "terrain/water/0.png",
@@ -1965,7 +1965,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "498DEEB2E722FBAE2B4AD9923286B1358CDA425C85CF2CE1CD8F8EB0F2C4EF8E"
+      "sha256": "EA0104E7F49242469ED1CF8CD900D21AD456E9D8D9359CE7F4BA338861176456"
     },
     "terrain.water.1": {
       "path": "terrain/water/1.png",
@@ -1978,7 +1978,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "729ADA3CF785A2238BC6446DC202837E1A987F0CDBCA2C63A5ECB100D91B861F"
+      "sha256": "B034F2309ECFD2003CCB53682B9E258E976BED4FF6A8EF5673A4BBAC1F316DE0"
     },
     "terrain.water.2": {
       "path": "terrain/water/2.png",
@@ -1991,7 +1991,7 @@
         16
       ],
       "layer": "ground",
-      "sha256": "538007B472C66BFAD9CA59B8E50D8ECA38A0899D8743C820FB8822599A397614"
+      "sha256": "79D79E68DAA57398BA89FDFC5475A97F615AE097198F12D1BEEEC604F307C8F5"
     },
     "terrain.water.3": {
       "path": "terrain/water/3.png",
@@ -2004,423 +2004,423 @@
         16
       ],
       "layer": "ground",
-      "sha256": "7DD9A13D9383F7C8245D34E6AD482CB54CC92592A5CC6AD8513F45841C6596F2"
+      "sha256": "74608D09B2ACE1D7919BB86077B057764575B066AC191262DA032F2280C7DE20"
     },
     "vehicle.car.ne.0": {
       "path": "vehicle/car/ne/0.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "2145E948535FC48AA3AF79C662945C8B2BE1BE20E351DD7000AD9BE791DFD4CD"
+      "sha256": "8BA8462D530D55FAD52C7B274AB31B13FB5A0AA16DC243E8755FF4DBC63ED8A2"
     },
     "vehicle.car.ne.1": {
       "path": "vehicle/car/ne/1.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "CC21CCD1F1399C4ABD3F7077BDBCA623010FF990AB77FA26198BFC76420B240F"
+      "sha256": "53475A4B9FEBFE3E5BEE5A0F2D098C4D0453710DBB6132CCF98F4C6F22D757F1"
     },
     "vehicle.car.ne.2": {
       "path": "vehicle/car/ne/2.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "14FF98D48D2790351C3C3AB7F02D59CD4D5943F2C8E202DAD1CBA7B3B927AE55"
+      "sha256": "E4CAD0BCA8213C8B85A357BC7439C648390CA6F68A63BA209D7F58D3FDCF5A02"
     },
     "vehicle.car.ne.3": {
       "path": "vehicle/car/ne/3.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "C9C152CDEE2CFC92DC72B437332C664F5F91D1BC6B9E4611D4EF43097C5EAD9D"
+      "sha256": "B624BD8722B2A276CD082F53D6728C460C7C61EA7824396B3DD1EB5E8657321D"
     },
     "vehicle.car.nw.0": {
       "path": "vehicle/car/nw/0.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "A7F36828F53B838245B9CC446B905FF0493EA85C13B81DE53FA7A9F0A866DBAA"
+      "sha256": "44798BC598EF578120D91C1240C86CC5883BC10C4E625B45DDF2AAD8F72710CD"
     },
     "vehicle.car.nw.1": {
       "path": "vehicle/car/nw/1.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "8E8160E3EDCAB04DE60D0C5442941F81ADDFC70712A3E21AC4B739E4DC7FB5EA"
+      "sha256": "1F380B386623C0612860EC0585B4CC3228A41D7375B363B6E77758C86B55AB91"
     },
     "vehicle.car.nw.2": {
       "path": "vehicle/car/nw/2.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "710007CAE3CD4D212DDD977229F6DC41C2F403AA53CB61F02DC74858ACBF7FE4"
+      "sha256": "68861BAE00005D54B8C120C7668FD88A618407BC17FA7859514A25EE3AB561E6"
     },
     "vehicle.car.nw.3": {
       "path": "vehicle/car/nw/3.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "A50A0A1476D0E7AECEBB04F4F5B5657B62BCC45EC0BDCE7C2DCF260A436A30C5"
+      "sha256": "208D6022E3B7F6D0E25CC8C746ED232CDECBE8A78DA3F661ACAD447095E2D1DE"
     },
     "vehicle.car.se.0": {
       "path": "vehicle/car/se/0.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "8E464311D8EFF5599171E1261F03A7FEBE9CB48E6CEC9C0E9EE3DE485C84140B"
+      "sha256": "46EB006A5AC6F487F9423F5224FA980748D5DD421804629D50E2D7038AB48A32"
     },
     "vehicle.car.se.1": {
       "path": "vehicle/car/se/1.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "D4D045E29F4F086082E682411AF93488172CF262B18352B19B1E79C965FB2E95"
+      "sha256": "C8A6E98CA5DD5B602A5B3FA90558429FF1160AD88B4E56FBFD02E371D79F2622"
     },
     "vehicle.car.se.2": {
       "path": "vehicle/car/se/2.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "2688EA2B451EE8F622C8E054301B77003464C3409A949EEC8818FACF883B9DEE"
+      "sha256": "89CBEEC2878C5FF0859A9C6C13BEAEB7F266B8139F91BEF8A929E0DCCC2EB912"
     },
     "vehicle.car.se.3": {
       "path": "vehicle/car/se/3.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "9647319D5490252E8FF3B555F18AA555001354302190BCE3DA1AFBF102C8DAB2"
+      "sha256": "661877CD0528AC75BEA52E3BEE7B3301E70D0DA449285C43BBCB6BE5EF3D04AD"
     },
     "vehicle.car.sw.0": {
       "path": "vehicle/car/sw/0.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "BADFB19C57D73C5E6E6EB8380955F7D606EE6BE2B6CAA19D8F69BD00BC07D6A1"
+      "sha256": "7142A234FC37B5B6BB908E8D6F953BF10C27C99B1B45D1F07C63799E7DA5B9C7"
     },
     "vehicle.car.sw.1": {
       "path": "vehicle/car/sw/1.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "353A54B82FD9F62705DDD082665C3FFEADFBDC08F166577C99C63CE0753B1F67"
+      "sha256": "E1C39ED8C81AB936B1A0774383C979A8F1BD3316F63E76A691A54C8645FBC5F6"
     },
     "vehicle.car.sw.2": {
       "path": "vehicle/car/sw/2.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "3F38261A626273776D9561DE25B0580ED714B437CF7B72D14EECE0494FE91054"
+      "sha256": "93EE758F60158EA74095844984182A89BFF8F0FB7AB451F399593D5262B30752"
     },
     "vehicle.car.sw.3": {
       "path": "vehicle/car/sw/3.png",
       "size": [
-        32,
-        24
+        40,
+        28
       ],
       "anchor": [
-        16,
-        16
+        20,
+        20
       ],
       "layer": "actor",
-      "sha256": "8CE989844B05FF3D547FFB65BC291FCDCA35C092F79486C5D5AE841419495390"
+      "sha256": "4754EB20173E02EE7F4A058C4DBD9737B2F7BEAEF7D1F47C8CBF8349835F21DB"
     },
     "vehicle.fire.ne.0": {
       "path": "vehicle/fire/ne/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "409828C066FC948B58E17A8858CB459F17E932D052C37F632E7D8C079EA9C726"
+      "sha256": "F85559160867F669BA7209C72DC36F4368B04D540FB54B69238D1E8EB4D183F0"
     },
     "vehicle.fire.ne.1": {
       "path": "vehicle/fire/ne/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "5D634406EF738A1FD0E404E1E7B73736B068BB5BCA973E0B08C5CF6554B1D0EC"
+      "sha256": "D6FDDD85DCFB16CCAAD9FD7202150F9499549C4914599C810D1A201846B8432C"
     },
     "vehicle.fire.nw.0": {
       "path": "vehicle/fire/nw/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "2FDA9F8BE82ABA7F5F8D28C3FEF32B973907EAA895BC77A28058581A0F9D0F9B"
+      "sha256": "312FCB02F2CE6A54C76F19316D343C8F38DCDB3D256D1380861175433674F50A"
     },
     "vehicle.fire.nw.1": {
       "path": "vehicle/fire/nw/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "7D11BFCE84C3691272751A9E1773A586CA6A62F9E0D59C7F069C15F2E02E2651"
+      "sha256": "55607D389725584A9C07936E70ABBAF6044BBCBA67FF108BB6F2FB8B6FF091DD"
     },
     "vehicle.fire.se.0": {
       "path": "vehicle/fire/se/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "897ADA9D653C0F6FB8805E12704796FB181F3108C4ABFF3DC2E2084D3433C5D1"
+      "sha256": "A00782085C7F881DB8DF960432DDA039E4F558ADD0EC79B18AD49545F10E0A19"
     },
     "vehicle.fire.se.1": {
       "path": "vehicle/fire/se/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "CB5BBCCF555A61F6FFA629EFEDF58DD95AA48633E007BFF241F5BE7CF3EA9CA4"
+      "sha256": "AFDD83EEE25531F7A19EAE38A45EDD4715A364CC4201D71C0627DAB4E84109B1"
     },
     "vehicle.fire.sw.0": {
       "path": "vehicle/fire/sw/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "C2D0E63353A378CD2C14DD264FDCD941DA4DF97E65E5B141561A17FC67F5F584"
+      "sha256": "7F2010A3D37E77DA06E722455FB4858F2E12B91875C493310EBD742BC28C7344"
     },
     "vehicle.fire.sw.1": {
       "path": "vehicle/fire/sw/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "98BEF065BF30E873D35997675376CBA179E46F54528D4BB21B5C5E35B21A881B"
+      "sha256": "23CCBA445525F0D392476ED2DD477016BCEA25290D76D1A2913543755AC2994E"
     },
     "vehicle.police.ne.0": {
       "path": "vehicle/police/ne/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "6310DCE75BF36582DFEF3451B6EFC5DC303AE1550E3393D708387017DE29A565"
+      "sha256": "72B9A17872DA23F1DA30A8CAE069122796171635A0716E066DA79E4EA7D8FF21"
     },
     "vehicle.police.ne.1": {
       "path": "vehicle/police/ne/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "4D905FA3235E57613CFA92987DEB991C059052FE4154D3D6BF5CB5690C94608C"
+      "sha256": "45BA98E9A091442F0AC16CEF9165EB8FFCA0B231B6449964708DBBFE5FC0FFB6"
     },
     "vehicle.police.nw.0": {
       "path": "vehicle/police/nw/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "489CDF7493BA03CBA42369A061529080583E7B7F6C061228DDFE1576E63A3DF7"
+      "sha256": "1D09B8840A4DE1477B58778A4812DAA0776179773C392AE9E5A6750127AC4FA0"
     },
     "vehicle.police.nw.1": {
       "path": "vehicle/police/nw/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "1ECF2DE98F5DD7FF54B6A41605A849B09BF4D99156C3C907A40064D4F7119C3C"
+      "sha256": "AB3136E65CCCE06BA3E296BF49AED95213B06C1D17832912EC68E7A64040B743"
     },
     "vehicle.police.se.0": {
       "path": "vehicle/police/se/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "2CD918C4576AD5D616DC89F5330A19F9EC6BA0F2108DAE602D862E31AA9CE182"
+      "sha256": "55F4B13A362A66E682522A1C6428CC58DD78121EC45933CDA78A9BA8FB4E42F8"
     },
     "vehicle.police.se.1": {
       "path": "vehicle/police/se/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "C9A7155E18EFFC66644F0388DD7C67F3D3D74E811011C3D01EF9C712DDC2F5EF"
+      "sha256": "7142BD1AB1A17FA9E1445AABA845A402557B84E550AED9EDC07CE9C6A354AD1C"
     },
     "vehicle.police.sw.0": {
       "path": "vehicle/police/sw/0.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "87520D8018E8BACD171ACBBAEBCED01C7F8AE1FBD5E737F2456DE9FEC356C0F9"
+      "sha256": "0C4E92702F63863C694DCB53F1C39CCA13519284F354DDAB616B12016FE053B6"
     },
     "vehicle.police.sw.1": {
       "path": "vehicle/police/sw/1.png",
       "size": [
-        32,
-        24
+        48,
+        36
       ],
       "anchor": [
-        16,
-        16
+        24,
+        26
       ],
       "layer": "actor",
-      "sha256": "0D673B2FB0985A7174287DABED01972446E50D6A6DAB27FAE3808D758F8EEA1D"
+      "sha256": "D044EFE0F5F45B3777D9851C59455EF553E9FE5DAAF7F6980ACDD60B077509A4"
     },
     "zone.commercial.base": {
       "path": "zone/commercial/base.png",
@@ -2433,7 +2433,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "B0B5CE283720CD43B0D6941DE2D78BD394DA93D48173316B46763701176D8568"
+      "sha256": "705C480795EFF075890AA58201C9020029FC490355D0D74524CED8136BE8AE6F"
     },
     "zone.industrial.base": {
       "path": "zone/industrial/base.png",
@@ -2446,7 +2446,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "2C44B0DB1498FAF5D8FCB4847C39E7B5FD745DFDC62E8636B4183C0967C26A11"
+      "sha256": "4F75B7D6940A43BA5873FD69A00194045D698CE1C04CC7F224120254A3878CC5"
     },
     "zone.residential.base": {
       "path": "zone/residential/base.png",
@@ -2459,7 +2459,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "33572D7AE27198B159A13BD1F8E4F3FBDFA234E6120DD4A055B396EFD7D0F7EE"
+      "sha256": "6493DBB0677A8A2EE7A52E6C74D76374191432295282B5957A67A745163730CF"
     }
   },
   "families": {
@@ -2781,6 +2781,78 @@
     ],
     "zone.residential.base": [
       "zone.residential.base"
+    ],
+    "vehicle.fire.ne": [
+      "vehicle.fire.ne.0",
+      "vehicle.fire.ne.1"
+    ],
+    "vehicle.police.ne": [
+      "vehicle.police.ne.0",
+      "vehicle.police.ne.1"
+    ],
+    "vehicle.fire.se": [
+      "vehicle.fire.se.0",
+      "vehicle.fire.se.1"
+    ],
+    "vehicle.police.se": [
+      "vehicle.police.se.0",
+      "vehicle.police.se.1"
+    ],
+    "vehicle.fire.sw": [
+      "vehicle.fire.sw.0",
+      "vehicle.fire.sw.1"
+    ],
+    "vehicle.police.sw": [
+      "vehicle.police.sw.0",
+      "vehicle.police.sw.1"
+    ],
+    "vehicle.fire.nw": [
+      "vehicle.fire.nw.0",
+      "vehicle.fire.nw.1"
+    ],
+    "vehicle.police.nw": [
+      "vehicle.police.nw.0",
+      "vehicle.police.nw.1"
+    ],
+    "effect.fire": [
+      "effect.fire.0",
+      "effect.fire.1",
+      "effect.fire.2",
+      "effect.fire.3",
+      "effect.fire.4",
+      "effect.fire.5"
+    ],
+    "effect.smoke": [
+      "effect.smoke.0",
+      "effect.smoke.1",
+      "effect.smoke.2",
+      "effect.smoke.3",
+      "effect.smoke.4",
+      "effect.smoke.5"
+    ],
+    "effect.tornado": [
+      "effect.tornado.0",
+      "effect.tornado.1",
+      "effect.tornado.2",
+      "effect.tornado.3",
+      "effect.tornado.4",
+      "effect.tornado.5",
+      "effect.tornado.6",
+      "effect.tornado.7"
+    ],
+    "effect.quake": [
+      "effect.quake.0",
+      "effect.quake.1",
+      "effect.quake.2",
+      "effect.quake.3",
+      "effect.quake.4",
+      "effect.quake.5"
+    ],
+    "effect.flood": [
+      "effect.flood.0",
+      "effect.flood.1",
+      "effect.flood.2",
+      "effect.flood.3"
     ]
   },
   "animations": {
