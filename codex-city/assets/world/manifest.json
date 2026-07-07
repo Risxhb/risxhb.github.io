@@ -41,7 +41,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "E61821D6523E8B97C518E29A972358E01A3CB3A18A20B06EDAF2C2E8D425DCB3"
+      "sha256": "409796B9A64DE67CDFE4CCE69EE962C857A0C9CE5EBC60CA6EE0C613B2CA98B8"
     },
     "bridge.01": {
       "path": "bridge/01.png",
@@ -54,7 +54,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "803691B1C7FBBAC0EF621F8B885595939E7CBB126D6CE3671CD0085FF701F9DD"
+      "sha256": "7254DA148636387196D01ED14FBD6481C71C5D6A792830986E2EBF38A07DD9D2"
     },
     "bridge.02": {
       "path": "bridge/02.png",
@@ -67,7 +67,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "F64100B48C71BFD42E44B8F84B35D67E0CFE435FD18F8354B337248C2EED9405"
+      "sha256": "1A4F385F79F450AF8533666F7A19AE0760DFFF602150A76D613247C36C0946BA"
     },
     "bridge.03": {
       "path": "bridge/03.png",
@@ -80,7 +80,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "2FFD26C86C4EE68A8E83F2A2A19C8D4CF6A46AF924DCF698A997831BDAC3F2C5"
+      "sha256": "46208373AA75EDF910CF58C6325632F1161C5A219B7B7AAE7CE3FDE6F5D74025"
     },
     "bridge.04": {
       "path": "bridge/04.png",
@@ -93,7 +93,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "99ABD3D8D4914CA2F6C63BCD44A028321B39D955A18D93B773FBC9F7B688A443"
+      "sha256": "0A6A9AE75120DDF7B42FF715C07989D0C6137CF9E3EAD7B1A13C702902FFA03F"
     },
     "bridge.05": {
       "path": "bridge/05.png",
@@ -106,7 +106,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "E3BDBD29067493A5BD23F08BB925AF23288E88328BD1C2C48006E05BFD5614D7"
+      "sha256": "66B2A9384F646FC71C1E7E1CE1693EA880026D98DC6AFE82BD662588AE690BE2"
     },
     "bridge.06": {
       "path": "bridge/06.png",
@@ -119,7 +119,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "D6FC9F7A00960DEFC0A876368F6D30D4780717453F33AECD845424F276EE9198"
+      "sha256": "8B551B8BBAFC91EBDBFB7EA20FF399AFFA94405D647B092978016EEA1A8002D7"
     },
     "bridge.07": {
       "path": "bridge/07.png",
@@ -132,7 +132,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "B47E14DECDF604E609F98EF98FD99CFD8BC1F46DE8CE43FEE9BEDFA2D8847772"
+      "sha256": "D33E6A08E6484DBA0BE26496EF0B9BE340EB6BBB67DE65605FD438D9A3ECEB03"
     },
     "bridge.08": {
       "path": "bridge/08.png",
@@ -145,7 +145,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "43688DF2EE6F059FFAB3DA61B5C44FAB4B05B436515E4672306414C42E4D7763"
+      "sha256": "13E5DDAFEFA8AD6FA7ABA439AA5B0C52654FB0B446A288925BE625A7A4204D79"
     },
     "bridge.09": {
       "path": "bridge/09.png",
@@ -158,7 +158,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "89A4AF5757EEF8A8AF26552FFF5D8F897C422508EAE8EE943730F68CF1663550"
+      "sha256": "4F1950C08F252D3E4E8384A977D020782CC3BF2800940ACBE9ED8501EC11AAE4"
     },
     "bridge.0a": {
       "path": "bridge/0a.png",
@@ -171,7 +171,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "351F586C0A1A0D37A39F95A1743B11545C1CDAAC2FA9941E434864D1C271276E"
+      "sha256": "E1D4163724E3CE461BC226232F81429B7F4E196A055D16E27121C67183E0B7B0"
     },
     "bridge.0b": {
       "path": "bridge/0b.png",
@@ -184,7 +184,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "16FD07775140790E6DB16907A4521B4927FAAD029E541834B516988DD0FE60AA"
+      "sha256": "11E95581A05A530FC870E3BD18E582CC38A693528871E747F72211FD32C54264"
     },
     "bridge.0c": {
       "path": "bridge/0c.png",
@@ -197,7 +197,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "6B50D62A613081DB7236DA2E70BD07ADD4D6ECD984DB742666F398DA4C6AF3D0"
+      "sha256": "30AE47DE80C8506D397055DC927129C69CEC291E3FA5EF3506CF9790E8A2A87E"
     },
     "bridge.0d": {
       "path": "bridge/0d.png",
@@ -210,7 +210,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "FA14CBD4C70E3F73BDC5104D8E16FFF4DB21B834F42B10A4828973595906F90B"
+      "sha256": "502CAD767F10371719F38D086186FFEDBBB2EFC256B1D5F4D3AD4FF8E9623A01"
     },
     "bridge.0e": {
       "path": "bridge/0e.png",
@@ -223,7 +223,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "4C8F1C40C9C1A35DACD5CE57F0E603044D650FF649594B9DB6347E9A4E459F68"
+      "sha256": "B78DAD947FDD8CE715D11875675E26DA42A025E34A2943B47A190C08324B864E"
     },
     "bridge.0f": {
       "path": "bridge/0f.png",
@@ -236,7 +236,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "6A79A4B1DC8E7493292846D802F0DD6A5ABD3B39DF2D889BA931A4590F77BD04"
+      "sha256": "76A4A11C0CA2A340146426A7D0DBCE91D4D7ABF50D082576D537E007BAE38774"
     },
     "building.commercial.level1.0": {
       "path": "building/commercial/level1/0.png",
@@ -249,7 +249,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "8DBF8D6AE4FAA954E7838DFDAB9ECC04B3F647D0345DAF9FAE210B560EC1229D"
+      "sha256": "93E73AC7B850D26BF4DF871A68DB77E48348E25F173D3B27D459B191CE89C7C6"
     },
     "building.commercial.level1.1": {
       "path": "building/commercial/level1/1.png",
@@ -262,7 +262,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "E29F09D6F3CA0A9490CC5B659CBAC409C451FE30833B70C99D494B83BAA27F61"
+      "sha256": "5EA68D5C3A4FB896B84A10CF5DB366F5A5C04DF9BB94A90E4EC9ED16BD95A13B"
     },
     "building.commercial.level1.2": {
       "path": "building/commercial/level1/2.png",
@@ -275,7 +275,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "20FC2D8240D75721D237D1F2575FD6AABCE941A4C4579CD58B2E6BE24B9DEE11"
+      "sha256": "C55C87073D98F69DA165B5A51D40A489DC0D8CD9C64BF959BBB2BEC645BF9450"
     },
     "building.commercial.level2.0": {
       "path": "building/commercial/level2/0.png",
@@ -288,7 +288,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "EC44A6C4A0FFB6DD2EE25BFC80040F4B12894588E1705989E8BEECF175EE9C40"
+      "sha256": "AF3687C0CA589FB2B9F2C024FE122FA739D7F27EFFC8A8F3F38FBDC95DCBE84F"
     },
     "building.commercial.level2.1": {
       "path": "building/commercial/level2/1.png",
@@ -301,7 +301,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "15AFC29B00EB0FB18645D07A784AC922EA3ABE26F4178D3519A508719BA2A839"
+      "sha256": "B2C6212D2A07B604CF4E636FC6A9F1E1EA79A2227A3440242CAA473A6A267AB9"
     },
     "building.commercial.level2.2": {
       "path": "building/commercial/level2/2.png",
@@ -314,7 +314,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "768F498E592329AFB3909B20DBB72624E81282E82D3776218BD8AEB86F3AD922"
+      "sha256": "3157711299088C3E666884C9E32898C0E671AA73A67DC4BD17815E5AB4B1BE53"
     },
     "building.commercial.level3.0": {
       "path": "building/commercial/level3/0.png",
@@ -327,7 +327,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "F2886FB013A71C2A74C0D889407B6820688A56320DCB12CF497A127B8193655F"
+      "sha256": "E2F7974E573A07AB5823D9EB3AA51DD445928ACC3B5518D28B8E3B4295E03F69"
     },
     "building.commercial.level3.1": {
       "path": "building/commercial/level3/1.png",
@@ -340,7 +340,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "7F71064BC5E461F7AE33398B7A61EF2102EE7A35BBF2753058D2F9FC69507E91"
+      "sha256": "895E714D82710115AD07D86750797972980CFFB4CD19FD67EAB2F37590851BEA"
     },
     "building.commercial.level3.2": {
       "path": "building/commercial/level3/2.png",
@@ -353,7 +353,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "D8F775D8879DF66D3099864303B354CE7D1B0C6BD7632E87EA578EEC72AE88C8"
+      "sha256": "BC9AD8A4303F76CADD87E2D8ACF4650E49C24BC4D761337D551ABE579FDB3811"
     },
     "building.industrial.level1.0": {
       "path": "building/industrial/level1/0.png",
@@ -366,7 +366,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "5CE14365905D80E74E01C95F305742E6EA3546DFC0D3BE1782CB116AF6653B27"
+      "sha256": "CA73E596C94D01E1E86E3C4468A09FA9B269101410AB1B5E8011292FF91E7ED0"
     },
     "building.industrial.level1.1": {
       "path": "building/industrial/level1/1.png",
@@ -379,7 +379,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "C4D020B3CBFAB7F5B1EAB6513985F0F402232B830ECE605AB68257E10D686D23"
+      "sha256": "846043929F974980D9F3F11EC0DB4F47A50A71C3DD65B5008768539A81D0D616"
     },
     "building.industrial.level1.2": {
       "path": "building/industrial/level1/2.png",
@@ -392,7 +392,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "85069BB6E3D388D15A9972793BF8CE39C3DBDA46E758914BABF19BBC6ADDB4A8"
+      "sha256": "2C08CA29B36DFFA32921E5C836ED8A371E749A70FD70744C5E3093723AE9AA38"
     },
     "building.industrial.level2.0": {
       "path": "building/industrial/level2/0.png",
@@ -405,7 +405,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "4821864B8812899B6C15A2CE7D1589CCC0A41D297D96386307F06F8CC920985E"
+      "sha256": "0E9E7A12BAAB31DD9BED2431968BB0365E771120961329775786063461485B57"
     },
     "building.industrial.level2.1": {
       "path": "building/industrial/level2/1.png",
@@ -418,7 +418,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "856D9152E0173BA1BF09B5339DE3482AD6C3F4F42EC918EEDFDB4E81F8DE1969"
+      "sha256": "D5AC7313772B0E8714AC0667053130C95BE9282A6475A56BF80F5C634104CFD1"
     },
     "building.industrial.level2.2": {
       "path": "building/industrial/level2/2.png",
@@ -431,7 +431,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "945C6001C9E345D5AD88C03276F686310A8F6AAF52D194651283276620EAF76A"
+      "sha256": "BF9F3067FA5299C1654B67EB830A63878C588A4BF7AFBF5585B02BDD421ED064"
     },
     "building.industrial.level3.0": {
       "path": "building/industrial/level3/0.png",
@@ -444,7 +444,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "F0707E1CC812C8C80D3318CA019A6FDF962F89BE525DE3FF83AFC0A06C120E8B"
+      "sha256": "8F0F5D62163E62CC5E99C95F2B3FE82122FCFFBB42ECCA62476F7BC10CDC1CA0"
     },
     "building.industrial.level3.1": {
       "path": "building/industrial/level3/1.png",
@@ -457,7 +457,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "70908F8A1A54F7C486F3FFC6211F236FB273CDB888D861C6999162C8A34ADFA1"
+      "sha256": "C9BCF8525CD8FDE0E0AE0AB815D4DD310F2D2E56FF3255BD8ECB3587F3505AA8"
     },
     "building.industrial.level3.2": {
       "path": "building/industrial/level3/2.png",
@@ -470,7 +470,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "2D5AE5B242B76173C90EB7589097716341DE29ABB4B851C891E6DE4DC30DD659"
+      "sha256": "233A9038920057225C48C6FA6FFA38BD3C462D354275FFA636FDE7AE72395AF8"
     },
     "building.residential.level1.0": {
       "path": "building/residential/level1/0.png",
@@ -639,7 +639,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "D056E657A4B01EF80593398C972B851689BA7775D570EA8F7C9733AC04D85B52"
+      "sha256": "E2A0F3DE74AEAF538891BB5E2BDDF1BD3A3170714348149DF02432B899507D28"
     },
     "civic.fire.1": {
       "path": "civic/fire/1.png",
@@ -652,7 +652,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "8229C50200D63E1EB30E32836C9AEC7E08B5A1D53BD2194A96EC47A3CF49B153"
+      "sha256": "CEAD90479A8082BF6C823EC383FC1581AF76569B227CE44066493A367B625005"
     },
     "civic.hospital.0": {
       "path": "civic/hospital/0.png",
@@ -665,7 +665,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "D13582EB87CE5BE55EAE2634D946DEF4F314F74AB9C09E56E255DBCCFA3AA1AC"
+      "sha256": "AEDA195A3B9DEA114C39F810E1E72ACA0977171A6690EC09A9DC4CC81F692A34"
     },
     "civic.hospital.1": {
       "path": "civic/hospital/1.png",
@@ -678,7 +678,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "0659E3A205349E9B147E9130F2CE96B6D11886B1B42D1BEC70B9C58F32C49DA2"
+      "sha256": "5DB4363CFCB38C0017B81E4AF01E8C5A6486C68D73D9317F3A1FF659A995BF9F"
     },
     "civic.landfill.0": {
       "path": "civic/landfill/0.png",
@@ -691,7 +691,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "B482C6AB69F5CB6B0E28C0AE66AA7B1BBF19696547F4F4C0BC331E03FA799393"
+      "sha256": "3898FAB08D53A170702F0DBD22AF7CC56D25ECDFF99E64E7F3B69D8EF76E9A63"
     },
     "civic.landfill.1": {
       "path": "civic/landfill/1.png",
@@ -704,7 +704,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "DFDC16BFF5ED57B33A6ECAB42CAA3B51C54A3FBACDEDA08DEA1566FBBF3BDAB9"
+      "sha256": "CBFB17991E8B9996423F81D1E7FF7152CC5C8EAC908E0800A498F0509BD1DFD2"
     },
     "civic.park.0": {
       "path": "civic/park/0.png",
@@ -717,7 +717,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "D57FDD76AD97E8050C4C4FF4ED0CC1168851CE1A4BCABD0B2D915B72EDF0DEDE"
+      "sha256": "C099E1D0855E926BF4A9DA90B73B3D5F78D1E52A0C782943CF1B674CEC2DD335"
     },
     "civic.park.1": {
       "path": "civic/park/1.png",
@@ -730,7 +730,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "3FCE712D5142B7EE26F0E8AB79F09A5A86163DB5D368F0A6C2C087D9029A2B55"
+      "sha256": "10859748D23DB1223580E6913159B259733706EEEF7CD74467B7096C03E3F85C"
     },
     "civic.police.0": {
       "path": "civic/police/0.png",
@@ -743,7 +743,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "DD15A8F1FAB299FE52703C807B1957B2E9F73F8FEC20833D885335E7C947DAD6"
+      "sha256": "E656CCC516A9F498ABB389FBFDC7213CD2D86A93D388AE5A58C1FDCA0F136D2B"
     },
     "civic.police.1": {
       "path": "civic/police/1.png",
@@ -756,7 +756,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "FA41B7F6CD766B17A3285B8D4A687ECC08D9AC0D0ECD427D1A39BEB9AF2F9C74"
+      "sha256": "E3415C82D9188F2961BF2DDCEC03CBDADAC4D11B45E3368528C5E6B6C93CC021"
     },
     "civic.power.0": {
       "path": "civic/power/0.png",
@@ -769,7 +769,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "7075198F052CACFECCAFCF5C7F5965C9C97E49A9149AED86E47FEF72759949EF"
+      "sha256": "237DA17E0A03BF1C0AC8FD8A3207626BB31C0D4B5C9BDA769BC220C4B38FB9C7"
     },
     "civic.power.1": {
       "path": "civic/power/1.png",
@@ -782,7 +782,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "25CEFB0E3E4F1AD0E3123D513B1C470E85A24DF65BB9134AE07314B4B4725722"
+      "sha256": "12A30503CD0CDD5F559AAAA4803D4EC9419BC4D6C5CDBEED4D88A384A8C073B9"
     },
     "civic.rubble.0": {
       "path": "civic/rubble/0.png",
@@ -795,7 +795,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "F12ED6AF920BB99BE74FF2C4F91CAAFA11F5DFAD4C05A6D3352D605967119F90"
+      "sha256": "F3C6EAC424E90079B7AB689C452A1F15838B1A3BBAA7192E0FB62C27CECFD285"
     },
     "civic.rubble.1": {
       "path": "civic/rubble/1.png",
@@ -808,7 +808,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "97FB8D1BF80BF93060D429B79F191A760F265ACD62C045BC66914A0C23402024"
+      "sha256": "D19A4C348E41B55DD216C071FBF81EED8691A1F7F5E10E92E48EF7FB4E2AA23F"
     },
     "civic.school.0": {
       "path": "civic/school/0.png",
@@ -821,7 +821,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "63232314E6EBE4524962CE8F846316CB5D3DB2A799C60C965DD2E17693FDCEAE"
+      "sha256": "6853411995CBFF43D18B203E4A2250FAE28381E2E79D0A41A96D7159B1AEBBAF"
     },
     "civic.school.1": {
       "path": "civic/school/1.png",
@@ -834,7 +834,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "D137AF6F9FAFCAF29017908C165680A8CF55D6A127ED14A740BBD284489A97F9"
+      "sha256": "AE8F4CE8C50F1C2D2D6C50FB4831D8E9CD094E0BC0EF2827C637149F32682F56"
     },
     "civic.transit.0": {
       "path": "civic/transit/0.png",
@@ -847,7 +847,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "67EBC55A4E57AAB17A1DBB9807F69B55637C28FE53913BF2D03815275E5A8DB7"
+      "sha256": "80FF08B53ACBB5275796E89E9B6E2DBA0E04B08F1D65F41CA8B60BF6C65DB6DA"
     },
     "civic.transit.1": {
       "path": "civic/transit/1.png",
@@ -860,7 +860,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "F0F60367D6396A4ADDEC663A0814CCECB1B52E1E1AF37DA0922E3E6612F8E403"
+      "sha256": "9A572AD3CF539CEECFD12CE07D93191F530B402EB95F27199BB49D7F1740853B"
     },
     "civic.water_tower.0": {
       "path": "civic/water_tower/0.png",
@@ -873,7 +873,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "D0FD394289D0EF126CB1770463058132A4A935A50934170A5055EE3E58CC44B9"
+      "sha256": "0F7C9CEBBFD2A65CD6E515CE794617F621FFB8587C39E61D55C8E70709D32113"
     },
     "civic.water_tower.1": {
       "path": "civic/water_tower/1.png",
@@ -886,7 +886,7 @@
         104
       ],
       "layer": "object",
-      "sha256": "9017C3DEDE139D3562BE1DA99AFBD67A16831D39045601F743A43207BEF5CEE0"
+      "sha256": "900CF1BC73DAB0D5DDB294D8239C579C9CA7CE3C6633649015E473A6D54E4E4B"
     },
     "effect.fire.0": {
       "path": "effect/fire/0.png",
