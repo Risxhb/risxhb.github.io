@@ -1367,7 +1367,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "E71DE6978C7E813EB04768A150003DD1E9FD05FDEF70A7031EF2F93F74542072"
+      "sha256": "A78987D7797D7E668645F063C079AFD0D4E25AE7AECFFD6A8A9933742B6C53D2"
     },
     "prop.streetlight": {
       "path": "prop/streetlight.png",
@@ -1380,7 +1380,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "289B8901ED2691629C1C15294C7CC09DF5D53733E9F6CBA101CB6618661C07E4"
+      "sha256": "578FD3A9D91024B9F56534A72E52EA018EE4DC6DB2608EE44B912044D5752DB5"
     },
     "prop.tree_oak": {
       "path": "prop/tree_oak.png",
@@ -1393,7 +1393,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "166081B5B395E177B762CD5CCA4584AEACCE9B4E973D69619B3FB19CB1DE4F56"
+      "sha256": "53827C6746359EFA437A4BCB2E189A6ACA3FB497FA453929B8D70FFFE39E14D4"
     },
     "prop.tree_palm": {
       "path": "prop/tree_palm.png",
@@ -1406,7 +1406,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "74B55E70BF1484584839272F4BDB49AC2B61A65A885CAA39D75B3EA518E28760"
+      "sha256": "4531888D69B89C0915F493452892A26DBFBB202BB48CB898C6DD306204C8A417"
     },
     "prop.tree_pine": {
       "path": "prop/tree_pine.png",
@@ -1419,7 +1419,7 @@
         52
       ],
       "layer": "object",
-      "sha256": "02BAE7A6C7E41C423BD382CFC74C7483C53AD7597794CF40073ACD46EE92916B"
+      "sha256": "825AE2F9C5D27AE51D4368A344880345D464D415DEF24AEF802F1C6DEE7CC9C4"
     },
     "road.00": {
       "path": "road/00.png",
@@ -1432,7 +1432,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "199374B882A41968320D45A89AA8BFC82E16D5F112852C287B0B5CE60AB60460"
+      "sha256": "BEE9DC61B83A461F599395634C0A7BDCB7655F1568DC8B2A21BF9ADEBB88CE48"
     },
     "road.01": {
       "path": "road/01.png",
@@ -1445,7 +1445,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "E3A555E0E866A644B4F02FB607184BC5484A21D94FBD8F4AC73EFC42EB39937E"
+      "sha256": "6BC6A71C54063423EA81E232CB91EC5971B0DF68F875C1A965CFBA7E560ED31C"
     },
     "road.02": {
       "path": "road/02.png",
@@ -1458,7 +1458,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "691C4027C54C39FD4184758650258C3D59EA7997E50F86F55DC1DE3BD1B36EC0"
+      "sha256": "336D536C03B3B19550B4E6EDE316B5AE2823CB878A7023758BE668A222D0FF46"
     },
     "road.03": {
       "path": "road/03.png",
@@ -1471,7 +1471,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "95FCD8D11D7EA052B91716EC0101D0A118F2D5AA652395B7536AF5184EAA2BB9"
+      "sha256": "DADEAD52345A41F6130B583AD77FAA32860971F943CF00E87FA68E3DBBDA362C"
     },
     "road.04": {
       "path": "road/04.png",
@@ -1484,7 +1484,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "014D258E341DCAD4DAD9919E4A5C89173A7508BE22A2C2D6BBDE74926AE9B307"
+      "sha256": "8B83F73D99BF7B1E58838708CA63FADC9F577C0545AC4DAF438F8A1B9AB651E0"
     },
     "road.05": {
       "path": "road/05.png",
@@ -1497,7 +1497,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "071949648E821EF16DDFA50744B6466AE88A8460FAF6EEA174027AB6CB72F455"
+      "sha256": "55F695F662EFB7ADB0C26CF0012FA1E83D3865591D8E912889BAE3E52B9D0809"
     },
     "road.06": {
       "path": "road/06.png",
@@ -1510,7 +1510,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "3A1042BDECBF61937EE38104B8A4BD8700EA47EDF4CBEC74DD8A7311E7D8FA06"
+      "sha256": "15B6C38463BB5F14B009D712888A01A76BB477210845AFD2BFC3FE26656143DB"
     },
     "road.07": {
       "path": "road/07.png",
@@ -1523,7 +1523,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "3973169451706CE996F4B83701B9C9C4B1873941198BA0A3BD8D9B9798CF74E6"
+      "sha256": "81266421C1E53FB591C3220C50F560F68422A5919EB7284DDCA720E83DF9B64C"
     },
     "road.08": {
       "path": "road/08.png",
@@ -1536,7 +1536,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "0E68635F7EB867009BBAF50A108889654816EE2BDC7E0174506BD434647F9333"
+      "sha256": "29C5D137159D662DDB94AAA8C7B40D492DC839EE3AC4B64DA608BD0DCD111E74"
     },
     "road.09": {
       "path": "road/09.png",
@@ -1549,7 +1549,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "5451D021820E57C89A7872985A8889F2D13ACF5EDCF65EE3EB7E9BA61A8D9DB0"
+      "sha256": "F9D19FDC72665884509DC6B18CD0F6BBAD2B55B37E0DAE769070521B620EA9A2"
     },
     "road.0a": {
       "path": "road/0a.png",
@@ -1562,7 +1562,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "66B2897B4273B29679FC8B74AC948C2D6EC7BFDA11C5825E8C1E74E5D2E708D0"
+      "sha256": "1A802DAB078C128A185EB7C664FBB968630F468FBD34D64340621370191B4D66"
     },
     "road.0b": {
       "path": "road/0b.png",
@@ -1575,7 +1575,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "8A81400F871CB3922EA46A3B2B3549B78C6ED8C43D8EF8EAA410BAFDFBE129EF"
+      "sha256": "2B2E3DC5E08FB9C664BE4DDD4C0ADC4F35CCFC58706B5DEC7C272AEB18462A46"
     },
     "road.0c": {
       "path": "road/0c.png",
@@ -1588,7 +1588,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "BCDD0B7325E20D0FAF97A20BE8D9C87644F01C9D7CDEE983F612FDB9018326BF"
+      "sha256": "30E2A6A50F10003CD86EFE8003EF729B96DCD68D3A7B141306C0A51A48868FE2"
     },
     "road.0d": {
       "path": "road/0d.png",
@@ -1601,7 +1601,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "BD3C054A082382C45C5CA70EB526F42D51AA92867BD4B7EC71157C9B15CE6814"
+      "sha256": "307D73A2D850B474EED2672AB6EB38ADD175E6103A8DD8340BE2ACB0C3F4A83C"
     },
     "road.0e": {
       "path": "road/0e.png",
@@ -1614,7 +1614,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "8874D3B773EE807C9CDCCA0586876B450BC9C72C72F290F58D65A1A498C38479"
+      "sha256": "AAB72B04A6873A5BDCDCD11ED0741DF218388D52AE6981A4B1A5AA6026B0B733"
     },
     "road.0f": {
       "path": "road/0f.png",
@@ -1627,7 +1627,7 @@
         16
       ],
       "layer": "ground_detail",
-      "sha256": "6E36C6C0912479E89511CD96D6DFE27809BE409CA664BFD9C88B85335B156EE0"
+      "sha256": "283F07B29F6131B4589064884FBAA2C00168C2575E88B98F9F750F858A3B2729"
     },
     "shore.00": {
       "path": "shore/00.png",

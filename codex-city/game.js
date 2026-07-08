@@ -52,6 +52,7 @@ let simAccumulator = 0;
 let activeTool = "road";
 let drag = null;
 let hover = null;
+let selectedTile = null;
 let panning = null;
 let mapEditor = false;
 let audio = null;
@@ -108,6 +109,7 @@ function newCity(editor = false) {
     effects: [],
     vehicles: [],
     events: ["Welcome to Codex City."],
+    selectedTile: null,
   };
   seedStarterTown(city);
   return city;
@@ -124,6 +126,7 @@ function resetCity(editor = false) {
   const fresh = newCity(editor);
   Object.keys(state).forEach((key) => delete state[key]);
   Object.assign(state, fresh);
+  selectedTile = null;
   mapEditor = editor;
   updateHud();
   status(editor ? "Map editor opened: big budget, same living simulation." : "New city started. Draw roads first, then drag zones.");
@@ -216,7 +219,7 @@ function bindUi() {
   canvas.addEventListener("pointercancel", onPointerUp);
   canvas.addEventListener("wheel", onWheel, { passive: false });
   window.addEventListener("keydown", (event) => {
-    const keyTools = { r: "road", z: "residential", c: "commercial", i: "industrial", b: "bulldoze", p: "police", f: "fire" };
+    const keyTools = { r: "road", z: "residential", c: "commercial", i: "industrial", b: "bulldoze", p: "police", f: "fire", x: "inspect" };
     if (keyTools[event.key.toLowerCase()]) setTool(keyTools[event.key.toLowerCase()]);
     if (event.code === "Space") {
       state.paused = !state.paused;
@@ -246,6 +249,26 @@ async function preloadCriticalAssets() {
 
 function spriteInfo(key) {
   return assets?.sprites?.[key] || null;
+}
+
+function familyChoice(familyName, t) {
+  const family = assets?.families?.[familyName] || [];
+  if (!family.length) return null;
+  return family[Math.abs(t.variant + t.x * 3 + t.y * 5) % family.length];
+}
+
+function tileSpriteKey(t) {
+  if (!t) return null;
+  if (t.rubble) return familyChoice("civic.rubble", t) || "civic.rubble.0";
+  if (t.civic) return familyChoice(`civic.${t.civic}`, t) || `civic.${t.civic}.0`;
+  if (t.zone && t.level > 0) return familyChoice(`building.${t.zone}.level${t.level}`, t);
+  if (t.zone) return `zone.${t.zone}.base`;
+  if (t.road) {
+    const family = t.bridge ? "bridge" : "road";
+    const mask = roadMask(t.x, t.y, t.bridge).toString(16).padStart(2, "0");
+    return `${family}.${mask}`;
+  }
+  return terrainSprite(t);
 }
 
 function loadImage(key) {
@@ -342,6 +365,7 @@ function lineCells(a, b) {
 }
 
 function gestureCells(tool, a, b) {
+  if (tool === "inspect") return [b];
   if (ZONES.has(tool)) return rectCells(a, b);
   if (CIVICS.has(tool)) return [b];
   return lineCells(a, b);
@@ -405,6 +429,14 @@ function commitGesture(toolName, start, end) {
   if (!cells.length) return;
   let cost = 0;
   let changed = 0;
+  if (toolName === "inspect") {
+    const cell = cells[cells.length - 1];
+    selectedTile = { x: cell.x, y: cell.y };
+    state.selectedTile = selectedTile;
+    updateHud();
+    status(`Inspecting block ${cell.x + 1}-${cell.y + 1}.`);
+    return;
+  }
   if (ZONES.has(toolName)) {
     for (const cell of cells) {
       const t = tile(cell.x, cell.y);
@@ -716,10 +748,22 @@ function render(now) {
   drawBackdrop(now);
   const ordered = [...state.tiles].sort((a, b) => (a.x + a.y) - (b.x + b.y) || a.y - b.y);
   for (const t of ordered) drawGroundTile(t);
-  for (const t of ordered) drawObjectTile(t, now);
-  drawVehicles();
+  const drawItems = ordered.map((tile) => {
+    const s = worldToScreen(tile.x, tile.y);
+    return { depth: tile.x + tile.y, y: s.y, priority: 1, type: "tile", tile };
+  });
+  for (const vehicle of state.vehicles) {
+    const spec = vehicleDrawSpec(vehicle);
+    if (spec) drawItems.push(spec);
+  }
+  drawItems.sort((a, b) => a.depth - b.depth || a.y - b.y || a.priority - b.priority);
+  for (const item of drawItems) {
+    if (item.type === "vehicle") drawVehicleSpec(item);
+    else drawObjectTile(item.tile, now);
+  }
   drawEffects(now);
   drawPreview();
+  drawSelection();
   drawHover();
   ctx.restore();
 }
@@ -767,16 +811,20 @@ function drawObjectTile(t, now) {
   if (t.fire > 0) drawEffectSprite("fire", t.x, t.y, now);
 }
 
-function drawVehicles() {
-  for (const vehicle of state.vehicles) {
-    const a = worldToScreen(vehicle.from.x, vehicle.from.y);
-    const b = worldToScreen(vehicle.to.x, vehicle.to.y);
-    const t = Math.min(1, vehicle.t);
-    const x = a.x + (b.x - a.x) * t;
-    const y = a.y + (b.y - a.y) * t;
-    const direction = b.x > a.x ? "se" : b.x < a.x ? "nw" : b.y > a.y ? "sw" : "ne";
-    drawSprite(`vehicle.car.${direction}.${vehicle.color}`, x, y + 4);
-  }
+function vehicleDrawSpec(vehicle) {
+  const a = worldToScreen(vehicle.from.x, vehicle.from.y);
+  const b = worldToScreen(vehicle.to.x, vehicle.to.y);
+  const t = Math.min(1, vehicle.t);
+  const x = a.x + (b.x - a.x) * t;
+  const y = a.y + (b.y - a.y) * t;
+  const gx = vehicle.from.x + (vehicle.to.x - vehicle.from.x) * t;
+  const gy = vehicle.from.y + (vehicle.to.y - vehicle.from.y) * t;
+  const direction = b.x > a.x ? "se" : b.x < a.x ? "nw" : b.y > a.y ? "sw" : "ne";
+  return { depth: gx + gy + 0.15, y, priority: 0, type: "vehicle", key: `vehicle.car.${direction}.${vehicle.color}`, x, drawY: y + 4 };
+}
+
+function drawVehicleSpec(item) {
+  drawSprite(item.key, item.x, item.drawY);
 }
 
 function drawEffects(now) {
@@ -844,6 +892,7 @@ function drawPreview() {
 }
 
 function previewValid(t, toolName) {
+  if (toolName === "inspect") return true;
   if (toolName === "bulldoze") return true;
   if (toolName === "road") return !t.civic;
   if (ZONES.has(toolName)) return t.terrain !== "water" && !t.road && !t.civic;
@@ -851,10 +900,45 @@ function previewValid(t, toolName) {
   return false;
 }
 
+function drawSelection() {
+  const cell = selectedTile || state.selectedTile;
+  if (!cell || !inBounds(cell.x, cell.y)) return;
+  const s = worldToScreen(cell.x, cell.y);
+  drawDiamond(s.x, s.y, "#f1c84d", 0.32);
+}
+
 function drawHover() {
   if (!hover || !inBounds(hover.x, hover.y)) return;
   const s = worldToScreen(hover.x, hover.y);
   drawDiamond(s.x, s.y, "#ffffff", 0.18);
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#39;",
+  }[char]));
+}
+
+function selectedTileCard() {
+  const cell = selectedTile || state.selectedTile;
+  if (!cell || !inBounds(cell.x, cell.y)) return "";
+  const t = tile(cell.x, cell.y);
+  const spriteKey = tileSpriteKey(t);
+  const info = spriteInfo(spriteKey);
+  const image = info ? `<img src="./assets/world/${escapeHtml(info.path)}" alt="">` : "";
+  const title = t.civic ? label(t.civic) : t.road ? (t.bridge ? "Bridge" : "Road") : t.zone ? `${label(t.zone)} ${t.level ? `Lv ${t.level}` : "Zone"}` : label(t.terrain);
+  const details = [
+    `Block ${cell.x + 1}-${cell.y + 1}`,
+    t.terrain,
+    t.zone ? `${t.level ? "Developed" : "Vacant"} zone` : null,
+    t.road ? "road access" : null,
+    t.fire > 0 ? "on fire" : null,
+  ].filter(Boolean).join(" | ");
+  return `<div class="tile-card">${image}<div><small>Block Inspector</small><strong>${escapeHtml(title)}</strong><span>${escapeHtml(details)}</span></div></div>`;
 }
 
 function updateHud() {
@@ -871,7 +955,7 @@ function updateHud() {
     ["Power", `${state.powerDemand}/${state.powerCapacity || "grid"}`],
     ["Water", `${state.waterDemand}/${state.waterCapacity || "wells"}`],
   ];
-  reportEl.innerHTML = metrics.map(([name, value]) => `<div class="metric"><small>${name}</small><strong>${value}</strong></div>`).join("");
+  reportEl.innerHTML = `${selectedTileCard()}${metrics.map(([name, value]) => `<div class="metric"><small>${escapeHtml(name)}</small><strong>${escapeHtml(value)}</strong></div>`).join("")}`;
 }
 
 function status(message) {
@@ -897,6 +981,7 @@ function loadGame() {
     if (data.version !== 1 || !Array.isArray(data.tiles)) throw new Error("bad save");
     Object.keys(state).forEach((keyName) => delete state[keyName]);
     Object.assign(state, data);
+    selectedTile = state.selectedTile || null;
     updateHud();
     status("Save loaded.");
     return true;
