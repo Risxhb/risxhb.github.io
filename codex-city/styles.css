@@ -175,6 +175,41 @@ button:active { transform: translateY(1px); }
   font-size: 12px;
 }
 
+.wide-card {
+  grid-column: 1 / -1;
+  padding: 10px;
+  border: 1px solid rgba(244, 232, 193, .14);
+  border-radius: 18px;
+  background: rgba(0, 0, 0, .16);
+}
+
+.wide-card h3 {
+  margin: 0 0 8px;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.wide-card p {
+  margin: 4px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.wide-card .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+.wide-card button {
+  padding: 6px 9px;
+  font-size: 12px;
+}
+
 .metric {
   min-height: 58px;
   padding: 9px;

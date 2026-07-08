@@ -12,6 +12,7 @@ const DIRS = [
 const COSTS = {
   road: 12,
   bridge: 55,
+  pipe: 8,
   residential: 25,
   commercial: 35,
   industrial: 30,
@@ -26,6 +27,17 @@ const COSTS = {
   landfill: 550,
   bulldoze: 4,
 };
+const MILESTONES = [
+  ["Village", 100, 2500],
+  ["Town", 350, 5000],
+  ["City", 900, 10000],
+  ["Metropolis", 2000, 20000],
+];
+const NEIGHBOR_TEMPLATES = [
+  { name: "Northgate", population: 42000, specialty: "High-tech commerce", relation: 62 },
+  { name: "Eastbank", population: 36000, specialty: "River freight", relation: 58 },
+  { name: "Southworks", population: 51000, specialty: "Heavy industry", relation: 54 },
+];
 const UPKEEP = {
   police: 55,
   fire: 50,
@@ -73,6 +85,7 @@ function newCity(editor = false) {
         terrain: river || lake ? "water" : forest ? "forest" : "grass",
         road: false,
         bridge: false,
+        pipe: false,
         zone: null,
         level: 0,
         civic: null,
@@ -92,6 +105,7 @@ function newCity(editor = false) {
     year: 1,
     money: editor ? 500000 : 15000,
     tax: 9,
+    loanBalance: 0,
     paused: false,
     speed: 1,
     population: 0,
@@ -104,6 +118,15 @@ function newCity(editor = false) {
     powerCapacity: 0,
     waterDemand: 0,
     waterCapacity: 0,
+    pipeTiles: 0,
+    monthlyIncome: 0,
+    monthlyExpenses: 0,
+    tradeIncome: 0,
+    neighborCommuters: 0,
+    concerns: ["Welcome, Mayor."],
+    budgetLines: {},
+    milestones: [],
+    neighbors: NEIGHBOR_TEMPLATES.map((neighbor) => ({ ...neighbor, trade: false, exports: 0, commuters: 0 })),
     connectedRoads: 0,
     tiles,
     effects: [],
@@ -130,6 +153,22 @@ function resetCity(editor = false) {
   mapEditor = editor;
   updateHud();
   status(editor ? "Map editor opened: big budget, same living simulation." : "New city started. Draw roads first, then drag zones.");
+}
+
+function ensureCityDefaults(city = state) {
+  city.loanBalance ??= 0;
+  city.pipeTiles ??= 0;
+  city.monthlyIncome ??= 0;
+  city.monthlyExpenses ??= 0;
+  city.tradeIncome ??= 0;
+  city.neighborCommuters ??= 0;
+  city.concerns ??= [];
+  city.budgetLines ??= {};
+  city.milestones ??= [];
+  city.neighbors ??= NEIGHBOR_TEMPLATES.map((neighbor) => ({ ...neighbor, trade: false, exports: 0, commuters: 0 }));
+  city.selectedTile ??= null;
+  for (const t of city.tiles || []) t.pipe ??= false;
+  return city;
 }
 
 async function boot() {
@@ -188,6 +227,13 @@ function bindUi() {
     state.tax = Number(taxSlider.value);
     taxLabel.textContent = `${state.tax}%`;
     updateHud();
+  });
+  reportEl.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-finance],button[data-trade]");
+    if (!button) return;
+    if (button.dataset.finance === "borrow") borrowMoney();
+    if (button.dataset.finance === "repay") repayMoney();
+    if (button.dataset.trade) toggleTrade(button.dataset.trade);
   });
   document.getElementById("pauseBtn").addEventListener("click", () => {
     state.paused = !state.paused;
@@ -453,6 +499,14 @@ function commitGesture(toolName, start, end) {
     }
     if (!canAfford(cost)) return;
     for (const cell of cells) if (buildRoad(state, cell.x, cell.y)) changed++;
+  } else if (toolName === "pipe") {
+    for (const cell of cells) {
+      const t = tile(cell.x, cell.y);
+      if (!t || t.terrain === "water" || t.pipe) continue;
+      cost += COSTS.pipe;
+    }
+    if (!canAfford(cost)) return;
+    for (const cell of cells) if (buildPipe(state, cell.x, cell.y)) changed++;
   } else if (toolName === "bulldoze") {
     cost = cells.length * COSTS.bulldoze;
     if (!canAfford(cost)) return;
@@ -480,6 +534,42 @@ function canAfford(cost) {
   return false;
 }
 
+function borrowMoney() {
+  ensureCityDefaults();
+  if (state.loanBalance >= 30000) {
+    status("Credit limit reached.");
+    return;
+  }
+  state.loanBalance += 10000;
+  state.money += 10000;
+  status("Municipal bond issued: borrowed $10,000.");
+  updateHud();
+}
+
+function repayMoney() {
+  ensureCityDefaults();
+  const amount = Math.min(5000, state.loanBalance);
+  if (!amount) {
+    status("No outstanding loan.");
+    return;
+  }
+  if (!canAfford(amount)) return;
+  state.money -= amount;
+  state.loanBalance -= amount;
+  status(`Debt repaid: $${amount.toLocaleString()}.`);
+  updateHud();
+}
+
+function toggleTrade(name) {
+  ensureCityDefaults();
+  const neighbor = state.neighbors.find((item) => item.name === name);
+  if (!neighbor) return;
+  neighbor.trade = !neighbor.trade;
+  status(`${neighbor.name} trade ${neighbor.trade ? "opened" : "paused"}.`);
+  updateRegionalTrade(false);
+  updateHud();
+}
+
 function buildRoad(city, x, y, free = false) {
   const t = tileIn(city, x, y);
   if (!t || t.civic || t.road) return false;
@@ -488,6 +578,14 @@ function buildRoad(city, x, y, free = false) {
   t.zone = null;
   t.level = 0;
   t.rubble = false;
+  if (!free) t.variant++;
+  return true;
+}
+
+function buildPipe(city, x, y, free = false) {
+  const t = tileIn(city, x, y);
+  if (!t || t.terrain === "water" || t.pipe) return false;
+  t.pipe = true;
   if (!free) t.variant++;
   return true;
 }
@@ -521,6 +619,10 @@ function bulldoze(x, y) {
   const t = tile(x, y);
   if (!t || t.terrain === "water") return false;
   const had = t.road || t.zone || t.civic || t.rubble || t.level;
+  if (!had && t.pipe) {
+    t.pipe = false;
+    return true;
+  }
   t.road = false;
   t.bridge = false;
   t.zone = null;
@@ -532,6 +634,7 @@ function bulldoze(x, y) {
 }
 
 function simulateMonth() {
+  ensureCityDefaults();
   state.month++;
   if (state.month > 12) {
     state.month = 1;
@@ -551,7 +654,9 @@ function simulateMonth() {
   let educationScore = 0;
   let parkScore = 0;
   let pollution = 0;
+  let pipeTiles = 0;
   for (const t of state.tiles) {
+    if (t.pipe) pipeTiles++;
     if (t.civic) {
       serviceUpkeep += UPKEEP[t.civic] || 0;
       if (t.civic === "power") powerCapacity += 700;
@@ -575,12 +680,15 @@ function simulateMonth() {
     }
   }
   const powerOK = powerCapacity === 0 ? powerDemand < 80 : powerDemand <= powerCapacity;
-  const waterOK = waterCapacity === 0 ? waterDemand < 70 : waterDemand <= waterCapacity;
+  const pipeOK = population < 350 || pipeTiles >= Math.max(12, Math.ceil(population / 28));
+  const waterOK = waterCapacity === 0 ? waterDemand < 70 : waterDemand <= waterCapacity && pipeOK;
   const unemployment = population ? Math.max(0, Math.round(((population - jobs) / population) * 100)) : 0;
+  Object.assign(state, { population, jobs, pipeTiles });
+  const tradeIncome = updateRegionalTrade(true);
   const demand = {
     residential: 54 + Math.min(34, jobs - population * 0.72) - state.tax * 1.6,
-    commercial: 44 + Math.min(28, population * 0.28 - jobs) - state.tax,
-    industrial: 38 + Math.max(0, population * 0.18 - jobs * 0.2) - pollution * 0.15,
+    commercial: 44 + Math.min(28, population * 0.28 - jobs) - state.tax + state.neighbors.filter((n) => n.trade).length * 5,
+    industrial: 38 + Math.max(0, population * 0.18 - jobs * 0.2) - pollution * 0.15 + state.neighbors.filter((n) => n.trade).length * 4,
   };
   let growth = 0;
   let decay = 0;
@@ -605,15 +713,72 @@ function simulateMonth() {
   const crime = Math.max(0, Math.min(100, Math.round(population / 12 + unemployment * 0.6 - policeScore * 0.45)));
   const fireRisk = Math.max(0, Math.min(100, Math.round(powerDemand / 22 + pollution * 0.32 - fireScore * 0.5)));
   const happiness = Math.max(0, Math.min(100, Math.round(62 + coverage * 0.18 - crime * 0.32 - unemployment * 0.24 - state.tax * 1.15 - (powerOK ? 0 : 14) - (waterOK ? 0 : 12))));
-  const income = Math.round(population * state.tax * 0.55 + jobs * 2.4 + happiness * 1.5);
+  const income = Math.round(population * state.tax * 0.55 + jobs * 2.4 + happiness * 1.5 + tradeIncome);
   const roadCost = Math.round(state.tiles.filter((t) => t.road).length * 0.9);
-  state.money += income - serviceUpkeep - roadCost;
-  Object.assign(state, { population, jobs, happiness, crime, fireRisk, unemployment, powerDemand, powerCapacity, waterDemand, waterCapacity, connectedRoads });
+  const pipeCost = Math.round(pipeTiles * 0.35);
+  const debtInterest = Math.round(state.loanBalance * 0.004);
+  const expenses = serviceUpkeep + roadCost + pipeCost + debtInterest;
+  state.budgetLines = {
+    Services: serviceUpkeep,
+    Roads: roadCost,
+    Pipes: pipeCost,
+    "Debt interest": debtInterest,
+  };
+  state.money += income - expenses;
+  Object.assign(state, { population, jobs, happiness, crime, fireRisk, unemployment, powerDemand, powerCapacity, waterDemand, waterCapacity, connectedRoads, monthlyIncome: income, monthlyExpenses: expenses });
+  checkMilestones();
+  updateConcerns({ powerOK, waterOK, pipeOK });
   if (growth) state.events.unshift(`${growth} blocks developed.`);
   if (decay) state.events.unshift(`${decay} blocks lost density.`);
   if (Math.random() < disasterChance()) randomDisaster();
   if (state.vehicles.length < Math.min(24, connectedRoads / 3)) spawnVehicle(connected);
   updateHud();
+}
+
+function updateRegionalTrade(advance = false) {
+  ensureCityDefaults();
+  let tradeIncome = 0;
+  let neighborCommuters = 0;
+  const excessJobs = Math.max(0, state.jobs - state.population);
+  for (const neighbor of state.neighbors) {
+    if (!neighbor.trade) {
+      neighbor.exports = 0;
+      neighbor.commuters = 0;
+      continue;
+    }
+    const relationFactor = Math.max(0.25, neighbor.relation / 100);
+    neighbor.exports = Math.round(Math.max(30, (state.jobs * 0.16 + state.population * 0.04) * relationFactor));
+    neighbor.commuters = Math.round(Math.min(neighbor.population * 0.012, excessJobs * relationFactor));
+    tradeIncome += neighbor.exports;
+    neighborCommuters += neighbor.commuters;
+    if (advance) neighbor.relation = Math.max(10, Math.min(100, neighbor.relation + (state.happiness >= 55 && state.crime < 40 ? 1 : -1)));
+  }
+  state.tradeIncome = tradeIncome;
+  state.neighborCommuters = neighborCommuters;
+  return tradeIncome;
+}
+
+function checkMilestones() {
+  ensureCityDefaults();
+  for (const [name, population, reward] of MILESTONES) {
+    if (state.population >= population && !state.milestones.includes(name)) {
+      state.milestones.push(name);
+      state.money += reward;
+      state.events.unshift(`Milestone: ${name}. Grant awarded: $${reward.toLocaleString()}.`);
+    }
+  }
+}
+
+function updateConcerns({ powerOK = true, waterOK = true, pipeOK = true } = {}) {
+  const concerns = [];
+  if (!powerOK) concerns.push("Power brownouts are slowing development.");
+  if (!waterOK) concerns.push(pipeOK ? "Water capacity is maxed out." : "Growing districts need more underground pipes.");
+  if (state.crime > 38) concerns.push("Residents are worried about crime.");
+  if (state.unemployment > 22) concerns.push("Unemployment is pushing families to leave.");
+  if (state.loanBalance >= 24000) concerns.push("Debt service is squeezing the budget.");
+  if (state.money < 0) concerns.push("City Hall is running a deficit.");
+  if (!concerns.length) concerns.push("Citizens are broadly satisfied with city services.");
+  state.concerns = concerns.slice(0, 4);
 }
 
 function pseudo(a, b, c) {
@@ -648,6 +813,15 @@ function roadMask(x, y, bridge = false) {
   for (const [bit, dx, dy] of DIRS) {
     const n = tile(x + dx, y + dy);
     if (n?.road && (!bridge || n.bridge)) mask |= bit;
+  }
+  return mask;
+}
+
+function pipeMask(x, y) {
+  let mask = 0;
+  for (const [bit, dx, dy] of DIRS) {
+    const n = tile(x + dx, y + dy);
+    if (n?.pipe) mask |= bit;
   }
   return mask;
 }
@@ -762,6 +936,7 @@ function render(now) {
     else drawObjectTile(item.tile, now);
   }
   drawEffects(now);
+  drawPipes();
   drawPreview();
   drawSelection();
   drawHover();
@@ -872,6 +1047,31 @@ function drawDiamond(x, y, color, alpha = 1) {
   ctx.restore();
 }
 
+function drawPipes() {
+  if (activeTool !== "pipe") return;
+  ctx.save();
+  ctx.strokeStyle = "#8bdaf6";
+  ctx.fillStyle = "#8bdaf6";
+  ctx.lineWidth = Math.max(2, 3 * camera.zoom);
+  ctx.lineCap = "round";
+  for (const t of state.tiles) {
+    if (!t.pipe) continue;
+    const s = worldToScreen(t.x, t.y);
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, Math.max(2, 4 * camera.zoom), 0, Math.PI * 2);
+    ctx.fill();
+    const mask = pipeMask(t.x, t.y);
+    for (const [bit, dx, dy] of [[1, 16, -8], [2, 16, 8], [4, -16, 8], [8, -16, -8]]) {
+      if (!(mask & bit)) continue;
+      ctx.beginPath();
+      ctx.moveTo(s.x, s.y);
+      ctx.lineTo(s.x + dx * camera.zoom, s.y + dy * camera.zoom);
+      ctx.stroke();
+    }
+  }
+  ctx.restore();
+}
+
 function drawPreview() {
   if (!drag) return;
   const cells = gestureCells(activeTool, drag.start, drag.current).filter((cell) => inBounds(cell.x, cell.y));
@@ -895,6 +1095,7 @@ function previewValid(t, toolName) {
   if (toolName === "inspect") return true;
   if (toolName === "bulldoze") return true;
   if (toolName === "road") return !t.civic;
+  if (toolName === "pipe") return t.terrain !== "water" && !t.pipe;
   if (ZONES.has(toolName)) return t.terrain !== "water" && !t.road && !t.civic;
   if (CIVICS.has(toolName)) return t.terrain !== "water" && !t.road && !t.zone && !t.civic;
   return false;
@@ -941,6 +1142,43 @@ function selectedTileCard() {
   return `<div class="tile-card">${image}<div><small>Block Inspector</small><strong>${escapeHtml(title)}</strong><span>${escapeHtml(details)}</span></div></div>`;
 }
 
+function financeCard() {
+  ensureCityDefaults();
+  const net = Math.round((state.monthlyIncome || 0) - (state.monthlyExpenses || 0));
+  return `<div class="wide-card"><h3>Finance</h3>
+    <div class="row"><span>Income</span><strong>$${Math.round(state.monthlyIncome || 0).toLocaleString()}</strong></div>
+    <div class="row"><span>Expenses</span><strong>$${Math.round(state.monthlyExpenses || 0).toLocaleString()}</strong></div>
+    <div class="row"><span>Net</span><strong>${net >= 0 ? "+" : "-"}$${Math.abs(net).toLocaleString()}</strong></div>
+    <div class="row"><span>Debt</span><strong>$${state.loanBalance.toLocaleString()} / $30,000</strong></div>
+    <div class="row"><button data-finance="borrow" type="button">Borrow 10K</button><button data-finance="repay" type="button">Repay 5K</button></div>
+  </div>`;
+}
+
+function budgetCard() {
+  const rows = Object.entries(state.budgetLines || {}).map(([name, value]) => `<div class="row"><span>${escapeHtml(name)}</span><strong>$${Math.round(value).toLocaleString()}</strong></div>`).join("");
+  return `<div class="wide-card"><h3>Budget Lines</h3>${rows || "<p>No expenses yet.</p>"}</div>`;
+}
+
+function concernsCard() {
+  const concerns = state.concerns?.length ? state.concerns : ["Citizens are broadly satisfied with city services."];
+  return `<div class="wide-card"><h3>Citizen Concerns</h3>${concerns.map((concern) => `<p>${escapeHtml(concern)}</p>`).join("")}</div>`;
+}
+
+function tradeCard() {
+  ensureCityDefaults();
+  const rows = state.neighbors.map((neighbor) => `<div class="row"><span>${escapeHtml(neighbor.name)} (${neighbor.relation})</span><button data-trade="${escapeHtml(neighbor.name)}" type="button">${neighbor.trade ? "Trading" : "Open"}</button></div><p>${escapeHtml(neighbor.specialty)} | ${neighbor.population.toLocaleString()} pop | exports $${(neighbor.exports || 0).toLocaleString()}</p>`).join("");
+  return `<div class="wide-card"><h3>Neighbor Trade</h3><p>Trade income $${(state.tradeIncome || 0).toLocaleString()} | Outside commuters ${(state.neighborCommuters || 0).toLocaleString()}</p>${rows}</div>`;
+}
+
+function milestonesCard() {
+  ensureCityDefaults();
+  const rows = MILESTONES.map(([name, population, reward]) => {
+    const done = state.milestones.includes(name);
+    return `<div class="row"><span>${done ? "*" : "-"} ${escapeHtml(name)} (${population.toLocaleString()} pop)</span><strong>$${reward.toLocaleString()}</strong></div>`;
+  }).join("");
+  return `<div class="wide-card"><h3>Milestones</h3>${rows}</div>`;
+}
+
 function updateHud() {
   taxSlider.value = state.tax;
   taxLabel.textContent = `${state.tax}%`;
@@ -954,8 +1192,10 @@ function updateHud() {
     ["Fire risk", `${state.fireRisk}%`],
     ["Power", `${state.powerDemand}/${state.powerCapacity || "grid"}`],
     ["Water", `${state.waterDemand}/${state.waterCapacity || "wells"}`],
+    ["Pipes", (state.pipeTiles || 0).toLocaleString()],
+    ["Trade", `$${(state.tradeIncome || 0).toLocaleString()}`],
   ];
-  reportEl.innerHTML = `${selectedTileCard()}${metrics.map(([name, value]) => `<div class="metric"><small>${escapeHtml(name)}</small><strong>${escapeHtml(value)}</strong></div>`).join("")}`;
+  reportEl.innerHTML = `${selectedTileCard()}${metrics.map(([name, value]) => `<div class="metric"><small>${escapeHtml(name)}</small><strong>${escapeHtml(value)}</strong></div>`).join("")}${financeCard()}${budgetCard()}${concernsCard()}${tradeCard()}${milestonesCard()}`;
 }
 
 function status(message) {
@@ -981,6 +1221,7 @@ function loadGame() {
     if (data.version !== 1 || !Array.isArray(data.tiles)) throw new Error("bad save");
     Object.keys(state).forEach((keyName) => delete state[keyName]);
     Object.assign(state, data);
+    ensureCityDefaults();
     selectedTile = state.selectedTile || null;
     updateHud();
     status("Save loaded.");
