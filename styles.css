@@ -132,6 +132,7 @@ nav a:hover { color: var(--blue); }
 .personnel-image { margin:0; position:relative; border:1px solid var(--line); box-shadow:0 22px 70px rgba(0,0,0,.48); }
 .personnel-image img { display:block; width:100%; height:auto; }
 .personnel-image figcaption { position:absolute; right:14px; bottom:12px; padding:7px 10px; background:rgba(2,8,13,.88); color:var(--cyan); font-size:8px; letter-spacing:.16em; }
+.personnel-media { display:grid; gap:14px; }
 
 .footage { background:#050b10; }
 .gallery { display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:auto; gap:14px; }
