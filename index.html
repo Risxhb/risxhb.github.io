@@ -2,130 +2,235 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Play EXODRIFT: Carrier Command, Codex City, and Eve: Moonroot Hollow directly in your browser.">
-  <title>Risxhb Games — Play in Browser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b12">
+  <meta name="description" content="EXODRIFT: Carrier Command is a single-player action-RTS where you pilot the flagship and command the fleet in real time.">
+  <meta property="og:title" content="EXODRIFT: Carrier Command">
+  <meta property="og:description" content="Pilot the flagship. Command the fleet. Survive the deep strike.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-exodrift.png">
   <link rel="canonical" href="https://risxhb.github.io/">
-  <link rel="stylesheet" href="./landing.css">
+  <title>EXODRIFT: Carrier Command</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="Risxhb games home"><span class="brand-mark">RG</span> Risxhb Games</a>
-    <nav aria-label="Games and page sections">
-      <a href="#highlights">Highlights</a>
-      <a href="./codex-city/">Codex City</a>
-      <a href="./eve/">Dungeon crawler</a>
-      <a href="./exodrift/">EXODRIFT</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav-shell">
+    <a class="brand" href="#top" aria-label="EXODRIFT home">
+      <span class="brand-mark">EXO</span>
+      <span>EXODRIFT<small>CARRIER COMMAND</small></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
+      <a href="#fleet">Fleet Archive</a>
+      <a href="#footage">Combat Feed</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#other-games">Other Games</a>
     </nav>
+    <a class="nav-cta" href="https://risxhb.github.io/exodrift/play/">Play Alpha</a>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">Browser-playable isometric city builder</p>
-        <h1 id="hero-title">Build a city.<br><span>Keep it alive.</span></h1>
-        <p class="lede">Drag neighborhoods into place, lay roads, manage services, watch traffic move, and hold the line when fire, flood, tornadoes, and earthquakes arrive.</p>
-        <div class="actions">
-          <a class="button primary" href="./codex-city/">Play Codex City <span aria-hidden="true">-></span></a>
-          <a class="button ghost" href="./eve/">Play the dungeon crawler</a>
-          <a class="button ghost" href="./exodrift/">Play EXODRIFT</a>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Tactical carrier action-RTS</p>
+        <h1>EXO<span>DRIFT</span></h1>
+        <p class="subtitle">Carrier Command</p>
+        <p class="tagline">Pilot the flagship. Command the fleet.<br>Survive the deep strike.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://risxhb.github.io/exodrift/play/"><b>Deploy Now</b><small>Launch browser alpha</small></a>
+          <a class="button ghost" href="#footage">Watch combat feed</a>
         </div>
-        <ul class="proof" aria-label="Project facts">
-          <li><strong>187</strong><span>world sprites</span></li>
-          <li><strong>12</strong><span>imagegen residences</span></li>
-          <li><strong>16</strong><span>road masks</span></li>
-        </ul>
+        <div class="build-note"><i></i> Live development build · PC + Web · Single-player</div>
       </div>
-      <figure class="hero-art">
-        <picture>
-          <source srcset="./assets/media/codex-city-gameplay.gif" type="image/gif">
-          <img src="./assets/media/codex-city-showcase.png" alt="A bright, dense isometric Codex City beside a river, with homes, businesses, roads, civic services, and traffic." width="1776" height="888">
-        </picture>
-        <figcaption><span class="live-dot" aria-hidden="true"></span> Playable on GitHub Pages</figcaption>
-      </figure>
+      <div class="hero-card reveal">
+        <div class="card-kicker">FLAGSHIP DOSSIER // CVN-01</div>
+        <div class="ship-glyph carrier-glyph"><span></span></div>
+        <div class="hero-card-title">Sidebay-class Carrier</div>
+        <div class="stat"><span>Command</span><b>EX</b></div>
+        <div class="stat"><span>Hangar</span><b>Port / Starboard</b></div>
+        <div class="stat"><span>Role</span><b>Mobile Fleet Base</b></div>
+        <div class="rarity">FLAGSHIP // UNIQUE COMMAND</div>
+      </div>
+      <a class="scroll-cue" href="#overview">SCROLL TO BRIEFING <span>↓</span></a>
     </section>
 
-    <section class="ticker" aria-label="Game systems">
-      <span>Residential</span><span>Commercial</span><span>Industrial</span><span>Traffic</span><span>Crime</span><span>Fire</span><span>Utilities</span><span>Disasters</span>
+    <section class="signal-strip" aria-label="Game highlights">
+      <div><strong>01</strong><span>Direct-pilot<br>carrier combat</span></div>
+      <div><strong>3D</strong><span>Live tactical<br>command map</span></div>
+      <div><strong>∞</strong><span>Continuous<br>real time</span></div>
+      <div><strong>2–3h</strong><span>Branching<br>deep-strike runs</span></div>
     </section>
 
-    <section class="highlights" id="highlights" aria-labelledby="highlights-title">
-      <div class="section-heading">
-        <p class="eyebrow">Mayor, the map is yours</p>
-        <h2 id="highlights-title">Every block is a decision.</h2>
-        <p>Codex City turns a blank region into a living system. Growth is earned through access, power, water, jobs, safety, and sane finances.</p>
+    <section class="overview section" id="overview">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> Command doctrine</p>
+        <h2>You are not above the battle.<br><em>You are inside it.</em></h2>
+        <p>Take the helm of a heavy carrier while issuing orders to persistent wings and capital escorts. Every launch, contact, missile track, and recovery happens in the same uninterrupted battlespace.</p>
       </div>
-      <div class="feature-grid">
-        <article class="feature feature-wide">
-          <span class="feature-number">01</span>
-          <div>
-            <h3>Paint the shape you mean</h3>
-            <p>Click and drag roads in clean lines. Drag residential, commercial, and industrial zones from corner to corner and preview the whole rectangle.</p>
-          </div>
-          <div class="zone-demo" aria-hidden="true">
-            <i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i>
-            <i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i>
-          </div>
+      <div class="pillar-grid">
+        <article class="pillar reveal">
+          <div class="pillar-number">01</div>
+          <h3>Fly the flagship</h3>
+          <p>Command a 120-meter carrier with heavy inertia, braking assist, flak, strike missiles, automated defenses, and layered shields, armor, and hull.</p>
         </article>
-        <article class="feature">
-          <span class="feature-number">02</span>
-          <h3>Actual cell sprites</h3>
-            <p>Residential buildings and road masks are imagegen-created isometric cell sprites with pads, sidewalks, trees, cars, rooftop details, curbs, crosswalks, and density tiers.</p>
+        <article class="pillar reveal">
+          <div class="pillar-number">02</div>
+          <h3>Direct the fleet</h3>
+          <p>Open a live holographic map without pausing. Queue moves, attacks, intercepts, escorts, recalls, stances, and formations while your carrier holds course.</p>
         </article>
-        <article class="feature">
-          <span class="feature-number">03</span>
-          <h3>Services with consequences</h3>
-          <p>Police, fire, hospitals, schools, transit, parks, power, water, and landfills all cost money and work only when the city can reach them.</p>
-        </article>
-        <article class="feature feature-alert">
-          <span class="feature-number">04</span>
-          <h3>Plan for the bad day</h3>
-          <p>Structure fires, floods, tornadoes, and earthquakes damage real districts. Emergency coverage and road access matter when the budget keeps ticking.</p>
+        <article class="pillar reveal">
+          <div class="pillar-number">03</div>
+          <h3>Own the flight cycle</h3>
+          <p>Launch fighters and drones through mirrored side bays. Manage ammunition and endurance, protect recovery lanes, service survivors, and relaunch.</p>
         </article>
       </div>
     </section>
 
-    <section class="world" aria-labelledby="world-title">
-      <div class="world-art">
-        <img src="./assets/media/codex-city-concept-board.png" alt="Codex City isometric art sheet showing terrain, roads, buildings, services, vehicles, and effects." loading="lazy">
+    <section class="fleet section" id="fleet">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow"><span></span> Fleet archive</p>
+        <h2>Assemble your <em>battlegroup.</em></h2>
+        <p>Ships are authored tactical sidegrades—not randomized-stat loot. Each hull has a readable role, silhouette, and place in the command network.</p>
       </div>
-      <div class="world-copy">
-        <p class="eyebrow">A coherent pixel world</p>
-        <h2 id="world-title">Built from the ground diamond up.</h2>
-        <p>The browser version loads the same manifest-backed world pack: imagegen residential cell sprites, imagegen road masks, all bridge connections, animated water, emergency vehicles, and disaster effects.</p>
-        <a class="text-link" href="./codex-city/">Play Codex City in your browser <span aria-hidden="true">-></span></a>
+      <div class="fleet-tabs" role="tablist" aria-label="Fleet factions">
+        <button class="active" data-faction="navy">Human Navy</button>
+        <button data-faction="opposition">Acheron Opposition</button>
+      </div>
+      <div class="ship-carousel" data-fleet="navy">
+        <article class="ship-card flagship reveal">
+          <div class="card-top"><span>CVN-01</span><b>FLAGSHIP</b></div>
+          <div class="ship-visual carrier-glyph"><span></span></div>
+          <h3>Sidebay</h3><p class="role">Heavy Carrier</p>
+          <p>Player-piloted mobile base with mirrored launch galleries, command systems, flak batteries, and strike missiles.</p>
+          <div class="traits"><span>COMMAND</span><span>HANGAR</span><span>FORTRESS</span></div>
+        </article>
+        <article class="ship-card reveal">
+          <div class="card-top"><span>FFG-12</span><b>VANGUARD</b></div>
+          <div class="ship-visual frigate-glyph"><span></span></div>
+          <h3>Resolute</h3><p class="role">Missile Frigate</p>
+          <p>A commandable capital escort that screens the carrier and delivers deliberate long-range missile pressure.</p>
+          <div class="traits"><span>MISSILE</span><span>ESCORT</span></div>
+        </article>
+        <article class="ship-card reveal">
+          <div class="card-top"><span>VF-04</span><b>STRIKE WING</b></div>
+          <div class="ship-visual fighter-glyph"><span></span></div>
+          <h3>Raptor</h3><p class="role">Interceptor Squadron</p>
+          <p>Four fast interceptors built to break hostile fighter screens and protect the carrier’s recovery pattern.</p>
+          <div class="traits"><span>INTERCEPT</span><span>SCREEN</span></div>
+        </article>
+        <article class="ship-card reveal">
+          <div class="card-top"><span>RQ-03</span><b>RECON WING</b></div>
+          <div class="ship-visual drone-glyph"><span></span></div>
+          <h3>Watcher</h3><p class="role">Scout Drone Squadron</p>
+          <p>Three sensor drones that resolve uncertain contacts without forcing the carrier to reveal itself with an active ping.</p>
+          <div class="traits"><span>RECON</span><span>IDENTIFY</span></div>
+        </article>
+      </div>
+      <div class="ship-carousel hidden" data-fleet="opposition">
+        <article class="ship-card hostile flagship reveal visible">
+          <div class="card-top"><span>UNKNOWN-01</span><b>HOSTILE COMMAND</b></div>
+          <div class="ship-visual frigate-glyph"><span></span></div>
+          <h3>Acheron</h3><p class="role">Command Frigate</p>
+          <p>The encounter’s priority target. Identify it through the fog of war, penetrate the screen, and destroy it to secure victory.</p>
+          <div class="traits"><span>COMMAND</span><span>MISSILE</span></div>
+        </article>
+        <article class="ship-card hostile reveal visible">
+          <div class="card-top"><span>UNKNOWN-02</span><b>HOSTILE SCREEN</b></div>
+          <div class="ship-visual corvette-glyph"><span></span></div>
+          <h3>Acheron Screen</h3><p class="role">Combat Corvette</p>
+          <p>A fast cannon escort that closes aggressively and forces the battlegroup to divide attention.</p>
+          <div class="traits"><span>BRAWLER</span><span>SCREEN</span></div>
+        </article>
+        <article class="ship-card hostile reveal visible">
+          <div class="card-top"><span>UNKNOWN-03</span><b>HOSTILE WING</b></div>
+          <div class="ship-visual fighter-glyph"><span></span></div>
+          <h3>Acheron Talon</h3><p class="role">Fighter Squadron</p>
+          <p>An aggressive air group that hunts the carrier and tests point defense, flak discipline, and interceptor timing.</p>
+          <div class="traits"><span>ASSAULT</span><span>PURSUIT</span></div>
+        </article>
       </div>
     </section>
 
-    <section class="games" aria-labelledby="games-title">
-      <div class="section-heading compact">
-        <p class="eyebrow">Three worlds, one doorstep</p>
-        <h2 id="games-title">Choose your next problem.</h2>
+    <section class="footage section" id="footage">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow"><span></span> Unfiltered combat feed</p>
+        <h2>Captured from the <em>playable build.</em></h2>
+        <p>No pre-rendered gameplay. These captures come directly from the current Godot greybox running at 1080p.</p>
       </div>
-      <div class="game-grid">
-        <a class="game-card city-card" href="./codex-city/">
-          <span class="tag">Play in browser</span>
+      <div class="gallery">
+        <figure class="gallery-main reveal">
+          <img src="assets/flight-preview.png" alt="Carrier combat viewed from the third-person flight camera">
+          <figcaption><b>DIRECT COMMAND</b><span>Third-person carrier combat</span><i>LIVE BUILD // 01</i></figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/tactical-preview.png" alt="Live three-dimensional tactical command map">
+          <figcaption><b>TACTICAL NET</b><span>Issue fleet orders in real time</span><i>LIVE BUILD // 02</i></figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/campaign-preview.png" alt="Branching three-sector campaign map">
+          <figcaption><b>DEEP STRIKE</b><span>Choose a route, pay its cost</span><i>LIVE BUILD // 03</i></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="roadmap section" id="roadmap">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow"><span></span> Development transmission</p>
+        <h2>Playable now. <em>Built in public.</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item complete reveal"><span>01</span><div><b>FIRST PLAYABLE</b><h3>Carrier combat loop</h3><p>Flight, weapons, side bays, squadrons, live tactical command, sensors, AI, and win/loss flow.</p></div></div>
+        <div class="timeline-item complete reveal"><span>02</span><div><b>RUN LAYER</b><h3>Three-sector deep strike</h3><p>Branching route, supplies, fuel, intel, forecasts, combat nodes, manual saves, and browser distribution.</p></div></div>
+        <div class="timeline-item complete reveal"><span>03</span><div><b>FLEET PERSISTENCE</b><h3>Condition & buildcraft</h3><p>Battle damage, surviving craft, ammunition, fleet service, module slots, and authored sidegrade unlocks.</p></div></div>
+        <div class="timeline-item complete reveal"><span>04</span><div><b>OBJECTIVE FOUNDATION</b><h3>Interception & withdrawal</h3><p>Command strikes, interception battles, extraction corridors, emergency withdrawal, and reduced-reward partial victories.</p></div></div>
+        <div class="timeline-item current reveal"><span>05</span><div><b>NEXT IN DEVELOPMENT</b><h3>Mission variety & consequences</h3><p>Defense, escort, capture, pursuit, escape pods, salvage decisions, and richer partial-success outcomes.</p></div></div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="final-image" aria-hidden="true"></div>
+      <div class="reveal">
+        <p class="eyebrow"><span></span> Command link established</p>
+        <h2>The fleet is waiting.</h2>
+        <p>Launch the browser build or clone the Godot project and join development from the source of truth.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://risxhb.github.io/exodrift/play/"><b>Play EXODRIFT</b><small>Browser alpha</small></a>
+          <a class="button ghost" href="#roadmap">View roadmap</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="other-games section" id="other-games">
+      <div class="section-heading compact reveal">
+        <p class="eyebrow"><span></span> More from Risxhb Games</p>
+        <h2>Choose another <em>world.</em></h2>
+        <p>EXODRIFT is the flagship project, but the existing browser games remain playable from the same home port.</p>
+      </div>
+      <div class="other-game-grid">
+        <a class="other-game-card city-game reveal" href="https://risxhb.github.io/codex-city/">
+          <span>ISOMETRIC CITY BUILDER</span>
           <h3>Codex City</h3>
-          <p>Build, budget, route, rescue.</p>
-          <span class="card-link">Play Codex City -></span>
+          <p>Build, budget, route, rescue—and keep the city alive when disaster arrives.</p>
+          <b>PLAY CODEX CITY →</b>
         </a>
-        <a class="game-card eve-card" href="./eve/">
-          <span class="tag">Play in browser</span>
+        <a class="other-game-card eve-game reveal" href="https://risxhb.github.io/eve/">
+          <span>PARTY RPG PROTOTYPE</span>
           <h3>Eve: Moonroot Hollow</h3>
-          <p>Gather your party and descend.</p>
-          <span class="card-link">Enter the dungeon -></span>
-        </a>
-        <a class="game-card exodrift-card" href="./exodrift/">
-          <span class="tag">Play in browser</span>
-          <h3>EXODRIFT: Carrier Command</h3>
-          <p>Pilot the flagship. Command the fleet.</p>
-          <span class="card-link">Open command briefing -></span>
+          <p>Gather your party, cross the village frontier, and descend into the dungeon.</p>
+          <b>ENTER MOONROOT HOLLOW →</b>
         </a>
       </div>
     </section>
   </main>
 
-  <footer><a href="./">Risxhb Games</a><span>Three handmade worlds, still growing.</span></footer>
+  <footer>
+    <div class="brand"><span class="brand-mark">EXO</span><span>EXODRIFT<small>CARRIER COMMAND</small></span></div>
+    <p>Independent development build. “Project Sidebay” is the internal codename.</p>
+    <p>© 2026 EXODRIFT PROJECT // GODOT 4</p>
+  </footer>
 </body>
 </html>
