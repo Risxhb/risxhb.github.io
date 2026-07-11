@@ -124,6 +124,15 @@ nav a:hover { color: var(--blue); }
 .traits { display:flex; flex-wrap:wrap; gap:6px; position:relative; z-index:2; }
 .traits span { border:1px solid var(--line); color:#9cc2d4; font-size:8px; padding:6px 8px; letter-spacing:.12em; }
 
+.personnel-showcase { display:grid; grid-template-columns:.8fr 1.2fr; gap:5vw; align-items:center; background:radial-gradient(circle at 12% 45%,rgba(53,200,255,.1),transparent 34%),#03080d; }
+.personnel-copy > p:not(.eyebrow) { color:var(--muted); line-height:1.75; max-width:620px; }
+.department-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:28px; }
+.department-grid span { border:1px solid var(--line); background:rgba(7,20,30,.84); padding:13px 15px; color:var(--cyan); font-size:10px; font-weight:900; letter-spacing:.12em; }
+.department-grid small { display:block; color:var(--muted); font-size:9px; font-weight:600; letter-spacing:.04em; margin-top:5px; text-transform:none; }
+.personnel-image { margin:0; position:relative; border:1px solid var(--line); box-shadow:0 22px 70px rgba(0,0,0,.48); }
+.personnel-image img { display:block; width:100%; height:auto; }
+.personnel-image figcaption { position:absolute; right:14px; bottom:12px; padding:7px 10px; background:rgba(2,8,13,.88); color:var(--cyan); font-size:8px; letter-spacing:.16em; }
+
 .footage { background:#050b10; }
 .gallery { display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:auto; gap:14px; }
 .gallery figure { margin:0; position:relative; overflow:hidden; min-height:280px; background:#08131c; border:1px solid var(--line); }
@@ -175,6 +184,7 @@ footer { display:flex; align-items:center; gap:30px; justify-content:space-betwe
   .hero { grid-template-columns:1fr; }
   .hero-card { display:none; }
   .ship-carousel { grid-template-columns:repeat(2,1fr); }
+  .personnel-showcase { grid-template-columns:1fr; }
   .gallery { grid-template-columns:1fr; grid-template-rows:auto; }
   .gallery figure.gallery-main { grid-column:auto; grid-row:auto; min-height:430px; }
   .gallery figure { min-height:360px; }
@@ -189,7 +199,7 @@ footer { display:flex; align-items:center; gap:30px; justify-content:space-betwe
   .signal-strip div { padding:12px; }
   .signal-strip div:nth-child(2) { border-right:0; }
   .section { padding:85px 22px; }
-  .pillar-grid,.ship-carousel { grid-template-columns:1fr; }
+  .pillar-grid,.ship-carousel,.department-grid { grid-template-columns:1fr; }
   .ship-card { min-height:480px; }
   .fleet-tabs { overflow-x:auto; }
   .gallery figure,.gallery figure.gallery-main { min-height:280px; }
