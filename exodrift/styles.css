@@ -166,9 +166,10 @@ nav a:hover { color: var(--blue); }
 .other-game-card::before { content:""; position:absolute; inset:0; opacity:.48; transition:.35s ease; }
 .other-game-card::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 5%,rgba(3,8,12,.96) 88%); }
 .other-game-card.city-game::before { background:radial-gradient(circle at 70% 28%,#9fe55b 0 4%,transparent 26%),linear-gradient(135deg,#1e574f,#18332e 55%,#071016); }
-.other-game-card.eve-game::before { background:radial-gradient(circle at 72% 24%,#d89b52 0 3%,transparent 25%),linear-gradient(135deg,#483048,#241d35 56%,#080b12); }
+.other-game-card.eve-game::before { background:url("../assets/eve-moonroot-gameplay.png") center 46%/cover no-repeat; opacity:.7; }
 .other-game-card:hover { transform:translateY(-6px); border-color:var(--blue); }
 .other-game-card:hover::before { transform:scale(1.035); opacity:.62; }
+.other-game-card.eve-game:hover::before { opacity:.82; }
 .other-game-card > * { position:relative; z-index:1; }
 .other-game-card span { margin-bottom:auto; color:var(--gold); font-size:9px; font-weight:900; letter-spacing:.18em; }
 .other-game-card h3 { margin:0 0 8px; font-size:clamp(28px,3.4vw,48px); text-transform:uppercase; }
