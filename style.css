@@ -77,3 +77,14 @@ ol.latest time{color:var(--ember);font-size:.8rem;font-weight:700;letter-spacing
 ol.latest a{color:var(--gold);text-decoration:none}ol.latest a:hover{text-decoration:underline}
 ol.latest span{color:var(--muted);font-size:.95rem}
 @media (max-width:760px){ol.latest li{grid-template-columns:64px 1fr}ol.latest span{grid-column:1/-1}}
+details.older{margin-top:18px;border:1px solid var(--line);background:#16130f}
+details.older>summary{cursor:pointer;list-style:none;padding:12px 16px;display:flex;align-items:baseline;gap:10px}
+details.older>summary::-webkit-details-marker{display:none}
+details.older>summary::before{content:"\25B8";color:var(--ember);transition:transform .15s}
+details.older[open]>summary::before{transform:rotate(90deg)}
+details.older>summary h2,details.older>summary h3{display:inline;margin:0;padding:0;border:0;font-size:1.2rem}
+details.older>summary:hover h2,details.older>summary:hover h3{color:var(--gold)}
+details.older .when{margin-right:10px;color:var(--ash);font:700 .7rem/1 "Segoe UI",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+details.older>.older-body{padding:0 16px 18px}
+details.older>.older-body>h2:first-child{margin-top:20px}
+details.older>ol.latest{margin:0 16px 12px}
