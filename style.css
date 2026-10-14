@@ -70,3 +70,10 @@ svg.plan .nave+text,svg.plan .tower+text{fill:#12100e}svg.plan .tower+text+text.
 .tools{position:absolute;right:10px;bottom:10px;display:flex;align-items:center;gap:12px;padding:6px 10px;background:#12100ecc;font-size:.85rem;color:var(--muted)}
 .tools label{display:flex;align-items:center;gap:8px}.tools input{width:110px;accent-color:var(--ember)}
 .note{color:var(--muted);min-height:1.6em;margin:12px 0 0}
+.latest-h{margin:8px 0 0;padding:0;border:0;font-size:1.5rem}
+ol.latest{list-style:none;margin:14px 0 28px;padding:0;border-top:1px solid var(--line)}
+ol.latest li{display:grid;grid-template-columns:64px 150px 1fr;gap:4px 16px;padding:10px 0;border-bottom:1px solid var(--line);align-items:baseline}
+ol.latest time{color:var(--ember);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+ol.latest a{color:var(--gold);text-decoration:none}ol.latest a:hover{text-decoration:underline}
+ol.latest span{color:var(--muted);font-size:.95rem}
+@media (max-width:760px){ol.latest li{grid-template-columns:64px 1fr}ol.latest span{grid-column:1/-1}}
