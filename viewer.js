@@ -139,7 +139,7 @@ async function load(index) {
   disposeContent();
   try {
     const gltf = await new GLTFLoader().loadAsync(item.file, e => {
-      if (mine === token && e.total) status.textContent = 'Loading ' + item.label + '… ' + Math.round(e.loaded / e.total * 100) + '% of ' + (e.total / 1048576).toFixed(1) + ' MB';
+      if (mine === token) status.textContent = 'Loading ' + item.label + '… ' + (e.loaded / 1048576).toFixed(1) + ' MB';
     });
     if (mine !== token) return;
     content = gltf.scene;
