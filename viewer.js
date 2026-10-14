@@ -130,6 +130,22 @@ function frameScene(root, ex, item) {
   status.dataset.span = span;
 }
 
+// A scene with a roof (the guild: the node named RF01_HallRoof; its gables stay) opens with the roof hidden, as the game's camera hides it,
+// and gets a button to show it.
+let roofParts = [], roofButton = null;
+function setupRoof(root) {
+  roofParts = [];
+  root.traverse(o => { if (/^RF01_/.test(o.name)) roofParts.push(o); });
+  if (!roofButton) {
+    roofButton = document.createElement('button'); roofButton.type = 'button';
+    roofButton.addEventListener('click', () => { const show = !roofParts[0].visible; for (const o of roofParts) o.visible = show; roofButton.textContent = show ? 'Hide roof' : 'Show roof'; });
+    const full = document.getElementById('full'); full.parentNode.insertBefore(roofButton, full);
+  }
+  roofButton.hidden = roofParts.length === 0;
+  for (const o of roofParts) o.visible = false;
+  roofButton.textContent = 'Show roof';
+}
+
 async function load(index) {
   const item = items[index], mine = ++token;
   for (const b of picker.children) b.setAttribute('aria-pressed', b.dataset.i == index);
@@ -147,6 +163,7 @@ async function load(index) {
     if (mode === 'model') { styleModel(content); frameModel(content); }
     else frameScene(content, gltf.scene.userData || {}, item);
     scene.add(content);
+    setupRoof(content);
     status.hidden = true;
     history.replaceState(null, '', '#' + item.id);
   } catch (err) {
