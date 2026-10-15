@@ -130,12 +130,12 @@ function frameScene(root, ex, item) {
   status.dataset.span = span;
 }
 
-// A scene with a roof (the guild: the node named RF01_HallRoof; its gables stay) opens with the roof hidden, as the game's camera hides it,
-// and gets a button to show it.
+// A scene with a roof (the guild: the node named RF01_HallRoof; its gables stay; the cathedral: its vaults, timber ceilings and the shadow shell
+// over them) opens with the roof hidden, as the game's camera hides it, and gets a button to show it.
 let roofParts = [], roofButton = null;
 function setupRoof(root) {
   roofParts = [];
-  root.traverse(o => { if (/^RF01_/.test(o.name)) roofParts.push(o); });
+  root.traverse(o => { if (/^RF01_|^C_(Vault|AisleCeil|PorchVault|SacristyCeil)|^S_Envelope|^N_SunShafts/.test(o.name)) roofParts.push(o); });
   if (!roofButton) {
     roofButton = document.createElement('button'); roofButton.type = 'button';
     roofButton.addEventListener('click', () => { const show = !roofParts[0].visible; for (const o of roofParts) o.visible = show; roofButton.textContent = show ? 'Hide roof' : 'Show roof'; });
