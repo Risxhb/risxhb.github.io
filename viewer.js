@@ -22,6 +22,43 @@ controls.dampingFactor = 0.12;
 controls.zoomToCursor = true;
 controls.maxPolarAngle = mode === 'model' ? Math.PI * 0.95 : Math.PI * 0.499;
 
+// Smooth wheel zoom. OrbitControls' own wheel zoom (three 0.160, with zoomToCursor and damping) jumped between the near and
+// far limits on many mice, so the wheel is handled here: every notch is the same small step whatever the device reports,
+// the camera glides to it over a few frames, and it zooms toward the point under the cursor. Pinch zoom on touch screens
+// is still OrbitControls'.
+let zoomGoal = null, targetGoal = null;
+const _ndc = new THREE.Vector2(), _ray = new THREE.Raycaster(), _plane = new THREE.Plane(), _hit = new THREE.Vector3(), _dir = new THREE.Vector3();
+stage.addEventListener('wheel', e => {
+  if (e.target !== canvas) return;
+  e.preventDefault(); e.stopPropagation();
+  let d = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1);
+  d = Math.max(-240, Math.min(240, d));
+  if (!d) return;
+  const curT = targetGoal || controls.target;
+  const curD = zoomGoal !== null ? zoomGoal : camera.position.distanceTo(controls.target);
+  const nextD = Math.max(controls.minDistance, Math.min(controls.maxDistance, curD * Math.exp(d * 0.0012)));
+  // the point under the cursor, on the plane through the orbit centre facing the camera
+  const r = canvas.getBoundingClientRect();
+  _ndc.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+  _ray.setFromCamera(_ndc, camera);
+  camera.getWorldDirection(_dir);
+  _plane.setFromNormalAndCoplanarPoint(_dir, curT);
+  const t = curT.clone();
+  if (_ray.ray.intersectPlane(_plane, _hit)) t.add(_hit.sub(curT).multiplyScalar(1 - nextD / curD));
+  zoomGoal = nextD; targetGoal = t;
+}, { capture: true, passive: false });
+controls.addEventListener('start', () => { zoomGoal = null; targetGoal = null; });
+function stepZoom(dt) {
+  if (zoomGoal === null) return;
+  const k = Math.min(1, dt * 12);
+  const off = camera.position.clone().sub(controls.target);
+  const dist = off.length();
+  controls.target.lerp(targetGoal, k);
+  const nd = dist + (zoomGoal - dist) * k;
+  camera.position.copy(controls.target).add(off.setLength(nd));
+  if (Math.abs(nd - zoomGoal) < zoomGoal * 0.002 && controls.target.distanceTo(targetGoal) < zoomGoal * 0.002) { zoomGoal = null; targetGoal = null; }
+}
+
 const lightRig = new THREE.Group();
 scene.add(lightRig);
 let content = null;
@@ -153,6 +190,7 @@ async function load(index) {
   status.hidden = false;
   status.textContent = 'Loading ' + item.label + '…';
   disposeContent();
+  zoomGoal = null; targetGoal = null;
   try {
     const gltf = await new GLTFLoader().loadAsync(item.file, e => {
       if (mine === token) status.textContent = 'Loading ' + item.label + '… ' + (e.loaded / 1048576).toFixed(1) + ' MB';
@@ -209,6 +247,7 @@ function tick() {
     step.multiplyScalar(speed * dt);
     camera.position.add(step); controls.target.add(step);
   }
+  stepZoom(dt);
   controls.update();
   renderer.render(scene, camera);
   requestAnimationFrame(tick);
