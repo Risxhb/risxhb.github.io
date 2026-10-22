@@ -1,0 +1,25 @@
+{
+    "totalBytes": 233940419,
+    "parts": [
+        {
+            "file": "data-04631f3c1c94cda70cfa7285b616e0171c19f61155e5826953b8166aeb4304ea.bin",
+            "sha256": "04631f3c1c94cda70cfa7285b616e0171c19f61155e5826953b8166aeb4304ea",
+            "bytes": 67108864
+        },
+        {
+            "file": "data-1a82ec8f869cc83ef10be999dc3f993e824f9ef7859226e82c961ed423b693f8.bin",
+            "sha256": "1a82ec8f869cc83ef10be999dc3f993e824f9ef7859226e82c961ed423b693f8",
+            "bytes": 67108864
+        },
+        {
+            "file": "data-4663809ba8aaffe6e94ac976d352779bae36c4ef90dc318a38f82049ac617ddf.bin",
+            "sha256": "4663809ba8aaffe6e94ac976d352779bae36c4ef90dc318a38f82049ac617ddf",
+            "bytes": 67108864
+        },
+        {
+            "file": "data-dbfb1612a397d8d949946e56494eade9bea4013e26a39a2544cd45cbeb325331.bin",
+            "sha256": "dbfb1612a397d8d949946e56494eade9bea4013e26a39a2544cd45cbeb325331",
+            "bytes": 32613827
+        }
+    ]
+}
