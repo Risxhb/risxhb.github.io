@@ -81,12 +81,12 @@
       progress.hidden = false;
       status.textContent = 'Downloading the demo…';
       const loader = document.createElement('script');
-      loader.src = 'Build/lastbell-v3.loader.js';
+      loader.src = 'Build/lastbell-v5.loader.js';
       loader.onerror = () => fail('Please check your connection and try again.');
       loader.onload = async () => { try { const dataUrl = await downloadData(); await createUnityInstance(canvas, {
         dataUrl,
-        frameworkUrl: 'Build/lastbell-v3.framework.js.unityweb',
-        codeUrl: 'Build/lastbell-v3.wasm.unityweb',
+        frameworkUrl: 'Build/lastbell-v5.framework.js.unityweb',
+        codeUrl: 'Build/lastbell-v5.wasm.unityweb',
         streamingAssetsUrl: 'StreamingAssets',
         companyName: "Last Bell",
         productName: "Last Bell",
